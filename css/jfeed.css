@@ -1,0 +1,67 @@
+/*body{*/
+
+/*    font-family:Arial, Helvetica, sans-serif;*/
+/*    font-size: 12px;*/
+/*    color: #333;*/
+/*}*/
+
+/*h1{*/
+/*    margin: 5px 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*a{*/
+/*    color: #F90;*/
+/*}*/
+
+
+.to-flips {
+/*    width: 178px;*/
+    float: left;
+/*    margin: 0em;*/
+    border: .1em solid #ddd;
+/*    padding: 1.2em;*/
+}
+
+.to-flips .content{
+    min-height: 15em;
+    position: relative;
+    overflow: hidden;
+}
+
+.to-flips .content .grey{
+    color: #999;
+}
+
+.to-flips .content .block{
+    width: 100%;
+    position: absolute;
+/*    top: 0px;*/
+    display: block;
+    overflow: hidden;
+}
+
+.to-flips .flipnav{
+    margin: 0 0 0 70px;
+/*	color: red;*/
+}
+
+.to-flips .flipnav .btn-left, 
+.to-flips .flipnav .btn-right,
+.to-flips .flipnav .btn-left-dis, .btn-right-dis {
+    width: 1.2em;
+    height: 1.2em;
+    background: #ccc;
+    color: #fff;
+    float: left;
+    font-size: 2em;
+    text-align: center;
+	vertical-align:middle;
+    cursor: pointer;
+}
+
+.to-flips .flipnav .btn-left-dis, .to-flips .flipnav .btn-right-dis {
+    color: transparent;
+    background: #fff;
+    cursor: default;
+}

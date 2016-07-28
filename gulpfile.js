@@ -4,7 +4,7 @@ var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
+var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
@@ -28,7 +28,7 @@ gulp.task('less', function() {
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Minify CSS
@@ -39,7 +39,7 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Minify JS
@@ -51,20 +51,20 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('js'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Copy Bootstrap core files from node_modules to vendor directory
 gulp.task('bootstrap', function() {
     return gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-        .pipe(gulp.dest('vendor/bootstrap'))
-})
+        .pipe(gulp.dest('vendor/bootstrap'));
+});
 
 // Copy jQuery core files from node_modules to vendor directory
 gulp.task('jquery', function() {
     return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('vendor/jquery'))
-})
+        .pipe(gulp.dest('vendor/jquery'));
+});
 
 // Copy Font Awesome core files from node_modules to vendor directory
 gulp.task('fontawesome', function() {
@@ -76,8 +76,8 @@ gulp.task('fontawesome', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('vendor/font-awesome'))
-})
+        .pipe(gulp.dest('vendor/font-awesome'));
+});
 
 // Copy all third party dependencies from node_modules to vendor directory
 gulp.task('copy', ['bootstrap', 'jquery', 'fontawesome']);
@@ -88,8 +88,8 @@ gulp.task('browserSync', function() {
         server: {
             baseDir: ''
         },
-    })
-})
+    });
+});
 
 // Watch Task that compiles LESS and watches for HTML or JS changes and reloads with browserSync
 gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-es" xml:lang="es-es" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -15,19 +15,18 @@
 	<meta name="author" content="Desarrollos PICSL">
 
 
-	<meta name="Reply-To" content="contacto@pic-sl.com"/>
-	<meta name="Copyright" content="Proyectos Informáticos Canarias"/>
-	<meta name="Distribution" content="Global"/>
-	<meta name="Revisit-After" content="180 Days"/>
-	<meta name="Rating" content="Mature"/>
+	<meta name="Reply-To" content="contacto@pic-sl.com" />
+	<meta name="Copyright" content="Proyectos Informáticos Canarias" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Revisit-After" content="180 Days" />
+	<meta name="Rating" content="Mature" />
 
 
 	<title>Proyectos Informáticos Canarios</title>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet">-->
-	<link href="css/rss.css" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
@@ -41,6 +40,8 @@
 
 	<!-- Theme CSS -->
 	<link href="css/agency.min.css" rel="stylesheet">
+	<link href="css/jfeed.css" rel="stylesheet">
+<!--	<link href="css/rss.css" rel="stylesheet" type="text/css">-->
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,8 +50,8 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<meta name="msapplication-TileColor" content="#123456"/>
-	<meta name="msapplication-square150x150logo" content="square.png"/>
+	<meta name="msapplication-TileColor" content="#123456" />
+	<meta name="msapplication-square150x150logo" content="square.png" />
 
 	<style>
 
@@ -95,7 +96,7 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+					<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li> -->
 					<!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li> -->
 					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 				</ul>
@@ -123,9 +124,13 @@
 			<div class="container">
 				<div class="alert alert-info fade in">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<h1>Aviso</h1>
 					<strong>Info!</strong> This alert box could indicate a neutral informative change or action.
 				</div>
 			</div>
+
+<!--
+
 			<div class="page-header">
 
 				<h1>Example Page Header</h1>
@@ -134,8 +139,24 @@
 					<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
 				</div>
 			</div>
-			<p>This is some text.</p>
-			<p>This is another text.</p>
+
+-->
+
+			<article>
+				<div class="container">
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 to-flips" id="news">
+							<h2>Noticias</h2>
+							<div class="content">
+								<div id="latestnews"></div>
+							</div>
+							<div class="flipnav"></div>
+						</div>
+
+					</div>
+				</div>
+			</article>
 		</div>
 	</section>
 
@@ -458,38 +479,22 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="embed-responsive embed-responsive-16by9">
-				<picture>
-					<!-- Extra Large Desktops -->
-					<source
-						media="(min-width: 1200px)"
-      						class="img-responsive"
-						srcset="http://lorempixel.com/1920/1080/business/1/1920x1082/">
+						<picture>
+							<!-- Extra Large Desktops -->
+							<source media="(min-width: 1200px)" class="img-responsive" srcset="http://lorempixel.com/1920/1080/business/1/1920x1082/">
 
-					<!-- Desktops -->
-					<source
-						media="(min-width: 992px)"
-      						class="img-responsive"
-						srcset="http://lorempixel.com/1200/992/business/1/1200x992/">
+							<!-- Desktops -->
+							<source media="(min-width: 992px)" class="img-responsive" srcset="http://lorempixel.com/1200/992/business/1/1200x992/">
 
-					<!-- Tablets -->
-					<source
-						media="(min-width: 768px)"
-      						class="img-responsive"
-						srcset="http://lorempixel.com/991/768/business/1/991x768/">
+							<!-- Tablets -->
+							<source media="(min-width: 768px)" class="img-responsive" srcset="http://lorempixel.com/991/768/business/1/991x768/">
 
-					<!-- Landscape Phones -->
-					<source
-						media="(min-width: 480px)"
-      						class="img-responsive"
-						srcset="http://lorempixel.com/767/480/business/1/767x480/">
+							<!-- Landscape Phones -->
+							<source media="(min-width: 480px)" class="img-responsive" srcset="http://lorempixel.com/767/480/business/1/767x480/">
 
-					<!-- Portrait Phones -->
-					<img
-						alt="Pintura por defecto"
-      						class="img-responsive"
-						src="http://lorempixel.com/640/480/business/1/640x480/"
-						srcset="http://lorempixel.com/479/320/business/1/479x320/">
-				</picture>
+							<!-- Portrait Phones -->
+							<img alt="Pintura por defecto" class="img-responsive" src="http://lorempixel.com/640/480/business/1/640x480/" srcset="http://lorempixel.com/479/320/business/1/479x320/">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -1071,8 +1076,25 @@
 		</div>
 	</div>
 
+
 	<!-- jQuery -->
 	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>-->
+
+	<!-- Añadido por mi -->
+	<script src="https://cdn.jsdelivr.net/jquery.migrate/1.4.1/jquery-migrate.min.js" integrity="sha256-q5a5C59JLG0CRBK1v3IXIL711uFqN1j1nC/j8LPkQzc=" crossorigin="anonymous"></script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.js" integrity="sha256-oGmQee+68T/LdtddqY8VHeANI4arQk6r2tx0q9hHcZQ=" crossorigin="anonymous"></script>-->
+	<!-- <script type="text/javascript" src="js/jquery.jfeed.pack.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.pack.js" integrity="sha256-cBMhj5B03W0CuwXPdJNoeA0ZQfcNuQU8NZhJUITBJLY=" crossorigin="anonymous"></script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.js" integrity="sha256-Bt8uZTSYZMIxzuIubd7CrQtiXCNdx7HqkqPccI5ttOg=" crossorigin="anonymous"></script>-->
+	<script type="text/javascript" src="js/jquery.flips.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.min.js" integrity="sha256-xWo9HGVxesxw2bMGpIX7hpvaBt7v7MBwVPfxdvZp13A=" crossorigin="anonymous"></script> -->
+
+
+
+
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -1085,7 +1107,45 @@
 	<script src="js/contact_me.js"></script>
 
 	<!-- Theme JavaScript -->
-	<script src="js/agency.min.js"></script>
+	<!-- <script src="js/agency.min.js"></script> -->
+	<script type="text/javascript">
+		// Agency Theme JavaScript
+
+		/*jslint browser: true*/
+		/*global $, jQuery*/
+
+		(function ($) {
+			'use strict';
+
+			// jQuery for page scrolling feature - requires jQuery Easing plugin
+			$('a.page-scroll').bind('click', function (event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: ($($anchor.attr('href')).offset().top - 50)
+				}, 1250, 'easeInOutExpo');
+				event.preventDefault();
+			});
+
+			// Highlight the top nav as scrolling occurs
+			$('body').scrollspy({
+				target: '.navbar-fixed-top',
+				offset: 51
+			});
+
+			// Closes the Responsive Menu on Menu Item Click
+			$('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () {
+				$('.navbar-toggle:visible').click();
+			});
+
+			// Offset for Main Navigation
+			$('#mainNav').affix({
+				offset: {
+					top: 100
+				}
+			});
+
+		}(jQuery));
+	</script>
 
 	<!-- News Reader -->
 	<!-- http://www.jqueryscript.net/slider/Responsive-jQuery-News-Ticker-Plugin-with-Bootstrap-3-Bootstrap-News-Box.html -->
@@ -1111,6 +1171,63 @@
 				onToDo: null
 			});
 		});
+	</script>
+
+	<script type="text/javascript">
+		//<![CDATA[
+		jQuery(function () {
+
+			jQuery.getFeed({
+
+				url: 'rss/rss.xml',
+				success: function (feed) {
+
+					'use strict';
+/*
+					console.log( feed.type);
+					console.log( feed.version );
+					console.log( feed.title );
+					console.log( feed.link );
+					console.log( feed.desciption );
+					console.log( feed.language );
+					console.log( feed.updated );
+*/
+					var html = '';
+					var nNoticias = 100;
+					var sRetraso = 500;
+					var Direccion = 'right';
+
+					// Selects how many RSS items to parse
+					for (var i = 0; i < feed.items.length && i < nNoticias; i++) {
+/*
+						console.log('%s de %s', i, feed.items.length);
+						console.log( feed.items[i].title );
+						console.log( feed.items[i].link );
+						console.log( feed.items[i].description );
+						console.log( feed.items[i].updated );
+						console.log( feed.items[i].id );
+
+						console.log( '---------------------------------------------------------------' );
+*/
+						var item = feed.items[i];
+						html += '<div class=block>'
+							+ '<h3>' + '<a href="' + item.link + '" target="_blank">' + item.title + '</a>' + '</h3>';
+
+						html += '<h4 class="grey">'
+							+ item.updated + '</h4>'
+							+ item.description + '</div>';
+					}
+					jQuery('#latestnews').append(html);
+
+					// Adds the jQuery Flips element. The direction can left, top or bottom/
+					$('#news').flips({
+						autorun_delay: sRetraso,
+						direction: Direccion
+					});
+				}
+			});
+		});
+		//]]>
 	</script>
 
 	<!--Start of Tawk.to Script-->
