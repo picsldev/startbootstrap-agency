@@ -15,7 +15,24 @@
 	<meta name='Distribution' content='Global' />
 	<meta name='Revisit-After' content='180 Days' />
 	<meta name='Rating' content='Mature' />
+	<meta name="google-site-verification" content="ToGzdkdW1sJT1Lor0MVOG4OB6SJGgQ8JF9xuGYwbUIQ" />
 	<title>Proyectos Informáticos Canarios</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
 	<link rel='apple-touch-icon' sizes='180x180' href='img/favicon/apple-touch-icon.png'>
 	<link rel='icon' type='image/png' href='img/favicon/favicon-32x32.png' sizes='32x32'>
 	<link rel='icon' type='image/png' href='img/favicon/favicon-16x16.png' sizes='16x16'>
@@ -1282,7 +1299,7 @@
 					// Selects how many RSS items to parse
 					for (var i = 0; i < feed.items.length && i < nNoticias; i++) {
 						var item = feed.items[i];
-						html += '<div class="block">' + '<h3>' + '<a href="' + item.link + '" target="_blank">' + item.title + '</a>' + '</h3>';
+						html += '<div class="block" typeof="schema:BlogPosting">' + '<h3>' + '<a href="' + item.link + '" target="_blank">' + item.title + '</a>' + '</h3>';
 						html += '<h4 class="grey">' + item.updated + '</h4>' + '<!-- ' + item.description + ' -->' + '</div>';
 					}
 					jQuery('#latestnews').append(html);
