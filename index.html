@@ -1,336 +1,340 @@
-<html>
+<!DOCTYPE html>
+<html lang="es-es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=3, user-scalable=yes">
-        <meta name="keywords" content="Proyectos Informáticos Canarias">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="es">
-        <meta name="description" content="Empresa dedicada a la prestación de servicios informáticos a otras empresas: formación, desarrollo, mantenimiento, etc. Estamos especializados en CashKeeper y Unycop.">
-        <meta name="author" content="Desarrollos PICSL">
-        <meta name="Reply-To" content="contacto@pic-sl.com">
-        <meta name="Copyright" content="Proyectos Informáticos Canarias">
-        <meta name="Distribution" content="Global">
-        <meta name="Revisit-After" content="180 Days">
-        <meta name="Rating" content="Mature">
-        <meta name="google-site-verification" content="ToGzdkdW1sJT1Lor0MVOG4OB6SJGgQ8JF9xuGYwbUIQ">
-        <title>Proyectos Informáticos Canarios</title>
-        <script type="application/ld+json">
-        { "@context": "http://schema.org", "@type": "NewsArticle", "author": "Proyectos Informáticos Canarias", "publisher": "Proyectos Informáticos Canarias", "headline": "Open-source framework for publishing content", "datePublished": "2015-10-07T12:02:41Z", "dateModified": "2015-10-07T12:02:41Z", "image": [ "img/logo.svg" ] }
-        </script>
-        <!-- <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>-->
-        <!-- <script async src="https://cdn.ampproject.org/v0.js"></script>-->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="img/favicon/manifest.json">
-        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
-        <link rel="shortcut icon" href="img/favicon/favicon.ico">
-        <meta name="apple-mobile-web-app-title" content="Proyectos Informáticos Canarias">
-        <meta name="application-name" content="Proyectos Informáticos Canarias">
-        <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <!-- Bootstrap Core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <!-- <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=3, user-scalable=yes">
+		<meta name="keywords" content="Proyectos Informáticos Canarias">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="es">
+		<meta name="description" content="Empresa dedicada a la prestación de servicios informáticos a otras empresas: formación, desarrollo, mantenimiento, etc. Estamos especializados en CashKeeper y Unycop.">
+		<meta name="author" content="Desarrollos PICSL">
+		<meta name="Reply-To" content="contacto@pic-sl.com">
+		<meta name="Copyright" content="Proyectos Informáticos Canarias">
+		<meta name="Distribution" content="Global">
+		<meta name="Revisit-After" content="180 Days">
+		<meta name="Rating" content="Mature">
+		<meta name="google-site-verification" content="ToGzdkdW1sJT1Lor0MVOG4OB6SJGgQ8JF9xuGYwbUIQ">
+		<title>Proyectos Informáticos Canarios</title>
+		<script type="application/ld+json">
+		{ "@context": "http://schema.org", "@type": "NewsArticle", "author": "Proyectos Informáticos Canarias", "publisher": "Proyectos Informáticos Canarias", "headline": "Open-source framework for publishing content", "datePublished": "2015-10-07T12:02:41Z", "dateModified": "2015-10-07T12:02:41Z", "image": [ "img/logo.svg" ] }
+		</script>
+		<!-- <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>-->
+		<!-- <script async src="https://cdn.ampproject.org/v0.js"></script>-->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico">
+		<meta name="apple-mobile-web-app-title" content="Proyectos Informáticos Canarias">
+		<meta name="application-name" content="Proyectos Informáticos Canarias">
+		<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Bootstrap Core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
 rel='stylesheet'>-->
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
-        <!-- Custom Fonts -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-        <!-- Theme CSS -->
-        <link href="css/agency.min.css" rel="stylesheet">
-        <link href="css/jfeed.css" rel="stylesheet">
-        <!-- <link href='css/rss.css' rel='stylesheet' type='text/css'>-->
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+		<!-- Custom Fonts -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+		<!-- Theme CSS -->
+		<link href="css/agency.min.css" rel="stylesheet">
+		<link href="css/jfeed.css" rel="stylesheet">
+		<!-- <link href='css/rss.css' rel='stylesheet' type='text/css'>-->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
 queries -->
-        <!--[if lt IE 9]>
+		<!--[if lt IE 9]>
 <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script>
 <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'></script>
 <![endif]-->
-        <meta name="msapplication-TileColor" content="#123456">
-        <meta name="msapplication-square150x150logo" content="square.png">
-        <style type="text/css">
-            /* Inicio del Logotipo */
+		<meta name="msapplication-TileColor" content="#123456">
+		<meta name="msapplication-square150x150logo" content="square.png">
+		<style type="text/css">
+			/* Inicio del Logotipo */
 
-            .logo {
-                width: 155px;
-                height: 55px;
-                animation: bounceIn 0.6s;
-                transform: rotate(0deg) scale(1) translateZ(0);
-                transition: all 0.4s cubic-bezier(.2, 1.8, .75, .75);
-                cursor: pointer;
-            }
+			.logo {
+				width: 155px;
+				height: 55px;
+				animation: bounceIn 0.6s;
+				transform: rotate(0deg) scale(1) translateZ(0);
+				transition: all 0.4s cubic-bezier(.2, 1.8, .75, .75);
+				cursor: pointer;
+			}
 
-            .logo:hover {
-                transform: rotate(10deg) scale(1.1);
-            }
+			.logo:hover {
+				transform: rotate(10deg) scale(1.1);
+			}
 
-            .bubble {
-                fill: Orange;
-                /* fill: #e76853; */
-            }
+			.bubble {
+				fill: Orange;
+				/* fill: #e76853; */
+			}
 
-            .icon {
-                fill: #fff;
-            }
+			.icon {
+				fill: #fff;
+			}
 
-            @keyframes bounceIn {
-                0% {
-                    opacity: 1;
-                    transform: scale(.3);
-                }
-                50% {
-                    opacity: 1;
-                    transform: scale(1.05);
-                }
-                70% {
-                    opacity: 1;
-                    transform: scale(.9);
-                }
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-            /* Fin del logotipo */
-            /* Inicio botón para volver al inicio de la página
-            -- http://bootsnipp.com/snippets/featured/back-to-top-scroll-feature
-            -- Habría que meterlo en el scss.
-            */
+			@keyframes bounceIn {
+				0% {
+					opacity: 1;
+					transform: scale(.3);
+				}
+				50% {
+					opacity: 1;
+					transform: scale(1.05);
+				}
+				70% {
+					opacity: 1;
+					transform: scale(.9);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			/* Fin del logotipo */
+			/* Inicio botón para volver al inicio de la página
+			-- http://bootsnipp.com/snippets/featured/back-to-top-scroll-feature
+			-- Habría que meterlo en el scss.
+			*/
 
-            .scroll-top-wrapper {
-                position: fixed;
-                opacity: 0;
-                visibility: hidden;
-                overflow: hidden;
-                text-align: center;
-                z-index: 99999999;
-                background-color: #777777;
-                color: #eeeeee;
-                width: 50px;
-                height: 48px;
-                line-height: 48px;
-                right: 1em;
-                bottom: 20em;
-                padding-top: 2px;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                -webkit-transition: all 0.5s ease-in-out;
-                -moz-transition: all 0.5s ease-in-out;
-                -ms-transition: all 0.5s ease-in-out;
-                -o-transition: all 0.5s ease-in-out;
-                transition: all 0.5s ease-in-out;
-            }
+			.scroll-top-wrapper {
+				position: fixed;
+				opacity: 0;
+				visibility: hidden;
+				overflow: hidden;
+				text-align: center;
+				z-index: 99999999;
+				background-color: #777777;
+				color: #eeeeee;
+				width: 50px;
+				height: 48px;
+				line-height: 48px;
+				right: 1em;
+				bottom: 20em;
+				padding-top: 2px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-ms-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
 
-            .scroll-top-wrapper:hover {
-                background-color: #888888;
-            }
+			.scroll-top-wrapper:hover {
+				background-color: #888888;
+			}
 
-            .scroll-top-wrapper.show {
-                visibility: visible;
-                cursor: pointer;
-                opacity: 1.0;
-            }
+			.scroll-top-wrapper.show {
+				visibility: visible;
+				cursor: pointer;
+				opacity: 1.0;
+			}
 
-            .scroll-top-wrapper i.fa {
-                line-height: inherit;
-            }
-            /*
-            Free App template for Bootstrap 3
-            Code snippet by maridlcrmn for Bootsnipp.com
-            Follow me on Twitter @maridlcrmn
-            Image credits: unsplash.com
-            Image <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-            laceholders: placemi.com
-            */
-            /*
-            .mt-100 {
-            margin-top: 100px;
-            }
-            .mb-100 {
-            margin-bottom: 100px;
-            }
-            .icon {
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            padding: 7px 8px;
-            border: 2px solid;
-            border-radius: 50%;
-            }
-            .header {
-            padding-top: 50px;
-            background-color: #eee;
-            overflow: hidden;
-            }
-            .footer {
-            color: #887;
-            background-color: #eee;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            }
-            .content {
-            position: relative;
-            display: table;
-            width: 100%;
-            min-height: 100vh;
-            }
-            .pull-middle {
-            display: table-cell;
-            vertical-align: middle;
-            }
-            .btn {
-            padding-left: 25px;
-            padding-right: 25px;
-            }
-            .btn-circle {
-            border-radius: 20px;
-            }
-            .input-group input {
-            border: 0;
-            box-shadow: none;
-            padding-right: 30px;
-            }
-            .input-group input:focus,
-            .input-group input:active {
-            outline: 0;
-            box-shadow: none;
-            }
-            .input-group-btn:last-child>.btn {
-            z-index: 2;
-            margin-left: -18px;
-            border-radius: 20px;
-            }
-            .phone {
-            position: relative;
-            max-width: 263px;
-            margin: 0 auto;
-            padding: 65px 15px 55px;
-            border: 2px solid #ddd;
-            border-radius: 20px;
-            background-color: #222;
-            box-shadow: 20px 20px 40px #887;
-            }
-            */
-            /* Fin del botón para volver al inicio de la página */
-            /*
-            * Centrado automático en vertical
-            */
+			.scroll-top-wrapper i.fa {
+				line-height: inherit;
+			}
+			/*
+			Free App template for Bootstrap 3
+			Code snippet by maridlcrmn for Bootsnipp.com
+			Follow me on Twitter @maridlcrmn
+			Image credits: unsplash.com
+			Image <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+			laceholders: placemi.com
+			*/
+			/*
+			.mt-100 {
+			margin-top: 100px;
+			}
+			.mb-100 {
+			margin-bottom: 100px;
+			}
+			.icon {
+			width: 32px;
+			height: 32px;
+			text-align: center;
+			padding: 7px 8px;
+			border: 2px solid;
+			border-radius: 50%;
+			}
+			.header {
+			padding-top: 50px;
+			background-color: #eee;
+			overflow: hidden;
+			}
+			.footer {
+			color: #887;
+			background-color: #eee;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			}
+			.content {
+			position: relative;
+			display: table;
+			width: 100%;
+			min-height: 100vh;
+			}
+			.pull-middle {
+			display: table-cell;
+			vertical-align: middle;
+			}
+			.btn {
+			padding-left: 25px;
+			padding-right: 25px;
+			}
+			.btn-circle {
+			border-radius: 20px;
+			}
+			.input-group input {
+			border: 0;
+			box-shadow: none;
+			padding-right: 30px;
+			}
+			.input-group input:focus,
+			.input-group input:active {
+			outline: 0;
+			box-shadow: none;
+			}
+			.input-group-btn:last-child>.btn {
+			z-index: 2;
+			margin-left: -18px;
+			border-radius: 20px;
+			}
+			.phone {
+			position: relative;
+			max-width: 263px;
+			margin: 0 auto;
+			padding: 65px 15px 55px;
+			border: 2px solid #ddd;
+			border-radius: 20px;
+			background-color: #222;
+			box-shadow: 20px 20px 40px #887;
+			}
+			*/
+			/* Fin del botón para volver al inicio de la página */
+			/*
+			* Centrado automático en vertical
+			*/
 
-            .vertical-align {
-                display: flex;
-                align-items: center;
-            }
-            /* --- */
-        </style>
-        <!-- <link rel="stylesheet" href="http://v4.pingendo.com/assets/bootstrap/themes/default.css">
+			.vertical-align {
+				display: flex;
+				align-items: center;
+			}
+			/* --- */
+		</style>
+		<!-- <link rel="stylesheet" href="http://v4.pingendo.com/assets/bootstrap/themes/default.css">
 <link rel="stylesheet" href="http://v4.pingendo.com/assets/bootstrap/themes/default.css">
 -->
-    </head>
+	</head>
 
-    <body id="top" class="index">
-        <!-- -->MENÚS<!-- END -->
-        <section id="menus" class="" style="padding:0;">
-            <nav id="mainNav" class="navbar navbar-inverse navbar-custom navbar-fixed-top">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Intercambiar</span>Menú
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- <a class='navbar-brand page-scroll' href='#top'>P.I.C. S.L.</a> -->
-                        <a class="navbar-brand" href="#top" style="max-width:100px; margin-top: -15px;">
-                            <!-- <img src='LOGO_ADDRESS' class='logo' alt=''>-->
-                            <!-- http://codepen.io/harmputman/pen/ImjDs?editors=1100 -->
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg3566" viewBox="0 0 155 55" enable-background="new 0 0 155 55" height="55" width="155" class="logo">
-                                <defs id="defs3568">
-                                    <filter id="filter5554" style="color-interpolation-filters:sRGB">
-                                        <feFlood id="feFlood5556" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
-                                        <feComposite id="feComposite5558" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
-                                        <feGaussianBlur id="feGaussianBlur5560" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
-                                        <feOffset id="feOffset5562" result="offset" dy="2" dx="2"></feOffset>
-                                        <feComposite id="feComposite5564" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
-                                    </filter>
-                                    <filter id="filter5566" style="color-interpolation-filters:sRGB">
-                                        <feFlood id="feFlood5568" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
-                                        <feComposite id="feComposite5570" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
-                                        <feGaussianBlur id="feGaussianBlur5572" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
-                                        <feOffset id="feOffset5574" result="offset" dy="2" dx="2"></feOffset>
-                                        <feComposite id="feComposite5576" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
-                                    </filter>
-                                    <filter id="filter5578" style="color-interpolation-filters:sRGB">
-                                        <feFlood id="feFlood5580" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
-                                        <feComposite id="feComposite5582" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
-                                        <feGaussianBlur id="feGaussianBlur5584" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
-                                        <feOffset id="feOffset5586" result="offset" dy="2" dx="2"></feOffset>
-                                        <feComposite id="feComposite5588" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
-                                    </filter>
-                                    <filter id="filter5590" style="color-interpolation-filters:sRGB">
-                                        <feFlood id="feFlood5592" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
-                                        <feComposite id="feComposite5594" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
-                                        <feGaussianBlur id="feGaussianBlur5596" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
-                                        <feOffset id="feOffset5598" result="offset" dy="2" dx="2"></feOffset>
-                                        <feComposite id="feComposite5600" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
-                                    </filter>
-                                    <filter id="filter5622" style="color-interpolation-filters:sRGB">
-                                        <feFlood id="feFlood5624" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
-                                        <feComposite id="feComposite5626" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
-                                        <feGaussianBlur id="feGaussianBlur5628" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
-                                        <feOffset id="feOffset5630" result="offset" dy="2" dx="2"></feOffset>
-                                        <feComposite id="feComposite5632" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
-                                    </filter>
-                                </defs>
-                                <g transform="translate(-310.74628,-463.78186)" id="layer1">
-                                    <g transform="matrix(0.5701837,0,0,0.5701837,132.08195,212.92789)" id="g6211">
-                                        <g id="g4463" transform="matrix(1.1207763,0,0,1.1742873,-50.570706,134.43097)" style="fill:#e6e6e6;fill-opacity:1;filter:url(#filter5622)">
-                                            <text x="412.71451" y="283.06232" class="fil6 fnt1" id="text218" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Proyectos</text>
-                                            <text x="412.71451" y="307.53238" class="fil6 fnt1" id="text220" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Informáticos</text>
-                                            <text x="412.71451" y="332.00955" class="fil6 fnt1" id="text222" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Canarias, S.L.</text>
-                                        </g>
-                                        <path id="_152766672" class="fil0" d="M 326.80071,472.71857 326.80071,472.71963 326.80071,472.72034 326.80071,472.78787 326.80071,503.90629 326.80071,504.10535 326.80071,504.10677 326.80035,504.10677 C 326.80071,508.38992 328.51248,512.26892 331.27909,515.07661 334.04464,517.88359 337.86539,519.62031 342.08441,519.62067 L 342.08441,519.62067 342.08689,519.62067 342.0883,519.62067 342.0883,519.62067 C 346.30803,519.62067 350.12984,517.88323 352.89574,515.0759 355.66165,512.26857 357.37342,508.39028 357.37378,504.10819 L 357.37378,504.10819 357.37378,504.10535 357.37378,504.10535 357.37378,504.03782 357.4411,504.03782 365.97126,504.03782 366.03893,504.03782 366.03893,504.10535 366.03893,504.10641 366.03858,504.10641 C 366.03822,510.81692 363.35665,516.89366 359.02248,521.29233 354.6883,525.69065 348.70118,528.41196 342.08972,528.41268 L 342.08972,528.41303 342.08689,528.41303 342.08582,528.41303 342.08582,528.41268 C 335.47295,528.41232 329.48476,525.64088 325.15059,521.19175 320.81712,516.74366 318.13626,510.61822 318.13555,503.90878 L 318.13555,503.90878 318.13555,503.90629 318.13555,503.90629 318.14724,472.72034 318.14759,472.65316 C 318.15291,470.43943 318.44984,468.29537 319.00082,466.25936 320.11484,462.14505 322.26882,458.46652 325.15696,455.53442 328.04511,452.60197 331.6685,450.41491 335.72204,449.28245 337.74846,448.71622 339.8833,448.41338 342.08689,448.41303 L 342.08689,448.41303 342.0883,448.41303 342.0883,448.41303 C 348.70082,448.41338 354.68901,451.13539 359.02354,455.53442 363.35665,459.93239 366.03787,466.00806 366.03858,472.71785 L 366.03893,472.71785 366.03893,472.72034 366.03893,472.78787 365.97126,472.78787 357.4411,472.78787 357.37378,472.78787 357.37378,472.72034 357.37378,472.72034 357.37378,472.71892 357.37378,472.71892 C 357.37378,468.43577 355.66165,464.55641 352.89504,461.74908 350.12948,458.94246 346.30874,457.20574 342.08972,457.20504 L 342.08972,457.20539 342.08689,457.20539 C 341.66559,457.20539 341.24712,457.2228 340.83397,457.25657 339.69374,457.35041 338.58858,457.57185 337.53374,457.90527 L 337.53374,457.90527 C 336.47748,458.23939 335.47047,458.68689 334.52724,459.23251 329.91598,461.90121 326.80496,466.93614 326.80035,472.70684 L 326.80071,472.70684 326.80071,472.70719 326.80071,472.70755 326.80071,472.7079 326.80071,472.70825 326.80071,472.7175 326.80071,472.71857 Z" style="clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;filter:url(#filter5590);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
-                                        <path id="_152759448" class="fil1" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" style="clip-rule:evenodd;fill:#2a1f74;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5578);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
-                                        <path style="clip-rule:evenodd;fill:#2a1f74;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5566);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" class="fil1" id="path4414"></path>
-                                        <path id="path4416" class="fil1" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" style="clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5554);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="heading" aria-level="1" title="Menú Principal">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="hidden">
-                                <a href="#top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#productos">Productos</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#servicios">Servicios</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#empresa">Empresa</a>
-                            </li>
-                            <!-- <li><a class="page-scroll" href="#equipo">Equipo</a></li> -->
-                            <li>
-                                <a class="page-scroll" href="#contacto">Contacto</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#blog">Blog</a>
-                            </li>
-                            <!-- <li class='dropdown'>
+	<body id="top" class="index">
+
+		<!-- -->MENÚS<!-- END -->
+		<header id="menus" style="padding:0;">
+			<h1 class="hidden" aria-hidden="true">Proyectos Informáticos Canarias S.L.</h1>
+			<nav id="mainNav" class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+				<h2 class="hidden" aria-hidden="true">Menú principal</h2>
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Intercambiar</span>Menú
+							<i class="fa fa-bars"></i>
+						</button>
+						<!-- <a class='navbar-brand page-scroll' href='#top'>P.I.C. S.L.</a> -->
+						<a class="navbar-brand" href="#top" style="max-width:100px; margin-top: -15px;">
+							<!-- <img src='LOGO_ADDRESS' class='logo' alt=''>-->
+							<!-- http://codepen.io/harmputman/pen/ImjDs?editors=1100 -->
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg3566" viewBox="0 0 155 55" enable-background="new 0 0 155 55" height="55" width="155" class="logo">
+								<defs id="defs3568">
+									<filter id="filter5554" style="color-interpolation-filters:sRGB">
+										<feFlood id="feFlood5556" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
+										<feComposite id="feComposite5558" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
+										<feGaussianBlur id="feGaussianBlur5560" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
+										<feOffset id="feOffset5562" result="offset" dy="2" dx="2"></feOffset>
+										<feComposite id="feComposite5564" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
+									</filter>
+									<filter id="filter5566" style="color-interpolation-filters:sRGB">
+										<feFlood id="feFlood5568" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
+										<feComposite id="feComposite5570" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
+										<feGaussianBlur id="feGaussianBlur5572" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
+										<feOffset id="feOffset5574" result="offset" dy="2" dx="2"></feOffset>
+										<feComposite id="feComposite5576" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
+									</filter>
+									<filter id="filter5578" style="color-interpolation-filters:sRGB">
+										<feFlood id="feFlood5580" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
+										<feComposite id="feComposite5582" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
+										<feGaussianBlur id="feGaussianBlur5584" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
+										<feOffset id="feOffset5586" result="offset" dy="2" dx="2"></feOffset>
+										<feComposite id="feComposite5588" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
+									</filter>
+									<filter id="filter5590" style="color-interpolation-filters:sRGB">
+										<feFlood id="feFlood5592" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
+										<feComposite id="feComposite5594" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
+										<feGaussianBlur id="feGaussianBlur5596" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
+										<feOffset id="feOffset5598" result="offset" dy="2" dx="2"></feOffset>
+										<feComposite id="feComposite5600" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
+									</filter>
+									<filter id="filter5622" style="color-interpolation-filters:sRGB">
+										<feFlood id="feFlood5624" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.494118"></feFlood>
+										<feComposite id="feComposite5626" result="composite1" operator="in" in2="SourceGraphic" in="flood"></feComposite>
+										<feGaussianBlur id="feGaussianBlur5628" result="blur" stdDeviation="0.5" in="composite1"></feGaussianBlur>
+										<feOffset id="feOffset5630" result="offset" dy="2" dx="2"></feOffset>
+										<feComposite id="feComposite5632" result="composite2" operator="over" in2="offset" in="SourceGraphic"></feComposite>
+									</filter>
+								</defs>
+								<g transform="translate(-310.74628,-463.78186)" id="layer1">
+									<g transform="matrix(0.5701837,0,0,0.5701837,132.08195,212.92789)" id="g6211">
+										<g id="g4463" transform="matrix(1.1207763,0,0,1.1742873,-50.570706,134.43097)" style="fill:#e6e6e6;fill-opacity:1;filter:url(#filter5622)">
+											<text x="412.71451" y="283.06232" class="fil6 fnt1" id="text218" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Proyectos</text>
+											<text x="412.71451" y="307.53238" class="fil6 fnt1" id="text220" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Informáticos</text>
+											<text x="412.71451" y="332.00955" class="fil6 fnt1" id="text222" style="font-weight:bold;font-size:21.90685081px;font-family:Arial;clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">Canarias, S.L.</text>
+										</g>
+										<path id="_152766672" class="fil0" d="M 326.80071,472.71857 326.80071,472.71963 326.80071,472.72034 326.80071,472.78787 326.80071,503.90629 326.80071,504.10535 326.80071,504.10677 326.80035,504.10677 C 326.80071,508.38992 328.51248,512.26892 331.27909,515.07661 334.04464,517.88359 337.86539,519.62031 342.08441,519.62067 L 342.08441,519.62067 342.08689,519.62067 342.0883,519.62067 342.0883,519.62067 C 346.30803,519.62067 350.12984,517.88323 352.89574,515.0759 355.66165,512.26857 357.37342,508.39028 357.37378,504.10819 L 357.37378,504.10819 357.37378,504.10535 357.37378,504.10535 357.37378,504.03782 357.4411,504.03782 365.97126,504.03782 366.03893,504.03782 366.03893,504.10535 366.03893,504.10641 366.03858,504.10641 C 366.03822,510.81692 363.35665,516.89366 359.02248,521.29233 354.6883,525.69065 348.70118,528.41196 342.08972,528.41268 L 342.08972,528.41303 342.08689,528.41303 342.08582,528.41303 342.08582,528.41268 C 335.47295,528.41232 329.48476,525.64088 325.15059,521.19175 320.81712,516.74366 318.13626,510.61822 318.13555,503.90878 L 318.13555,503.90878 318.13555,503.90629 318.13555,503.90629 318.14724,472.72034 318.14759,472.65316 C 318.15291,470.43943 318.44984,468.29537 319.00082,466.25936 320.11484,462.14505 322.26882,458.46652 325.15696,455.53442 328.04511,452.60197 331.6685,450.41491 335.72204,449.28245 337.74846,448.71622 339.8833,448.41338 342.08689,448.41303 L 342.08689,448.41303 342.0883,448.41303 342.0883,448.41303 C 348.70082,448.41338 354.68901,451.13539 359.02354,455.53442 363.35665,459.93239 366.03787,466.00806 366.03858,472.71785 L 366.03893,472.71785 366.03893,472.72034 366.03893,472.78787 365.97126,472.78787 357.4411,472.78787 357.37378,472.78787 357.37378,472.72034 357.37378,472.72034 357.37378,472.71892 357.37378,472.71892 C 357.37378,468.43577 355.66165,464.55641 352.89504,461.74908 350.12948,458.94246 346.30874,457.20574 342.08972,457.20504 L 342.08972,457.20539 342.08689,457.20539 C 341.66559,457.20539 341.24712,457.2228 340.83397,457.25657 339.69374,457.35041 338.58858,457.57185 337.53374,457.90527 L 337.53374,457.90527 C 336.47748,458.23939 335.47047,458.68689 334.52724,459.23251 329.91598,461.90121 326.80496,466.93614 326.80035,472.70684 L 326.80071,472.70684 326.80071,472.70719 326.80071,472.70755 326.80071,472.7079 326.80071,472.70825 326.80071,472.7175 326.80071,472.71857 Z" style="clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;filter:url(#filter5590);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
+										<path id="_152759448" class="fil1" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" style="clip-rule:evenodd;fill:#2a1f74;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5578);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
+										<path style="clip-rule:evenodd;fill:#2a1f74;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5566);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" class="fil1" id="path4414"></path>
+										<path id="path4416" class="fil1" d="M 330.3713,501.9883 330.3713,474.81856 340.31133,474.81856 C 344.07681,474.81856 346.53551,474.95789 347.67858,475.22981 349.43641,475.63466 350.91539,476.52044 352.10169,477.88678 353.28799,479.25313 353.88114,481.01793 353.88114,483.17514 353.88114,484.84504 353.53815,486.24941 352.85216,487.38186 352.16618,488.52037 351.30161,489.41255 350.24393,490.06408 349.1937,490.70922 348.12185,491.13931 347.03547,491.34796 345.55649,491.60744 343.41279,491.74038 340.60401,491.74038 L 336.56641,491.74038 336.56641,501.9883 330.3713,501.9883 Z M 336.56641,479.41735 336.56641,487.12239 339.95382,487.12239 C 342.39799,487.12239 344.03429,486.98306 344.85598,486.6987 345.67767,486.41398 346.32078,485.9711 346.79275,485.36363 347.25693,484.75653 347.49291,484.05451 347.49291,483.25121 347.49291,482.26413 347.16409,481.44802 346.50681,480.80288 345.85661,480.16413 345.02039,479.75928 344.01976,479.6011 343.27673,479.47457 341.79031,479.41735 339.56086,479.41735 L 336.56641,479.41735 Z M 357.44181,474.81856 365.967,474.81856 365.967,479.95514 357.44181,479.95514 357.44181,474.81856 Z M 357.44181,482.30856 365.967,482.30856 365.967,501.9883 357.44181,501.9883 357.44181,482.30856 Z M 390.042,491.99949 396.04436,493.68254 C 395.1224,496.64911 393.59346,498.85076 391.44976,500.29281 389.31279,501.72882 386.59047,502.45003 383.29625,502.45003 379.22287,502.45003 375.87161,501.21662 373.24921,498.75585 370.6261,496.28833 369.31153,492.91691 369.31153,488.64691 369.31153,484.12383 370.63354,480.61307 373.27082,478.10823 375.90704,475.60942 379.3731,474.35683 383.67468,474.35683 387.42633,474.35683 390.47783,475.33751 392.82173,477.30455 394.22204,478.46225 395.26554,480.1325 395.9657,482.30856 L 389.82763,483.60523 C 389.47011,482.19446 388.71291,481.0812 387.55495,480.26544 386.4048,479.44898 385.00377,479.04412 383.36074,479.04412 381.08771,479.04412 379.2374,479.76568 377.82255,481.21377 376.40736,482.65654 375.69976,484.99682 375.69976,488.23566 375.69976,491.67071 376.39319,494.11867 377.79385,495.57388 379.18743,497.03477 381.00232,497.76238 383.23177,497.76238 384.88259,497.76238 386.29708,497.30065 387.48338,496.37079 388.66968,495.44734 389.52007,493.9861 390.042,491.99949 Z" style="clip-rule:evenodd;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke-width:282.222229;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5554);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"></path>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="heading" aria-level="1" title="Menú Principal">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="hidden">
+								<a href="#top"></a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#productos">Productos</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#servicios">Servicios</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#empresa">Empresa</a>
+							</li>
+							<!-- <li><a class="page-scroll" href="#equipo">Equipo</a></li> -->
+							<li>
+								<a class="page-scroll" href="#contacto">Contacto</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#blog">Blog</a>
+							</li>
+							<!-- <li class='dropdown'>
 <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Desplegable<span class='caret'></span></a>
 <ul class='dropdown-menu'>
 <li><a href='#'>Page 1-1</a></li>
@@ -339,25 +343,26 @@ queries -->
 </ul>
 </li>
 -->
-                            <li id="buscar">
-                                <a href="#"><i class="fa fa-search"> </i></a>
-                            </li>
-                        </ul>
-                        <!-- <ul class='nav navbar-nav navbar-right'>
-<li><a href='#'><span class='glyphicon glyphicon-user'></span></a></li>
-<li><a href='#'><span class='glyphicon glyphicon-log-in'></span></a></li>
-<li><a href='#'><span class='glyphicon glyphicon-search'></span></a></li>
-</ul>
--->
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </section>
+							<li id="buscar">
+								<a href="#"><i class="fa fa-search"> </i></a>
+							</li>
+						</ul>
+						<!--
+						<ul class='nav navbar-nav navbar-right'>
+							<li><a href='#'><span class='glyphicon glyphicon-user'></span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-log-in'></span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-search'></span></a></li>
+						</ul>
+						-->
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
 
-        <!-- -->DIAPOSITIVAS<!-- END -->
-        <!-- <section id="diapositivas" class="section" style="padding: 0;">
+		<!-- -->DIAPOSITIVAS<!-- END -->
+		<!-- <section id="diapositivas" class="section" style="padding: 0;">
 
 <div class="container-fluid" style="padding:.1px;">
 
@@ -488,79 +493,116 @@ background-size: cover;
 </div>
 </section> -->
 
-        <!-- -->PRODUCTOS<!-- END -->
-        <section id="productos" class="bg-light-gray" style="padding: 0;">
-            <div class="container" style="padding: 5em 0;">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Nuestros productos</h2>
-                        <h3 class="section-subheading text-muted">Productos en los que nos hemos especializado</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 col-xs-12 portfolio-item text-center">
-                        <a href="#portfolioModal1" class="portfolio-link text-center" data-toggle="modal">
+		<!-- -->PRODUCTOS<!-- END -->
+		<section id="productos" style="padding:5em 0;">
+			<div class="container" style="padding:0;">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Nuestros productos</h2>
+						<h3 class="section-subheading text-muted">Productos en los que nos hemos especializado</h3>
+					</div>
+				</div>
 
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                            </div>
+				<div class="row">
 
-                            <img src="https://dummyimage.com/300x9:16/666/fff.jpg&amp;text=CashKeeper+-+300x9:16" class="center-block img-centered img-responsive img-thumbnail" alt="Cashkeeper" title="Cashkeeper">
+					<!-- CashKeeper -->
+					<div class="col-lg-3 col-sm-6 col-xs-12 portfolio-item text-center">
 
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Cashkeeper</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item">
-                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="https://dummyimage.com/300x9:16/666/fff.jpg&amp;text=Unycop+-+300x9:16" class="img-responsive img-thumbnail" alt="Unycop" title="Unycop">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Unycop</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
-                        </div>
-                    </div>
-                    <!-- </div>
+						<div class="main">
+							<a href="#portfolioModal1" class="portfolio-link text-center" data-toggle="modal">
 
-<div class="row"> -->
-                    <div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item">
-                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="https://dummyimage.com/300x9:16/666/fff.jpg&amp;text=Hostelería+-+300x9:16" class="img-responsive img-thumbnail" alt="Hostelería" title="Hostelería">
-                            <!--                            <img src="img/portfolio/treehouse.png" class="img-responsive img-thumbnail" alt="TreeHouse">-->
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Hostelería</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item">
-                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="https://dummyimage.com/300x9:16/666/fff.jpg&amp;text=Hoteles+-+300x9:16" class="img-responsive img-thumbnail" alt="Hoteles" title="Hoteles">
-                            <!--                            <img src="img/portfolio/golden.png" class="img-responsive img-thumbnail" alt="Golden">-->
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Hoteles</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
-                        </div>
-                    </div>
-                    <!-- <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
+							<!--
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+							</div>
+							-->
+
+							<img class="center-block img-centered img-responsive img-thumbnail" src="https://dummyimage.com/300x9:16/DCDCDC/000000.jpg&amp;text=CashKeeper+-+300x9:16" alt="Cashkeeper" title="Cashkeeper">
+
+							</a>
+						</div>
+
+						<div class="portfolio-caption">
+							<h4>Cashkeeper</h4>
+							<p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+						</div>
+
+					</div>
+
+					<!-- Unycop -->
+					<div class="col-lg-3 col-sm-6 col-xs-12 portfolio-item text-center">
+
+						<div class="main">
+							<a href="#portfolioModal1" class="portfolio-link text-center" data-toggle="modal">
+
+							<!--
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+							</div>
+							-->
+
+							<img class="center-block img-centered img-responsive img-thumbnail" src="https://dummyimage.com/300x9:16/D3D3D3/000000.jpg&amp;text=Unycop+-+300x9:16" alt="Unycop" title="Unycop">
+
+							</a>
+						</div>
+
+						<div class="portfolio-caption">
+							<h4>Unycop</h4>
+							<p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+						</div>
+
+					</div>
+
+<!--
+					<div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item text-center">
+						<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img src="https://dummyimage.com/300x9:16/666/fff.jpg&amp;text=Unycop+-+300x9:16" class="img-responsive img-thumbnail" alt="Unycop" title="Unycop">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Unycop</h4>
+							<p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+						</div>
+					</div>
+
+-->
+
+					<div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item">
+						<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img src="https://dummyimage.com/300x9:16/C0C0C0/fff.jpg&amp;text=Hostelería+-+300x9:16" class="img-responsive img-thumbnail" alt="Hostelería" title="Hostelería">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Hostelería</h4>
+							<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+						</div>
+					</div>
+
+
+					<div class="col-xs-12 col-sm-6 col-lg-3 portfolio-item">
+						<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img src="https://dummyimage.com/300x9:16/A9A9A9/fff.jpg&amp;text=Hoteles+-+300x9:16" class="img-responsive img-thumbnail" alt="Hoteles" title="Hoteles">
+							<!--                            <img src="img/portfolio/golden.png" class="img-responsive img-thumbnail" alt="Golden">-->
+						</a>
+						<div class="portfolio-caption">
+							<h4>Hoteles</h4>
+							<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+						</div>
+					</div>
+					<!-- <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
 <div class="portfolio-hover">
 <div class="portfolio-hover-content">
@@ -574,7 +616,7 @@ background-size: cover;
 <p class="text-muted">Website Design</p>
 </div>
 </div> -->
-                    <!-- <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+					<!-- <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
 <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
 <div class="portfolio-hover">
 <div class="portfolio-hover-content">
@@ -587,432 +629,441 @@ background-size: cover;
 <h4>Dreams</h4>
 <p class="text-muted">Website Design</p>
 </div>
-</div> --></div>
-            </div>
-        </section>
+</div> -->
+				</div>
+			</div>
+		</section>
 
-        <!-- -->SERVICIOS<!-- END -->
-        <section id="servicios" style="padding: 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Servicios</h2>
-                        <h3 class="section-subheading text-muted">Texto de relleno.</h3>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal1" class="service-link" data-toggle="modal" data-target="#serviceModal1">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Servicio Técnico</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal2" class="service-link" data-toggle="modal">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Formación</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal3" class="service-link" data-toggle="modal">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Desarrollo Web</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal4" class="service-link" data-toggle="modal">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Venta y Postventa</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal5" class="service-link" data-toggle="modal">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Redes e Infraestructura</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 service-item">
-                        <a href="#serviceModal6" class="service-link" data-toggle="modal">
-                            <div>
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="service-heading">Soporte Personalizado</h4>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- -->SERVICIOS<!-- END -->
+		<section id="servicios" class="bg-light-gray" style="padding:5em 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Servicios</h2>
+						<h3 class="section-subheading text-muted">Texto de relleno.</h3>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal1" class="service-link" data-toggle="modal" data-target="#serviceModal1">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Servicio Técnico</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal2" class="service-link" data-toggle="modal">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Formación</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal3" class="service-link" data-toggle="modal">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Desarrollo Web</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal4" class="service-link" data-toggle="modal">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Venta y Postventa</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal5" class="service-link" data-toggle="modal">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Redes e Infraestructura</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 service-item">
+						<a href="#serviceModal6" class="service-link" data-toggle="modal">
+							<div>
+								<span class="fa-stack fa-4x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-comments fa-stack-1x fa-inverse"></i>
+								</span>
+								<h4 class="service-heading">Soporte Personalizado</h4>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!-- -->EMPRESA     <!-- END -->
-        <section id="empresa" style="height: 100vh;padding: 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Línea de Tiempo</h2>
-                        <h3 class="section-subheading text-muted">Hitos importantes en nuestra empresa</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="timeline">
-                            <li>
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="1">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>2001</h4>
-                                        <h4 class="subheading">Empezamos</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Poner algo aquí interesante ...</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="2">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>11 de Septiembre de 2011</h4>
-                                        <h4 class="subheading">Cambió el mundo...</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">
-                                            <a href="https://github.com/leereilly/games" target="_blank">https://github.com/leereilly/games</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/3.jpg" alt="3">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>Diciembre de 2012</h4>
-                                        <h4 class="subheading">¿Navidades?</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/4.jpg" alt="4">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>Julio de 2014</h4>
-                                        <h4 class="subheading">Expansión</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <h4>!Se parte
-                                        <br>de nuestra
-                                        <br>historia!</h4>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- -->EMPRESA<!-- END -->
+		<section id="empresa" style="padding:5em 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Línea de Tiempo</h2>
+						<h3 class="section-subheading text-muted">Hitos importantes en nuestra empresa</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="timeline">
+							<li>
+								<div class="timeline-image">
+									<img class="img-circle img-responsive" src="img/about/1.jpg" alt="1">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>2001</h4>
+										<h4 class="subheading">Empezamos</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Poner algo aquí interesante ...</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<img class="img-circle img-responsive" src="img/about/2.jpg" alt="2">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>11 de Septiembre de 2011</h4>
+										<h4 class="subheading">Cambió el mundo...</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">
+											<a href="https://github.com/leereilly/games" target="_blank">https://github.com/leereilly/games</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-image">
+									<img class="img-circle img-responsive" src="img/about/3.jpg" alt="3">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Diciembre de 2012</h4>
+										<h4 class="subheading">¿Navidades?</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<img class="img-circle img-responsive" src="img/about/4.jpg" alt="4">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Julio de 2014</h4>
+										<h4 class="subheading">Expansión</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4>!Se parte
+										<br>de nuestra
+										<br>historia!</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!-- -->EQUIPO<!-- END -->
-        <section id="equipo" class="bg-light-gray" style="height: 100vh;padding: 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Nuestro equipo</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <picture>
-                                <!-- Extra Large Desktops -->
-                                <source media="(min-width: 1200px)" class="" srcset="http://lorempixel.com/1920/1080/business/1/1920x1082/">
-                                <!-- Desktops -->
-                                <source media="(min-width: 992px)" class="" srcset="http://lorempixel.com/1200/992/business/1/1200x992/">
-                                <!-- Tablets -->
-                                <source media="(min-width: 768px)" class="" srcset="http://lorempixel.com/991/768/business/1/991x768/">
-                                <!-- Landscape Phones -->
-                                <source media="(min-width: 480px)" class="" srcset="http://lorempixel.com/767/480/business/1/767x480/">
-                                <!-- Portrait Phones -->
-                                <img alt="Nuestro equipo humano" class="" src="http://lorempixel.com/640/480/business/1/640x480/" srcset="http://lorempixel.com/479/320/business/1/479x320/">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="1">
-                            <h4>Quico</h4>
-                            <p class="text-muted">CEO</p>
-                            <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/2.jpg" class="img-responsive img-circle" alt="2">
-                            <h4>Manuel</h4>
-                            <p class="text-muted">Director Comercial</p>
-                            <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/3.jpg" class="img-responsive img-circle" alt="3">
-                            <h4>Luis</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- -->EQUIPO<!-- END -->
+		<section id="equipo" class="bg-light-gray" style="padding:5em  0;">
+			<div class="container">
 
-        <!-- -->PROVEEDORES<!-- END -->
-        <aside class="proveedores">
-            <div class="container">
-                <div>
-                    <h2>Nuestros proveedores</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#">
-                            <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="Envato">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#">
-                            <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="desigmodo">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#">
-                            <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="ThemeForest">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#">
-                            <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="Creative-Market">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Nuestro equipo</h2>
+						<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+					</div>
+				</div>
 
-        <!-- -->CONTACTO<!-- END -->
-        <section id="contacto" style="height: 100vh;padding: 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Contacta con nosotros</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                        <!-- Localización -->
-                    </div>
-                    <!-- <hr>-->
-                    <!-- Contact Details Column -->
-                    <div class="col-md-12">
-                        <h3>Dirección</h3>
-                        <address>
-                            <p>
-                                <i class="fa fa-map-marker"></i>C/ Manzanilla, 12 - 1º Las Torres Altas - Las Palmas de G. C. - Las
-                                Palmas - 35010 - ESPAÑA</p>
-                            <p>
-                                <i class="fa fa-phone"></i>
-                                <abbr title="Teléfono">Telf.</abbr>: (123) 456-7890</p>
-                            <p>
-                                <i class="fa fa-envelope-o"></i>
-                                <abbr title="Correo Electrónico">Email</abbr>:
-                                <a href="mailto:contacto@pic-sl.com">contacto@pic-sl.com</a>
-                            </p>
-                            <!-- <a href='mailto:name@example.com'>name@example.com</a></p> -->
-                            <!-- <p><i class='fa fa-clock-o'></i> <abbr title='Horario'>Horarios</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>-->
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
-                                    <i class="fa fa-clock-o"></i>Horario
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Lunes: 09:00h - 19:00h</span>
-                                    </li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Martes: 09:00h - 19:00h</span>
-                                    </li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Miércoles: 09:00h - 19:00h</span>
-                                    </li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Jueves: 09:00h - 19:00h</span>
-                                    </li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Viernes: 09:00h - 19:00h</span>
-                                    </li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Sábado: Cerrado</span>
-                                    </li>
-                                    <li role="presentation">
-                                        <span role="menuitem" tabindex="-1">Domingo: Cerrado</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </address>
-                    </div>
-                    <!-- <hr>-->
-                    <div class="col-lg-12">
-                        <h2>Contacta con nosotros</h2>
-                        <h3>No te quedes con la duda</h3>
-                        <form name="sentMessage" id="contactFormContacto" novalidate="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group" aria-label="nameContacto">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="nameContacto" required="" data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="emailContacto" required="" data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phoneContacto" required="" data-validation-required-message="Please enter your phone number.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" rows="6" placeholder="Texto del mensaje" id="messageContacto" required="" data-validation-required-message="Escribe un mensaje, si quieres."></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="successContacto"></div>
-                                    <button type="submit" class="btn btn-xl">Enviar mensaje</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						 <div class="embed-responsive embed-responsive-16by9">
+							<picture>
+								<!-- Extra Large Desktops -->
+								<!-- <source media="(min-width: 1200px)" class="" srcset="http://lorempixel.com/1920/1080/business/1/1920x1082/"> -->
+								<source media="(min-width: 1200px)" srcset="https://dummyimage.com/1200x9:16/666/fff.jpg&amp;text=HD1080">
+								<!-- Desktops -->
+								<!-- <source media="(min-width: 992px)" class="" srcset="http://lorempixel.com/1200/992/business/1/1200x992/"> -->
+								<source media="(min-width: 992px)" srcset="https://dummyimage.com/992x9:16/666/fff.jpg&amp;text=Escritorios">
+								<!-- Tablets -->
+								<!-- <source media="(min-width: 768px)" class="" srcset="http://lorempixel.com/991/768/business/1/991x768/"> -->
+								<source media="(min-width: 768px)" srcset="https://dummyimage.com/768x9:16/666/fff.jpg&amp;text=Tabletas">
+								<!-- Landscape Phones -->
+								<!-- <source media="(min-width: 480px)" class="" srcset="http://lorempixel.com/767/480/business/1/767x480/"> -->
+								<source media="(min-width: 480px)" srcset="https://dummyimage.com/480x9:16/666/fff.jpg&amp;text=Teléfonos">
+								<!-- Portrait Phones -->
+								<!-- <img alt="Nuestro equipo humano" class="" src="http://lorempixel.com/640/480/business/1/640x480/" srcset="http://lorempixel.com/479/320/business/1/479x320/"> -->
+								<img alt="Nuestro equipo humano" src="https://dummyimage.com/640x9:16/666/fff.jpg&amp;text=Equipo+Humano+por+defecto">
+							</picture>
+						</div>
+					</div>
+				</div>
 
-        <!-- -->ALERTAS<!-- END -->
-        <section id="alertas" style="height: 100vh;padding: 0;">
-            <!-- Video de Fondo -->
-            <!-- <video autoplay loop muted class='fillWidth fadeIn wow collapse in'
+				<div class="clearfix">&nbsp;</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img id="quico" src="https://dummyimage.com/210x9:16/666/fff.jpg&amp;text=Quico" class="img-responsive img-circle" alt="Quico">
+							<h4>Quico</h4>
+							<p class="text-muted">CEO</p>
+							<ul class="list-inline social-buttons">
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img id="manuel" src="https://dummyimage.com/210x9:16/666/fff.jpg&amp;text=Manuel" class="img-responsive img-circle" alt="Manuel">
+							<h4>Manuel</h4>
+							<p class="text-muted">Director Comercial</p>
+							<ul class="list-inline social-buttons">
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="team-member">
+							<img id="manuel" src="https://dummyimage.com/210x9:16/666/fff.jpg&amp;text=Luis" class="img-responsive img-circle" alt="Luis">
+							<h4>Luis</h4>
+							<p class="text-muted">Lead Developer</p>
+							<ul class="list-inline social-buttons">
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- -->PROVEEDORES<!-- END -->
+		<section id="proveedores" style="padding:0;">
+			<div class="container">
+				<div>
+					<h2>Nuestros proveedores</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="Envato">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="desigmodo">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="ThemeForest">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="#">
+							<img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="Creative-Market">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- -->CONTACTO<!-- END -->
+		<section id="contacto" class="bg-light-gray" style="padding:0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Contacta con nosotros</h2>
+						<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+						<!-- Localización -->
+					</div>
+					<!-- <hr>-->
+					<!-- Contact Details Column -->
+					<div class="col-md-12">
+						<h3>Dirección</h3>
+						<address>
+							<p>
+								<i class="fa fa-map-marker"></i>C/ Manzanilla, 12 - 1º Las Torres Altas - Las Palmas de G. C. - Las
+								Palmas - 35010 - ESPAÑA</p>
+							<p>
+								<i class="fa fa-phone"></i>
+								<abbr title="Teléfono">Telf.</abbr>: (123) 456-7890</p>
+							<p>
+								<i class="fa fa-envelope-o"></i>
+								<abbr title="Correo Electrónico">Email</abbr>:
+								<a href="mailto:contacto@pic-sl.com">contacto@pic-sl.com</a>
+							</p>
+							<!-- <a href='mailto:name@example.com'>name@example.com</a></p> -->
+							<!-- <p><i class='fa fa-clock-o'></i> <abbr title='Horario'>Horarios</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>-->
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+									<i class="fa fa-clock-o"></i>Horario
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Lunes: 09:00h - 19:00h</span>
+									</li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Martes: 09:00h - 19:00h</span>
+									</li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Miércoles: 09:00h - 19:00h</span>
+									</li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Jueves: 09:00h - 19:00h</span>
+									</li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Viernes: 09:00h - 19:00h</span>
+									</li>
+									<li role="presentation" class="divider"></li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Sábado: Cerrado</span>
+									</li>
+									<li role="presentation">
+										<span role="menuitem" tabindex="-1">Domingo: Cerrado</span>
+									</li>
+								</ul>
+							</div>
+						</address>
+					</div>
+					<!-- <hr>-->
+					<div class="col-lg-12">
+						<h2>Contacta con nosotros</h2>
+						<h3>No te quedes con la duda</h3>
+						<form name="sentMessage" id="contactFormContacto" novalidate="">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group" aria-label="nameContacto">
+										<input type="text" class="form-control" placeholder="Your Name *" id="nameContacto" required="" data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Your Email *" id="emailContacto" required="" data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="Your Phone *" id="phoneContacto" required="" data-validation-required-message="Please enter your phone number.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" rows="6" placeholder="Texto del mensaje" id="messageContacto" required="" data-validation-required-message="Escribe un mensaje, si quieres."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="successContacto"></div>
+									<button type="submit" class="btn btn-xl">Enviar mensaje</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- -->ALERTAS<!-- END -->
+		<section id="alertas" style="padding:0;">
+			<!-- Video de Fondo -->
+			<!-- <video autoplay loop muted class='fillWidth fadeIn wow collapse in'
 data-wow-delay='0.5s' poster='video/video-1.jpg' id='video-background'>
 <source src='video/video-1.mp4' type='video/mp4' />Tu navegador no soporta HTML5. Deberías actualizarlo.
 <source src='video/video-1.webm' type='video/webm' />Tu navegador no soporta HTML5. Deberías actualizarlo.
 <source src='video/video-1.ogv'  type='video/ogg' />Tu navegador no soporta HTML5. Deberías actualizalo.
 </video>
 -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="alert alert-warning alert-dismissible" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
-                                <span aria-hidden="true">×</span>
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>-->
-                            <h1>Aviso</h1>
-                            <p>
-                                <strong>Info!</strong>Esta es una nota informativa</p>Better check yourself, you're not looking too good.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <p>SlideShow</p>
-            </div>
-            <div class="container">
-                <!-- <div class='page-header'>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="alert alert-warning alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="close">
+								<span aria-hidden="true">×</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>-->
+							<h2>Aviso</h2>
+							<p><strong>Info!</strong> Esta es una nota informativa</p>Better check yourself, you're not looking too good.</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<p>SlideShow</p>
+			</div>
+			<div class="container">
+				<!-- <div class='page-header'>
 <<h1 class="h1">h1. Element HTML H1</h1>
 >Example Page Header</h1>
 <div class='jumbotron'>
@@ -1021,303 +1072,296 @@ data-wow-delay='0.5s' poster='video/video-1.jpg' id='video-background'>
 </div>
 </div>
 -->
-                <!-- <article>-->
-                <!-- <div class="container">-->
-                <div class="row">
-                    <div class="to-flips col-xs-12" id="news">
-                        <h2>Noticias</h2>
-                        <div class="content">
-                            <div id="latestnews"></div>
-                        </div>
-                        <div class="flipnav"></div>
-                    </div>
-                </div>
-                <!-- </div>-->
-                <!-- </article>-->
-            </div>
-        </section>
+				<!-- <article>-->
+				<!-- <div class="container">-->
+				<div class="row">
+					<div class="to-flips col-xs-12" id="news">
+						<h2>Noticias</h2>
+						<div class="content">
+							<div id="latestnews"></div>
+						</div>
+						<div class="flipnav"></div>
+					</div>
+				</div>
+				<!-- </div>-->
+				<!-- </article>-->
+			</div>
+		</section>
 
-        <!-- -->NOTICIAS<!-- END -->
-        <section id="noticias">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4>
-                        <span class="glyphicon glyphicon-list-alt"></span>Noticias</h4>
-                </div>
-                <div class="container panel-body">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="demo">
-                                <li class="table-responsive news-item">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <i class="fa fa-newspaper-o">&nbsp;</i>
-                                                </td>
-                                                <td>Noticia 1</td>
-                                                <td>&nbsp;
-                                                    <a href="#">Leer más…</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </li>
-                                <li class="table-responsive news-item">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <i class="fa fa-newspaper-o">&nbsp;</i>
-                                                </td>
-                                                <td>Noticia 2, que es kilométrica o más :-), repetimos, es kilométrica, o más...
-                                                </td>
-                                                <td>&nbsp;
-                                                    <a href="#">Leer más…</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </li>
-                                <li class="table-responsive news-item">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <i class="fa fa-newspaper-o">&nbsp;</i>
-                                                </td>
-                                                <td>Noticia 3</td>
-                                                <td>&nbsp;
-                                                    <a href="#">Leer más…</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-footer"></div>
-            </div>
-        </section>
+		<!-- -->NOTICIAS
+		<!-- END -->
+		<section id="noticias" style="padding:0;">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3><span class="glyphicon glyphicon-list-alt">&nbsp;</span>Noticias</h3>
+				</div>
+				<div class="container panel-body">
+					<div class="row">
+						<div class="col-xs-12">
+							<ul class="demo">
+								<li class="table-responsive news-item">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<i class="fa fa-newspaper-o">&nbsp;</i>
+												</td>
+												<td>Noticia 1</td>
+												<td>&nbsp;
+													<a href="#">Leer más…</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="table-responsive news-item">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<i class="fa fa-newspaper-o">&nbsp;</i>
+												</td>
+												<td>Noticia 2, que es kilométrica o más :-), repetimos, es kilométrica, o más...
+												</td>
+												<td>&nbsp;
+													<a href="#">Leer más…</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="table-responsive news-item">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<i class="fa fa-newspaper-o">&nbsp;</i>
+												</td>
+												<td>Noticia 3</td>
+												<td>&nbsp;
+													<a href="#">Leer más…</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+		</section>
 
-        <!-- -->PIE DE PÁGINA
-        <!-- END -->
-        <footer class="section section-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h1>Footer header</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                            <br>Ut enim ad minim veniam, quis nostrud</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="text-info text-right">
-                            <br>
-                            <br>
-                        </p>
-                        <div class="row">
-                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hidden-xs text-right"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+		<!-- -->PIE DE PÁGINA
+		<!-- END -->
+		<footer class="section section-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1>Footer header</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+							<br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+							<br>Ut enim ad minim veniam, quis nostrud</p>
+					</div>
+					<div class="col-sm-6">
+						<p class="text-info text-right">
+							<br>
+							<br>
+						</p>
+						<div class="row">
+							<div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 hidden-xs text-right"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="copyright">Copyright © PIC SL 2016</span>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li>
-                                <a href="#">Privacidad</a>
-                            </li>
-                            <li>
-                                <a href="#">Términos de Uso</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="copyright">Copyright © PIC SL 2016</span>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li>
+								<a href="#">Privacidad</a>
+							</li>
+							<li>
+								<a href="#">Términos de Uso</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-        <!-- Servicios Modals -->
-        <!-- Servicios Modal 1 -->
-        <div class="service-modal modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <!-- <div class='close-modal' data-dismiss='modal'>
-<div class='lr'>
-<div class='rl'></div>
-</div>
-</div>
--->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <!--<div>-->
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                                <h4 class="modal-title">Servicio Técnico</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div typeof="schema:BlogPosting">
-                                                    <div class="su-animate" data-animation="fadeIn" data-duration="1.5" data-delay="0.5">
-                                                        <div class="animated fadeIn">
-                                                            <div class="animated bounceIn">
-                                                                <div>
-                                                                    <div class="animated tada">
-                                                                        <div>
-                                                                            <span class="fa-stack fa-4x">
-                                                                                <i class="fa fa-group"></i>
-                                                                            </span>Nuestra Empresa</div>
-                                                                        <div>Nuestra empresa tiene más de 15 años de experiencia prestando servicios de manera continuada.</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="animated bounceIn">
-                                                                <div>
-                                                                    <div class="animated tada">
-                                                                        <div>
-                                                                            <span class="fa-stack fa-4x">
-                                                                                <i class="fa fa-mortar-board"></i>
-                                                                            </span>Nuestra experiencia</div>
-                                                                        <div>La ventaja de apoyarse en una empresa externa con diferentes perfiles profesionales que nos permiten estar al día de toda la tecnología.</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="animated bounceIn">
-                                                                <div>
-                                                                    <div class="tada">
-                                                                        <div>
-                                                                            <span class="fa-stack fa-4x">
-                                                                                <i class="fa fa-mobile-phone"></i>
-                                                                            </span>¿Le llamamos?</div>
-                                                                        <div>Déjenos su teléfono, díganos cuando prefiere que le llamemos y le llamaremos sin compromiso alguno. Así de sencillo.</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <br>
-                                                            <!-- Formulario de recogida de datos.-->
-                                                            <div class="clearfix"></div>
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <form name="sentMessage" id="contactFormServicioTecnico" novalidate="">
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" placeholder="Su nombre *" id="name" required="" data-validation-required-message="Introduzca el nombre con el que quiere que nos dirijamos a usted.">
-                                                                                    <p class="help-block text-danger"></p>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <input type="email" class="form-control" placeholder="Un correo electrónico de contacto *" id="email" required="" data-validation-required-message="Introduzca un correo electrónico de contacto.">
-                                                                                    <p class="help-block text-danger"></p>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <input type="tel" class="form-control" placeholder="Teléfono de contacto *" id="phone" required="" data-validation-required-message="Introduzca un teléfono de contacto.">
-                                                                                    <p class="help-block text-danger"></p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <textarea class="form-control" rows="6" placeholder="Aquí puede escribir su mensaje" id="message" required="" data-validation-required-message="Escriba un mensaje describiendo sus necesidades."></textarea>
-                                                                                    <p class="help-block text-danger"></p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="clearfix"></div>
-                                                                            <div class="col-lg-12 text-center">
-                                                                                <div id="success"></div>
-                                                                                <button type="submit" class="btn btn-xl">Enviar mensaje</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-xl text-right" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Cerrar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Servicios Modales -->
+		<!-- Servicios Modal 1 -->
+		<div id="serviceModal1" class="service-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">×</button>
+												<h2 class="modal-title">Servicio Técnico</h2>
+											</div>
+											<div class="modal-body">
+												<div typeof="schema:BlogPosting">
+													<div class="su-animate" data-animation="fadeIn" data-duration="1.5" data-delay="0.5">
+														<div class="animated fadeIn">
+															<div class="animated bounceIn">
+																<div>
+																	<div class="animated tada">
+																		<div>
+																			<span class="fa-stack fa-4x">
+																				<i class="fa fa-group"></i>
+																			</span>Nuestra Empresa</div>
+																		<div>Nuestra empresa tiene más de 15 años de experiencia prestando servicios de manera continuada.</div>
+																	</div>
+																</div>
+															</div>
+															<div class="animated bounceIn">
+																<div>
+																	<div class="animated tada">
+																		<div>
+																			<span class="fa-stack fa-4x">
+																				<i class="fa fa-mortar-board"></i>
+																			</span>Nuestra experiencia</div>
+																		<div>La ventaja de apoyarse en una empresa externa con diferentes perfiles profesionales que nos permiten estar al día de toda la tecnología.</div>
+																	</div>
+																</div>
+															</div>
+															<div class="animated bounceIn">
+																<div>
+																	<div class="tada">
+																		<div>
+																			<span class="fa-stack fa-4x">
+																				<i class="fa fa-mobile-phone"></i>
+																			</span>¿Le llamamos?</div>
+																		<div>Déjenos su teléfono, díganos cuando prefiere que le llamemos y le llamaremos sin compromiso alguno. Así de sencillo.</div>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<!-- Formulario de recogida de datos.-->
+															<div class="clearfix"></div>
+															<div class="row">
+																<div class="col-lg-12">
+																	<form name="sentMessage" id="contactFormServicioTecnico" novalidate="">
+																		<div class="row">
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<input type="text" class="form-control" placeholder="Su nombre *" id="name" required="" data-validation-required-message="Introduzca el nombre con el que quiere que nos dirijamos a usted.">
+																					<p class="help-block text-danger"></p>
+																				</div>
+																				<div class="form-group">
+																					<input type="email" class="form-control" placeholder="Un correo electrónico de contacto *" id="email" required="" data-validation-required-message="Introduzca un correo electrónico de contacto.">
+																					<p class="help-block text-danger"></p>
+																				</div>
+																				<div class="form-group">
+																					<input type="tel" class="form-control" placeholder="Teléfono de contacto *" id="phone" required="" data-validation-required-message="Introduzca un teléfono de contacto.">
+																					<p class="help-block text-danger"></p>
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<textarea class="form-control" rows="6" placeholder="Aquí puede escribir su mensaje" id="message" required="" data-validation-required-message="Escriba un mensaje describiendo sus necesidades."></textarea>
+																					<p class="help-block text-danger"></p>
+																				</div>
+																			</div>
+																			<div class="clearfix"></div>
+																			<div class="col-lg-12 text-center">
+																				<div id="success"></div>
+																				<button type="submit" class="btn btn-xl">Enviar mensaje</button>
+																			</div>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-xl text-right" data-dismiss="modal">
+													<i class="fa fa-times"></i>Cerrar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Portfolio Modals -->
-        <!-- Portfolio Modal 1 -->
-        <div id="portfolioModal1" class="portfolio-modal modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="close-modal" data-dismiss="modal">
-                            <div class="lr">
-                                <div class="rl"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2" style="background-color: LightGray;">
-                                    <div class="row">JumboTron
-                                        <div class="col-md-12">
-                                            <div class="jumbotron">
-                                                <h1>Hello, world!</h1>
-                                                <p>...</p>
-                                                <a class="btn btn-primary btn-large">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <img src="https://dummyimage.com/hd720/666/fff.jpg&amp;text=CashKeeper" class="img-responsive img-thumbnail" alt="Cashkeeper" title="Cashkeeper">
-                                    </div>
+		<!-- Portfolio Modals -->
+		<!-- Portfolio Modal 1 [CASHKEEPER] -->
+		<div id="portfolioModal1" class="portfolio-modal modal fade" role="dialog" aria-labelledby="dialogo-cashkeeper" aria-hidden="true">
+			<div id="dialogo-cashkeeper" class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2" style="background-color: LightGray;">
+									<div class="row">JumboTron
+										<div class="col-md-12">
+											<div class="jumbotron">
+												<h2>Hello, world!</h2>
+												<p>...</p>
+												<a class="btn btn-primary btn-large">Learn more</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<img src="https://dummyimage.com/hd720/666/fff.jpg&amp;text=CashKeeper" class="img-responsive img-thumbnail" alt="Cashkeeper" title="Cashkeeper">
+									</div>
 
-                                    <div class="row">
-                                        <div class="col-md-6" style="background-color: Red;">Columna Izquierda</div>
-                                        <div class="col-md-6" style="background-color: Yellow;">Columna Derecha</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6" style="background-color: Red;"></div>
-                                        <div class="col-md-6" style="background-color: Yellow;"></div>
-                                    </div>
-                                </div>
-                            </div>
+									<div class="row">
+										<div class="col-md-6" style="background-color: Red;">Columna Izquierda</div>
+										<div class="col-md-6" style="background-color: Yellow;">Columna Derecha</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6" style="background-color: Red;"></div>
+										<div class="col-md-6" style="background-color: Yellow;"></div>
+									</div>
+								</div>
+							</div>
 
 
-                            <!--
-                            <div class="row">
+							<!--
+<div class="row">
 <div class="col-md-4" style="background-color: #666;">.col-md-4</div>
 <div class="col-md-4 col-md-offset-4" style="background-color: #999;">.col-md-4 .col-md-offset-4</div>
 </div>
@@ -1342,502 +1386,535 @@ Level 2: .col-xs-4 .col-sm-6
 </div>
 </div>
 -->
-</div>
-                        <div class="container-fluid">Container fluido</div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-xl" data-dismiss="modal">
-                            <i class="fa fa-times"></i>Salir</button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
-        <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1"
-role="dialog" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="close-modal" data-dismiss="modal">
-<div class="lr">
-<div class="rl"></div>
-</div>
-</div>
+						</div>
+						<div class="container-fluid">Container fluido</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-xl" data-dismiss="modal">
+							<i class="fa fa-times"></i>Salir</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
 
-<div class="container">container
-<div class="row">row
-<div class="col-lg-8 col-lg-offset-2">
-test col
-<div class="modal fade" tabindex="-1" role="dialog">
+		<!-- Portfolio Modal 2 [UNYCOP] -->
+		<div id="portfolioModal2" class="portfolio-modal modal fade" role="dialog" aria-labelledby="dialogo-unycop" aria-hidden="true">
+			<div id="dialogo-unycop" class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2" style="background-color: LightGray;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="jumbotron">
+												<h2>Hello, world!</h2>
+												<p>...</p>
+												<a class="btn btn-primary btn-large">Más&hellip;</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<img src="https://dummyimage.com/hd720/666/fff.jpg&amp;text=Unycop" class="img-responsive img-thumbnail" alt="Unycop" title="Unycop">
+									</div>
 
-Test dialog
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-Header
-</div>
-<div class="modal-body">
-<h2>Body</h2>
-<img src="https://dummyimage.com/300x9:16/666/fff.jpg&text=CashKeeper+-+300x9:16" class="img-responsive img-centered" alt="Cashkeeper" title="Cashkeeper">
-<img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="RoundIcons">
-<p>Use this area to describe your project.</p>
-<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+									<div class="row">
+										<div class="col-md-6" style="background-color: Red;">Columna Izquierda</div>
+										<div class="col-md-6" style="background-color: Yellow;">Columna Derecha</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6" style="background-color: Red;">&spades;</div>
+										<div class="col-md-6" style="background-color: Yellow;">&spades;</div>
+									</div>
+								</div>
+							</div>
 
+
+							<!--
+<div class="row">
+<div class="col-md-4" style="background-color: #666;">.col-md-4</div>
+<div class="col-md-4 col-md-offset-4" style="background-color: #999;">.col-md-4 .col-md-offset-4</div>
 </div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary" data-dismiss="modal">
-<i class="fa fa-times"></i>
-Close Project
-</button>
+<div class="row">
+<div class="col-md-3 col-md-offset-3" style="background-color: #999;">.col-md-3 .col-md-offset-3</div>
+<div class="col-md-2 col-md-offset-4" style="background-color: #666;">.col-md-2 .col-md-offset-4</div>
 </div>
+<div class="row">
+<div class="col-md-6 col-md-offset-3" style="background-color: LightBlue;">.col-md-6 .col-md-offset-3</div>
 </div>
+<div class="row">
+<div class="col-sm-9" style="background-color: LightYellow;">
+Level 1: .col-sm-9
+<div class="row">
+<div class="col-xs-8 col-sm-6" style="background-color: LightGray;">
+Level 2: .col-xs-8 .col-sm-6
 </div>
-</div>
-</div>
-</div>
+<div class="col-xs-4 col-sm-6" style="background-color: LightSilver;">
+Level 2: .col-xs-4 .col-sm-6
 </div>
 </div>
 </div>
 </div>
 -->
 
-        <!-- Portfolio Modal 2 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <h2>Más Test</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="Framework">
-                                                <p>
-                                                    <a href="http://designmodo.com/startup/?u=787">Startup Framework</a>is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                                <p>You can preview Startup Framework
-                                                    <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Close Project</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Portfolio Modal 3 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <!-- Project Details Go Here -->
-                                                <h2>Más Test</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="TreeHouse">
-                                                <p>Treehouse is a free PSD web template built by
-                                                    <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                                <p>You can download the PSD template in this portfolio sample item at
-                                                    <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Close Project</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+						</div>
+						<div class="container-fluid">Container fluido</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-xl" data-dismiss="modal">
+							<i class="fa fa-times"></i>Salir</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
 
-        <!-- Portfolio Modal 4 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <!-- Project Details Go Here -->
-                                                <h2>Más Test</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="Golden">
-                                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by
-                                                    <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                                <p>You can download the PSD template in this portfolio sample item at
-                                                    <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Close Project</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Portfolio Modal 2 -->
+		<div id="portfolioModal2-anulado" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<h2>Más Test</h2>
+												<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+												<img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="Framework">
+												<p>
+													<a href="http://designmodo.com/startup/?u=787">Startup Framework</a>is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+												<p>You can preview Startup Framework
+													<a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">
+													<i class="fa fa-times"></i>Close Project</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Portfolio Modal 5 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <!-- Project Details Go Here -->
-                                                <h2>Más Test</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="Escape">
-                                                <p>Escape is a free PSD web template built by
-                                                    <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                                <p>You can download the PSD template in this portfolio sample item at
-                                                    <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Close Project</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Portfolio Modal 3 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<!-- Project Details Go Here -->
+												<h2>Más Test</h2>
+												<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+												<img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="TreeHouse">
+												<p>Treehouse is a free PSD web template built by
+													<a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+												<p>You can download the PSD template in this portfolio sample item at
+													<a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">
+													<i class="fa fa-times"></i>Close Project</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Portfolio Modal 6 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <!-- Project Details Go Here -->
-                                                <h2>Más Test</h2>
-                                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="Dreams">
-                                                <p>Dreams is a free PSD web template built by
-                                                    <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                                <p>You can download the PSD template in this portfolio sample item at
-                                                    <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                    <i class="fa fa-times"></i>Close Project</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table-responsive" draggable="true">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <ul class="list-group" draggable="true">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in
-                        <span class="label label-default label-pill pull-right">2</span>
-                    </li>
-                    <li class="list-group-item">Morbi leo risus
-                        <i class="fa fa-fw pull-right fa-check"></i>
-                    </li>
-                    <li class="list-group-item">Porta ac consectetur ac
-                        <img src="http://v4.pingendo.com/assets/photos/apple/photo-1.jpg" class="img-circle pull-right" style="width:50px" alt="¿?">
-                    </li>
-                </ul>
-                <form class="" draggable="true">
-                    <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" class="form-control" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                <ul class="nav nav-pills  nav-stacked" draggable="true">
-                    <li class="nav-item">
-                        <a href="#" class="active nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Messages</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<!-- Portfolio Modal 4 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<!-- Project Details Go Here -->
+												<h2>Más Test</h2>
+												<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+												<img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="Golden">
+												<p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by
+													<a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+												<p>You can download the PSD template in this portfolio sample item at
+													<a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">
+													<i class="fa fa-times"></i>Close Project</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- -->SCROLL TOP WRAPER<!-- END -->
-        <div class="scroll-top-wrapper ">
-            <span class="scroll-top-inner">
-                <i class="fa fa-3x fa-arrow-circle-up"></i>
-            </span>
-        </div>
+		<!-- Portfolio Modal 5 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<!-- Project Details Go Here -->
+												<h2>Más Test</h2>
+												<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+												<img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="Escape">
+												<p>Escape is a free PSD web template built by
+													<a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+												<p>You can download the PSD template in this portfolio sample item at
+													<a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">
+													<i class="fa fa-times"></i>Close Project</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- -->SCRIPTS<!-- END -->
-        <section id="scripts">
-            <!-- jQuery -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <!-- <script src='https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js'
+		<!-- Portfolio Modal 6 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<!-- Project Details Go Here -->
+												<h2>Más Test</h2>
+												<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+												<img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="Dreams">
+												<p>Dreams is a free PSD web template built by
+													<a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+												<p>You can download the PSD template in this portfolio sample item at
+													<a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">
+													<i class="fa fa-times"></i>Close Project</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-responsive" draggable="true">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<ul class="list-group" draggable="true">
+					<li class="list-group-item">Cras justo odio</li>
+					<li class="list-group-item">Dapibus ac facilisis in
+						<span class="label label-default label-pill pull-right">2</span>
+					</li>
+					<li class="list-group-item">Morbi leo risus
+						<i class="fa fa-fw pull-right fa-check"></i>
+					</li>
+					<li class="list-group-item">Porta ac consectetur ac
+						<img src="http://v4.pingendo.com/assets/photos/apple/photo-1.jpg" class="img-circle pull-right" style="width:50px" alt="¿?">
+					</li>
+				</ul>
+				<form class="" draggable="true">
+					<div class="form-group">
+						<label>Email address</label>
+						<input type="email" class="form-control" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<ul class="nav nav-pills  nav-stacked" draggable="true">
+					<li class="nav-item">
+						<a href="#" class="active nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Messages</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- -->SCROLL TOP WRAPER<!-- END -->
+		<div id="scroll" class="scroll-top-wrapper ">
+			<span class="scroll-top-inner">
+				<i class="fa fa-3x fa-arrow-circle-up"></i>
+			</span>
+		</div>
+
+		<!-- -->SCRIPTS<!-- END -->
+		<div id="scripts" class="hidden" aria-hidden="true">
+			<!-- jQuery -->
+			<script src="vendor/jquery/jquery.min.js"></script>
+			<!-- <script src='https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js'
 integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=' crossorigin='anonymous'></script>-->
-            <!-- Añadido por mi -->
-            <script src="https://cdn.jsdelivr.net/jquery.migrate/1.4.1/jquery-migrate.min.js" integrity="sha256-q5a5C59JLG0CRBK1v3IXIL711uFqN1j1nC/j8LPkQzc=" crossorigin="anonymous"></script>
-            <!-- <script src='https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.js'
+			<!-- Añadido por mi -->
+			<script src="https://cdn.jsdelivr.net/jquery.migrate/1.4.1/jquery-migrate.min.js" integrity="sha256-q5a5C59JLG0CRBK1v3IXIL711uFqN1j1nC/j8LPkQzc=" crossorigin="anonymous"></script>
+			<!-- <script src='https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.js'
 integrity='sha256-oGmQee+68T/LdtddqY8VHeANI4arQk6r2tx0q9hHcZQ=' crossorigin='anonymous'></script>-->
-            <!-- <script type='text/javascript' src='js/jquery.jfeed.pack.js'></script>-->
-            <script src="https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.pack.js" integrity="sha256-cBMhj5B03W0CuwXPdJNoeA0ZQfcNuQU8NZhJUITBJLY=" crossorigin="anonymous"></script>
-            <!-- <script src='https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.js'
+			<!-- <script type='text/javascript' src='js/jquery.jfeed.pack.js'></script>-->
+			<script src="https://cdn.jsdelivr.net/jquery.jfeed/0.1/jquery.jfeed.pack.js" integrity="sha256-cBMhj5B03W0CuwXPdJNoeA0ZQfcNuQU8NZhJUITBJLY=" crossorigin="anonymous"></script>
+			<!-- <script src='https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.js'
 integrity='sha256-Bt8uZTSYZMIxzuIubd7CrQtiXCNdx7HqkqPccI5ttOg=' crossorigin='anonymous'></script>-->
-            <script type="text/javascript" src="js/jquery.flips.min.js"></script>
-            <!-- <script src='https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.min.js'
+			<script type="text/javascript" src="js/jquery.flips.min.js"></script>
+			<!-- <script src='https://cdn.jsdelivr.net/jquery.flip/0.9.9/jquery.flip.min.js'
 integrity='sha256-xWo9HGVxesxw2bMGpIX7hpvaBt7v7MBwVPfxdvZp13A=' crossorigin='anonymous'></script> -->
-            <!-- Bootstrap Core JavaScript -->
-            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-            <!-- Plugin JavaScript -->
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-            <!-- Contact Form JavaScript -->
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
-            <script type="text/javascript">
-                //<![CDATA[
-                // Thanks to: http://www.webtipblog.com/adding-scroll-top-button-website/
-                // http://bootsnipp.com/snippets/featured/back-to-top-scroll-feature
-                $(document).ready(function () {
-                    var top = 200;
-                    $(function () {
-                        'use strict';
-                        $(document).on('scroll', function () {
-                            if ($(window).scrollTop() > top) {
-                                $('.scroll-top-wrapper').addClass('show');
-                            } else {
-                                $('.scroll-top-wrapper').removeClass('show');
-                            }
-                        });
-                        $('.scroll-top-wrapper').on('click', scrollToTop);
-                    });
+			<!-- Bootstrap Core JavaScript -->
+			<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+			<!-- Plugin JavaScript -->
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+			<!-- Contact Form JavaScript -->
+			<script src="js/jqBootstrapValidation.js"></script>
+			<script src="js/contact_me.js"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				// Thanks to: http://www.webtipblog.com/adding-scroll-top-button-website/
+				// http://bootsnipp.com/snippets/featured/back-to-top-scroll-feature
+				$(document).ready(function () {
+					var top = 200;
+					$(function () {
+						'use strict';
+						$(document).on('scroll', function () {
+							if ($(window).scrollTop() > top) {
+								$('.scroll-top-wrapper').addClass('show');
+							} else {
+								$('.scroll-top-wrapper').removeClass('show');
+							}
+						});
+						$('.scroll-top-wrapper').on('click', scrollToTop);
+					});
 
-                    function scrollToTop() {
-                        'use strict';
-                        var verticalOffset;
-                        var element;
-                        var offset;
-                        var offsetTop;
-                        verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0;
-                        element = $('body');
-                        offset = element.offset();
-                        offsetTop = offset.top;
-                        $('html, body').animate({
-                            scrollTop: offsetTop
-                        }, 500, 'linear');
-                    }
-                });
-                //]]>
-            </script>
-            <!-- Theme JavaScript -->
-            <!-- <script src='js/agency.min.js'></script> -->
-            <script type="text/javascript">
-                //<![CDATA[
-                // Agency Theme JavaScript
-                /*jslint browser: true*/
-                /*global $, jQuery*/
-                (function ($) {
-                    'use strict';
-                    // jQuery for page scrolling feature - requires jQuery Easing plugin
-                    $('a.page-scroll').bind('click', function (event) {
-                        var $anchor = $(this);
-                        $('html, body').stop().animate({
-                            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-                        }, 1250, 'easeInOutExpo');
-                        event.preventDefault();
-                    });
-                    // Highlight the top nav as scrolling occurs
-                    $('body').scrollspy({
-                        target: '.navbar-fixed-top',
-                        offset: 51
-                    });
-                    // Closes the Responsive Menu on Menu Item Click
-                    $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () {
-                        $('.navbar-toggle:visible').click();
-                    });
-                    // Offset for Main Navigation
-                    $('#mainNav').affix({
-                        offset: {
-                            top: 100
-                        }
-                    });
-                }(jQuery));
-                //]]>
-            </script>
-            <!-- News Reader -->
-            <!-- http://www.jqueryscript.net/slider/Responsive-jQuery-News-Ticker-Plugin-with-Bootstrap-3-Bootstrap-News-Box.html
+					function scrollToTop() {
+						'use strict';
+						var verticalOffset;
+						var element;
+						var offset;
+						var offsetTop;
+						verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0;
+						element = $('body');
+						offset = element.offset();
+						offsetTop = offset.top;
+						$('html, body').animate({
+							scrollTop: offsetTop
+						}, 500, 'linear');
+					}
+				});
+				//]]>
+			</script>
+			<!-- Theme JavaScript -->
+			<!-- <script src='js/agency.min.js'></script> -->
+			<script type="text/javascript">
+				//<![CDATA[
+				// Agency Theme JavaScript
+				/*jslint browser: true*/
+				/*global $, jQuery*/
+				(function ($) {
+					'use strict';
+					// jQuery for page scrolling feature - requires jQuery Easing plugin
+					$('a.page-scroll').bind('click', function (event) {
+						var $anchor = $(this);
+						$('html, body').stop().animate({
+							scrollTop: ($($anchor.attr('href')).offset().top - 50)
+						}, 1250, 'easeInOutExpo');
+						event.preventDefault();
+					});
+					// Highlight the top nav as scrolling occurs
+					$('body').scrollspy({
+						target: '.navbar-fixed-top',
+						offset: 51
+					});
+					// Closes the Responsive Menu on Menu Item Click
+					$('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () {
+						$('.navbar-toggle:visible').click();
+					});
+					// Offset for Main Navigation
+					$('#mainNav').affix({
+						offset: {
+							top: 100
+						}
+					});
+				}(jQuery));
+				//]]>
+			</script>
+			<!-- News Reader -->
+			<!-- http://www.jqueryscript.net/slider/Responsive-jQuery-News-Ticker-Plugin-with-Bootstrap-3-Bootstrap-News-Box.html
 -->
-            <!-- <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script> -->
-            <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                //<![CDATA[
-                $(function () {
-                    'use strict';
-                    $('.demo').bootstrapNews({
-                        newsPerPage: 5,
-                        navigation: true,
-                        autoplay: true,
-                        direction: 'down', // up or down
-                        animationSpeed: 'normal',
-                        newsTickerInterval: 4000, //4 secs
-                        pauseOnHover: true,
-                        onStop: null,
-                        onPause: null,
-                        onReset: null,
-                        onPrev: null,
-                        onNext: null,
-                        onToDo: null
-                    });
-                });
-                //]]>
-            </script>
-            <script type="text/javascript">
-                //<![CDATA[
-                jQuery(function () {
-                    jQuery.getFeed({
-                        url: 'rss/rss20.xml',
-                        success: function (feed) {
-                            'use strict';
-                            var html = '';
-                            var nNoticias = 10;
-                            var sRetraso = 500;
-                            var Direccion = 'right';
-                            // Selects how many RSS items to parse
-                            for (var i = 0; i < feed.items.length && i < nNoticias; i++) {
-                                var item = feed.items[i];
-                                html += '<div class="block" typeof="schema:BlogPosting">' + '<h3>' + '<a href="' + item.link + '" target="_blank">' + item.title + '</a>' + '</h3>';
-                                html += '<h4 class="grey">' + item.updated + '</h4>' + '<!-- ' + item.description + ' -->' + '</div>';
-                                html += '    <script type="application/ld+json">';
-                                html += '      {';
-                                html += '        "@context": "http://schema.org",';
-                                html += '        "@type": "NewsArticle",';
-                                html += '        "author": "Proyectos Informáticos Canarias",';
-                                html += '        "publisher": "Proyectos Informáticos Canarias",';
-                                html += '        "headline": "' + item.title + '",';
-                                html += '        "datePublished": "' + item.updated + '",';
-                                html += '        "dateModified": "' + item.updated + '"';
-                                html += '      }';
-                                html += '    <\/script>';
+			<!-- <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script> -->
+			<script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				$(function () {
+					'use strict';
+					$('.demo').bootstrapNews({
+						newsPerPage: 5,
+						navigation: true,
+						autoplay: true,
+						direction: 'down', // up or down
+						animationSpeed: 'normal',
+						newsTickerInterval: 4000, //4 secs
+						pauseOnHover: true,
+						onStop: null,
+						onPause: null,
+						onReset: null,
+						onPrev: null,
+						onNext: null,
+						onToDo: null
+					});
+				});
+				//]]>
+			</script>
+			<script type="text/javascript">
+				//<![CDATA[
+				jQuery(function () {
+					jQuery.getFeed({
+						url: 'rss/rss20.xml',
+						success: function (feed) {
+							'use strict';
+							var html = '';
+							var nNoticias = 10;
+							var sRetraso = 500;
+							var Direccion = 'right';
+							// Selects how many RSS items to parse
+							for (var i = 0; i < feed.items.length && i < nNoticias; i++) {
+								var item = feed.items[i];
+								html += '<div class="block" typeof="schema:BlogPosting">' + '<h3>' + '<a href="' + item.link + '" target="_blank">' + item.title + '</a>' + '</h3>';
+								html += '<h4 class="grey">' + item.updated + '</h4>' + '<!-- ' + item.description + ' -->' + '</div>';
+								html += '    <script type="application/ld+json">';
+								html += '      {';
+								html += '        "@context": "http://schema.org",';
+								html += '        "@type": "NewsArticle",';
+								html += '        "author": "Proyectos Informáticos Canarias",';
+								html += '        "publisher": "Proyectos Informáticos Canarias",';
+								html += '        "headline": "' + item.title + '",';
+								html += '        "datePublished": "' + item.updated + '",';
+								html += '        "dateModified": "' + item.updated + '"';
+								html += '      }';
+								html += '    <\/script>';
 
-                            }
-                            jQuery('#latestnews').append(html);
-                            // Adds the jQuery Flips element. The direction can left, top or bottom/
-                            $('#news').flips({
-                                autorun_delay: sRetraso,
-                                direction: Direccion
-                            });
-                        }
-                    });
-                });
-                //]]>
-            </script>
-            <script type="text/javascript">
-                //<![CDATA[
-                var Tawk_API = Tawk_API || {},
-                    Tawk_LoadStart = new Date();
-                (function () {
-                    var s1 = document.createElement('script'),
-                        s0 = document.getElementsByTagName('script')[0];
-                    s1.async = true;
-                    s1.src = 'https://embed.tawk.to/5791189a8642ec804b75d0be/default';
-                    s1.charset = 'UTF-8';
-                    s1.setAttribute('crossorigin', '*');
-                    s0.parentNode.insertBefore(s1, s0);
-                })();
-                //]]>
-            </script>
-        </section>
+							}
+							jQuery('#latestnews').append(html);
+							// Adds the jQuery Flips element. The direction can left, top or bottom/
+							$('#news').flips({
+								autorun_delay: sRetraso,
+								direction: Direccion
+							});
+						}
+					});
+				});
+				//]]>
+			</script>
+			<script type="text/javascript">
+				//<![CDATA[
+				var Tawk_API = Tawk_API || {},
+					Tawk_LoadStart = new Date();
+				(function () {
+					var s1 = document.createElement('script'),
+						s0 = document.getElementsByTagName('script')[0];
+					s1.async = true;
+					s1.src = 'https://embed.tawk.to/5791189a8642ec804b75d0be/default';
+					s1.charset = 'UTF-8';
+					s1.setAttribute('crossorigin', '*');
+					s0.parentNode.insertBefore(s1, s0);
+				})();
+				//]]>
+			</script>
+		</div>
 
-
-    </body>
+	</body>
 
 </html>
