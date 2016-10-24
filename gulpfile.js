@@ -69,13 +69,13 @@ gulp.task('jquery', function() {
 // Copy Font Awesome core files from node_modules to vendor directory
 gulp.task('fontawesome', function() {
     return gulp.src([
-            'node_modules/font-awesome/**',
-            '!node_modules/font-awesome/**/*.map',
-            '!node_modules/font-awesome/.npmignore',
-            '!node_modules/font-awesome/*.txt',
-            '!node_modules/font-awesome/*.md',
-            '!node_modules/font-awesome/*.json'
-        ])
+        'node_modules/font-awesome/**',
+        '!node_modules/font-awesome/**/*.map',
+        '!node_modules/font-awesome/.npmignore',
+        '!node_modules/font-awesome/*.txt',
+        '!node_modules/font-awesome/*.md',
+        '!node_modules/font-awesome/*.json'
+    ])
         .pipe(gulp.dest('vendor/font-awesome'));
 });
 
