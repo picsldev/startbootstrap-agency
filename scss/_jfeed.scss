@@ -1,0 +1,53 @@
+.to-flips {
+	float: left;
+	border: .1em solid #ddd;
+	.content {
+		min-height: 15em;
+		position: relative;
+		overflow: hidden;
+
+		.grey {
+			color: #999;
+		}
+		.block {
+			width: 100%;
+			position: absolute;
+			display: block;
+			overflow: hidden;
+		}
+	}
+	.flipnav {
+		margin: 0 0 0 70px;
+
+		.btn-left, .btn-right, .btn-left-dis {
+			width: 1.2em;
+			height: 1.2em;
+			background: #ccc;
+			color: #fff;
+			float: left;
+			font-size: 2em;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+	}
+}
+.btn-right-dis {
+	width: 1.2em;
+	height: 1.2em;
+	background: #ccc;
+	color: #fff;
+	float: left;
+	font-size: 2em;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.to-flips .flipnav {
+	.btn-left-dis, .btn-right-dis {
+		color: transparent;
+		background: #fff;
+		cursor: default;
+	}
+}
+
