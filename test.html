@@ -40,81 +40,37 @@
 	<!-- Fuentes -->
 	<!--        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
 
+	<!-- TEMA PERSONALIZADO -->
+	<link href="css/agency+4.css" rel="stylesheet" type="text/css">
+
 	<style>
-		/*
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 12px;
-			color: #333;
-		}
-*/
-		/*
-		h1 { margin: 5px 0; padding: 0; }
-*/
-		/*
-		a { color: #F90; }
-*/
-
-		.to-flips {
-
-/*			float: left;*/
-			/*			margin: 20px;*/
-			/*			border: 1px solid #ddd;*/
-			/*			padding: 10px;*/
-		}
-
-		.to-flips .content {
-			height: 150px;
-			position: relative;
-			overflow: hidden;
-		}
-
-		.to-flips .content .grey {
-			color: #999;
-		}
-
-		.to-flips .content .block {
-			width: 100%;
-			position: absolute;
-			top: 0px;
-			display: block;
-			overflow: hidden;
-		}
-
-		.to-flips .flipnav {
-			margin: 0 0 0 70px;
-		}
-
-		.to-flips .flipnav .btn-left,
-		.to-flips .flipnav .btn-right,
-		.to-flips .flipnav .btn-left-dis,
-		.btn-right-dis {
-			width: 20px;
-			height: 20px;
-			background: #ccc;
-			color: #fff;
-			float: left;
-			font-size: 16px;
-			text-align: center;
-			cursor: pointer;
-		}
-
-		.to-flips .flipnav .btn-left-dis,
-		.to-flips .flipnav .btn-right-dis {
-			color: #fff;
-			background: #fff;
-			cursor: default;
-		}
+		/* CSS de jfeed */
 	</style>
 
 </head>
 
-<body>
+<body onload="actualizaReloj()">
 	<!-- Insert your HTML here -->
 
 	<div class="container-fluid">
 
-		<div class="row" style="min-height: 75vh; background-color: Gray;">&nbsp;</div>
+		<div class="row" style="min-height: 75vh; background-color: Gray;">
+
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Dropdown link</a></li>
+					<li><a href="#">Dropdown link</a></li>
+				</ul>
+			</div>
+			<br />
+			<div id="Fecha_Reloj"></div>
+		</div>
+
+
 
 		<div class="row" style="min-height: 25vh; background-color: #FFC">
 			<div class="to-flips" id="news">
@@ -134,8 +90,10 @@
 	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+
 	<script type="text/javascript">
 		//http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.jfeed.pack.js
+		"use strict";
 		eval(function (p, a, c, k, e, d) {
 			e = function (c) {
 				return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
@@ -146,8 +104,11 @@
 		}('3.X=a(h){h=3.J({v:D,C:D,u:D},h);k(h.v){$.W({t:\'V\',v:h.v,C:h.C,U:\'4\',u:a(4){d f=j B(4);k(3.T(h.u))h.u(f)}})}};a B(4){k(4)2.K(4)};B.r={t:\'\',l:\'\',c:\'\',b:\'\',g:\'\',K:a(4){k(3(\'8\',4).y==1){2.t=\'x\';d s=j z(4)}H k(3(\'f\',4).y==1){2.t=\'S\';d s=j A(4)}k(s)3.J(2,s)}};a o(){};o.r={c:\'\',b:\'\',g:\'\',i:\'\',n:\'\'};a A(4){2.q(4)};A.r={q:a(4){d 8=3(\'f\',4).9(0);2.l=\'1.0\';2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').p(\'I\');2.g=3(8).5(\'R:e\').6();2.w=3(8).p(\'4:Q\');2.i=3(8).5(\'i:e\').6();2.m=j G();d f=2;3(\'P\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).p(\'I\');7.g=3(2).5(\'O\').9(0).6();7.i=3(2).5(\'i\').9(0).6();7.n=3(2).5(\'n\').9(0).6();f.m.E(7)})}};a z(4){2.q(4)};z.r={q:a(4){k(3(\'x\',4).y==0)2.l=\'1.0\';H 2.l=3(\'x\',4).9(0).p(\'l\');d 8=3(\'8\',4).9(0);2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').6();2.g=3(8).5(\'g:e\').6();2.w=3(8).5(\'w:e\').6();2.i=3(8).5(\'N:e\').6();2.m=j G();d f=2;3(\'7\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).6();7.g=3(2).5(\'g\').9(0).6();7.i=3(2).5(\'M\').9(0).6();7.n=3(2).5(\'L\').9(0).6();f.m.E(7)})}};', 60, 60, '||this|jQuery|xml|find|text|item|channel|eq|function|link|title|var|first|feed|description|options|updated|new|if|version|items|id|JFeedItem|attr|_parse|prototype|feedClass|type|success|url|language|rss|length|JRss|JAtom|JFeed|data|null|push|each|Array|else|href|extend|parse|guid|pubDate|lastBuildDate|content|entry|lang|subtitle|atom|isFunction|dataType|GET|ajax|getFeed'.split('|')))
 	</script>
 
+
 	<script type="text/javascript">
 		// http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.flips.min.js
+		"use strict";
+
 		(function (a) {
 			a.fn.flips = function (k) {
 				if (this.length > 1) {
@@ -175,7 +136,7 @@
 					a(".block", j).css("display", "block");
 					f = -1;
 					g = a(".block", h).length;
-					page = 0;
+					var page = 0;
 					a(".block", h).each(function () {
 						a(this).wrapInner('<div class="in"></div');
 						a(this).css("left", "0px");
@@ -448,7 +409,7 @@
 
 					// Adds the jQuery Flips element. The direction can left, top or bottom/
 					$('#news').flips({
-						autorun_delay: 500,
+						autorun_delay: 200,
 						direction: 'right'
 					});
 				}
@@ -456,20 +417,83 @@
 		});
 	</script>
 
+	<script type="text/javascript">
+		/*
+		 * http://jcatala.net/node/943
+		 *
+		 * Para que funcione:
+		 * ------------------
+		 * <body onload="actualizaReloj()">
+		 * <div id="Fecha_Reloj"></div>
+		 *
+		 */
+		/*Script del Reloj */
+		function actualizaReloj() {
+			/* Capturamos la Hora, los minutos y los segundos */
+			var marcacion = new Date()
+				/* Capturamos la Hora */
+			var Hora = marcacion.getHours()
+				/* Capturamos los Minutos */
+			var Minutos = marcacion.getMinutes()
+				/* Capturamos los Segundos */
+			var Segundos = marcacion.getSeconds()
+				/*variable para el apóstrofe de am o pm*/
+			var dn = "AM"
+			if (Hora > 12) {
+				dn = "PM"
+				Hora = Hora - 12
+			}
+			if (Hora == 0)
+				Hora = 12
+				/* Si la Hora, los Minutos o los Segundos son Menores o igual a 9, le añadimos un 0 */
+			if (Hora <= 9) Hora = "0" + Hora
+			if (Minutos <= 9) Minutos = "0" + Minutos
+			if (Segundos <= 9) Segundos = "0" + Segundos
+				/* Termina el Script del Reloj */
+
+			/*Script de la Fecha */
+
+			var Dia = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+			var Mes = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+			var Hoy = new Date();
+			var Anio = Hoy.getFullYear();
+			var Fecha = Dia[Hoy.getDay()] + ", " + Hoy.getDate() + " de " + Mes[Hoy.getMonth()] + " de " + Anio + ". ";
+
+			/* Termina el script de la Fecha */
+
+			/* Creamos 2 variables para darle formato a nuestro Script */
+			var Script, Total
+
+			/* En Reloj le indicamos la Hora, los Minutos y los Segundos */
+			Script = Fecha + Hora + ":" + Minutos + ":" + Segundos + " " + dn
+
+			/* En total Finalizamos el Reloj uniendo las variables */
+			Total = Script
+
+			/* Capturamos una celda para mostrar el Reloj */
+			document.getElementById('Fecha_Reloj').innerHTML = Total
+
+			/* Indicamos que nos refresque el Reloj cada 1 segundo */
+			setTimeout("actualizaReloj()", 1000)
+		}
+	</script>
+
 	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-		ga('create', 'UA-XXXXXXXX-X', 'auto');
-		ga('send', 'pageview');
+		/*
+				(function (i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] || function () {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+					a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+				ga('create', 'UA-XXXXXXXX-X', 'auto');
+				ga('send', 'pageview');
+				*/
 	</script>
 </body>
 
