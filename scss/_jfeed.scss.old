@@ -1,19 +1,27 @@
+/* body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333; } */
+
+/* h1 { margin: 5px 0; padding: 0; }  */
+
+/* a { color: #F90; }  */
+
+/* .to-flips { float: left; margin: 20px; border: 1px solid #ddd; padding: 10px; } */
+
 .to-flips {
   .content {
     height: 150px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 
     .grey {
-      color: $gray-darker;
+      color: #999;
     }
 
     .block {
+      width: 100%;
+      position: absolute;
+      top: 0px;
       display: block;
       overflow: hidden;
-      position: absolute;
-      top: 0;
-      width: 100%;
     }
   }
 
@@ -21,33 +29,33 @@
     margin: 0 0 0 70px;
 
     .btn-left, .btn-right, .btn-left-dis {
-      background: $gray-lighter;
+      width: 20px;
+      height: 20px;
+      background: #ccc;
       color: #fff;
-      cursor: pointer;
       float: left;
       font-size: 16px;
-      height: 20px;
       text-align: center;
-      width: 20px;
+      cursor: pointer;
     }
   }
 }
 
 .btn-right-dis {
-  background: $gray-lighter;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
   color: #fff;
-  cursor: pointer;
   float: left;
   font-size: 16px;
-  height: 20px;
   text-align: center;
-  width: 20px;
+  cursor: pointer;
 }
 
 .to-flips .flipnav {
   .btn-left-dis, .btn-right-dis {
-    background: #fff;
     color: #fff;
+    background: #fff;
     cursor: default;
   }
 }

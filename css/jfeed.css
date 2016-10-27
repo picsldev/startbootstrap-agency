@@ -1,49 +1,53 @@
 .to-flips {
-	float: left;
-	border: .1em solid #ddd;
-	min-height: 25vh;
+  .content {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+
+    .grey {
+      color: #999;
+    }
+
+    .block {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .flipnav {
+    margin: 0 0 0 70px;
+
+    .btn-left, .btn-right, .btn-left-dis {
+      background: #ccc;
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-size: 16px;
+      height: 20px;
+      text-align: center;
+      width: 20px;
+    }
+  }
 }
 
-.to-flips .content {
-	/*	min-height: 9em;*/
-	min-height: 20vh;
-	position: relative;
-	overflow: hidden;
-}
-
-.to-flips .content .grey {
-	color: #999;
-}
-
-.to-flips .content .block {
-	width: 100%;
-	position: absolute;
-	display: block;
-	overflow: hidden;
+.btn-right-dis {
+  background: #ccc;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 16px;
+  height: 20px;
+  text-align: center;
+  width: 20px;
 }
 
 .to-flips .flipnav {
-	margin: 0 0 0 1em;
-}
-
-.to-flips .flipnav .btn-left,
-.to-flips .flipnav .btn-right,
-.to-flips .flipnav .btn-left-dis,
-.btn-right-dis {
-	width: 1.2em;
-	height: 1.2em;
-	background: #ccc;
-	color: #fff;
-	float: left;
-	font-size: 2em;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-.to-flips .flipnav .btn-left-dis,
-.to-flips .flipnav .btn-right-dis {
-	color: transparent;
-	background: #fff;
-	cursor: default;
+  .btn-left-dis, .btn-right-dis {
+    background: #fff;
+    color: #fff;
+    cursor: default;
+  }
 }
