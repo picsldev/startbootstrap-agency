@@ -1,917 +1,501 @@
-@import 'variables';
-@import 'mixins';
-@import 'print';
-#MISCOLORES {
-	gray-base: $gray-base;
-	gray-darker: $gray-darker;
-	gray-dark: $gray-dark;
-	gray: $gray;
-	gray-light: $gray-light;
-	gray-lighter: $gray-lighter;
-	brand-primary: $brand-primary;
-	brand-sucess: $brand-sucess;
-	brand-info: $brand-info;
-	brand-warning: $brand-warning;
-	brand-danger: $brand-danger;
-}
+<!DOCTYPE html>
+<html>
 
-#contact {
-	background: $gray-darker url(../img/map-image.png) center no-repeat;
-	.form-control:focus {
-		border-color: $brand-primary;
-		box-shadow: none;
-	}
-	.form-group {
-		margin-bottom: 25px;
-		input,
-		textarea {
-			padding: 20px;
-		}
-		input.form-control {
-			height: auto;
-		}
-		textarea.form-control {
-			height: 236px;
-		}
-	}
-	.section-heading {
-		color: White;
-	}
-	.text-danger {
-		color: $brand-danger;
-	}
-	&:-moz-placeholder,
-	&::-moz-placeholder {
-		color: $placeholder-text;
-		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-}
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="CHANGE-ME">
+	<meta name="description" content="CHANGE-ME">
 
-#service .service-item .service-caption p,
-#portfolio .portfolio-item .portfolio-caption p {
-	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	font-style: italic;
-	margin: 0;
-}
+	<!-- Mobile Stuff -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
 
-#service .service-item .service-caption,
-#portfolio .portfolio-item .portfolio-caption {
-	background: White;
-	margin: 0 auto;
-	max-width: 400px;
-	padding: 25px;
-	text-align: center;
-}
+	<!-- Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="CHANGE-ME">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
 
-#service .service-item .service-link .service-hover .service-hover-content i,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-	margin-top: -12px;
-}
+	<!-- Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-#service .service-item .service-link .service-hover .service-hover-content,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-	color: White;
-	font-size: 20px;
-	height: 20px;
-	margin-top: -12px;
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	width: 100%;
-}
+	<!-- Windows 8 -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
 
-#service .service-item .service-link .service-hover,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-	-moz-transition: all ease .5s;
-	-webkit-transition: all ease .5s;
-	height: 100%;
-	opacity: 0;
-	position: absolute;
-	transition: all ease .5s;
-	width: 100%;
-}
 
-#service .service-item .service-link .service-hover:hover,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-	opacity: 1;
-}
+	<meta name="theme-color" content="#000000">
 
-#service .service-item .service-link,
-#portfolio .portfolio-item .portfolio-link {
-	display: block;
-	margin: 0 auto;
-	max-width: 400px;
-	position: relative;
-}
+	<link rel="shortcut icon" href="favicon.ico">
 
-#service .service-item,
-#portfolio .portfolio-item {
-	margin: 0 0 15px;
-	right: 0;
-}
+	<title>CHANGE-ME</title>
 
-.bg-darkest-gray {
-	background: $gray-darker;
-}
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 
-.btn-primary {
-	background: $brand-primary;
-	border-color: $brand-primary;
-	color: White;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	.badge {
-		background: White;
-		color: $brand-primary;
-	}
-}
+	<!-- Fuentes -->
+	<!--        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
 
-.btn-xl .badge {
-	background: White;
-	color: $brand-primary;
-}
+	<!-- TEMA PERSONALIZADO -->
+	<link href="css/agency.css" rel="stylesheet" type="text/css">
 
-.btn-primary {
-	&.active,
-	&:active,
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-		border-color: darken($brand-primary, 20%);
-		color: White;
-	}
-}
+	<style>
+		/* CSS de jfeed */
+	</style>
 
-.open .dropdown-toggle.btn-primary {
-	background: $brand-primary;
-	border-color: darken($brand-primary, 20%);
-	color: White;
-}
+</head>
 
-.btn-xl {
-	&.active,
-	&:active,
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-		border-color: darken($brand-primary, 20%);
-		color: White;
-	}
-}
+<body onload="actualizarReloj()">
+	<!-- Insert your HTML here -->
 
-.open .dropdown-toggle.btn-xl {
-	background: $brand-primary;
-	border-color: darken($brand-primary, 20%);
-	color: White;
-}
+	<div class="container-fluid">
 
-.btn-xl {
-	background: $brand-primary;
-	border-color: $brand-primary;
-	border-radius: 3px;
-	color: White;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
-	padding: 20px 40px;
-	text-transform: uppercase;
-}
+		<div class="row" style="min-height: 75vh; background-color: Gray;">
 
-.btn {
-	&.active {
-		outline: none;
-	}
-	&:active {
-		outline: none;
-		&:focus {
-			outline: none;
-		}
-	}
-	&:focus {
-		outline: none;
-	}
-}
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Dropdown link</a></li>
+					<li><a href="#">Dropdown link</a></li>
+				</ul>
+			</div>
+			<br />
+			<div id="Fecha_Reloj"></div>
+			<div><span class='glyphicon glyphicon-user'></span></div>
+			&lt; . &gt; &frasl;
+		</div>
 
-.bubble {
-	fill: $brand-warning;
-}
 
-.icon {
-	fill: White;
-}
 
-.img-centered {
-	margin: 0 auto;
-}
+		<div class="row" style="min-height: 25vh; background-color: #FFC">
+			<div class="to-flips" id="news">
+				<!-- <h1>Últimas Noticias</h1>-->
+				<div class="content">
+					<div id="latestnews"></div>
+				</div>
+				<div class="flipnav"></div>
+			</div>
+		</div>
 
-.logo {
-	animation: bounceIn .6s;
-	cursor: pointer;
-	height: 55px;
-	transform: rotate(0deg) scale(1) translatez(0);
-	transition: all 0.4s cubic-bezier(0.2, 1.8, 0.75, 0.75);
-	width: 155px;
-	&:hover {
-		transform: rotate(10deg) scale(1.1);
-	}
-}
+	</div>
 
-.navbar-default {
-	background: $gray-darker;
-	border-color: transparent;
-	.nav li a {
-		color: White;
-		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		&:focus,
-		&:hover {
-			color: $brand-primary;
-			outline: none;
-		}
-	}
-	.navbar-brand {
-		color: $brand-primary;
-		font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-		&.active,
-		&:active,
-		&:focus,
-		&:hover {
-			color: $brand-primary;
-		}
-	}
-	.navbar-collapse {
-		border-color: White;
-	}
-	.navbar-nav > .active > a {
-		background: $brand-primary;
-		border-radius: 0;
-		color: White;
-		&:focus,
-		&:hover {
-			background: $brand-primary;
-			color: White;
-		}
-	}
-	.navbar-toggle {
-		.icon-bar {
-			background: White;
-		}
-		background: $brand-primary;
-		border-color: $brand-primary;
-	}
-}
+	<!-- Scripts -->
 
-.btn-primary {
-	&.disabled {
-		background: $brand-primary;
-		border-color: $brand-primary;
-		&.active,
-		&:active,
-		&:focus,
-		&:hover {
-			background: $brand-primary;
-			border-color: $brand-primary;
-		}
-	}
-	&[disabled] {
-		background: $brand-primary;
-		border-color: $brand-primary;
-		&.active,
-		&:active,
-		&:focus,
-		&:hover {
-			background: $brand-primary;
-			border-color: $brand-primary;
-		}
-	}
-}
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-fieldset[disabled] .btn-primary {
-	background: $brand-primary;
-	border-color: $brand-primary;
-	&.active,
-	&:active,
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-		border-color: $brand-primary;
-	}
-}
 
-.btn-xl {
-	&.disabled {
-		background: $brand-primary;
-		border-color: $brand-primary;
-		&.active,
-		&:active,
-		&:focus,
-		&:hover {
-			background: $brand-primary;
-			border-color: $brand-primary;
-		}
-	}
-	&[disabled] {
-		background: $brand-primary;
-		border-color: $brand-primary;
-		&.active,
-		&:active,
-		&:focus,
-		&:hover {
-			background: $brand-primary;
-			border-color: $brand-primary;
-		}
-	}
-}
+	<script type="text/javascript">
+		//http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.jfeed.pack.js
+		"use strict";
+		eval(function (p, a, c, k, e, d) {
+			e = function (c) {
+				return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+			};
+			while (c--)
+				if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+			return p
+		}('3.X=a(h){h=3.J({v:D,C:D,u:D},h);k(h.v){$.W({t:\'V\',v:h.v,C:h.C,U:\'4\',u:a(4){d f=j B(4);k(3.T(h.u))h.u(f)}})}};a B(4){k(4)2.K(4)};B.r={t:\'\',l:\'\',c:\'\',b:\'\',g:\'\',K:a(4){k(3(\'8\',4).y==1){2.t=\'x\';d s=j z(4)}H k(3(\'f\',4).y==1){2.t=\'S\';d s=j A(4)}k(s)3.J(2,s)}};a o(){};o.r={c:\'\',b:\'\',g:\'\',i:\'\',n:\'\'};a A(4){2.q(4)};A.r={q:a(4){d 8=3(\'f\',4).9(0);2.l=\'1.0\';2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').p(\'I\');2.g=3(8).5(\'R:e\').6();2.w=3(8).p(\'4:Q\');2.i=3(8).5(\'i:e\').6();2.m=j G();d f=2;3(\'P\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).p(\'I\');7.g=3(2).5(\'O\').9(0).6();7.i=3(2).5(\'i\').9(0).6();7.n=3(2).5(\'n\').9(0).6();f.m.E(7)})}};a z(4){2.q(4)};z.r={q:a(4){k(3(\'x\',4).y==0)2.l=\'1.0\';H 2.l=3(\'x\',4).9(0).p(\'l\');d 8=3(\'8\',4).9(0);2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').6();2.g=3(8).5(\'g:e\').6();2.w=3(8).5(\'w:e\').6();2.i=3(8).5(\'N:e\').6();2.m=j G();d f=2;3(\'7\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).6();7.g=3(2).5(\'g\').9(0).6();7.i=3(2).5(\'M\').9(0).6();7.n=3(2).5(\'L\').9(0).6();f.m.E(7)})}};', 60, 60, '||this|jQuery|xml|find|text|item|channel|eq|function|link|title|var|first|feed|description|options|updated|new|if|version|items|id|JFeedItem|attr|_parse|prototype|feedClass|type|success|url|language|rss|length|JRss|JAtom|JFeed|data|null|push|each|Array|else|href|extend|parse|guid|pubDate|lastBuildDate|content|entry|lang|subtitle|atom|isFunction|dataType|GET|ajax|getFeed'.split('|')))
+	</script>
 
-fieldset[disabled] .btn-xl {
-	background: $brand-primary;
-	border-color: $brand-primary;
-	&.active,
-	&:active,
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-		border-color: $brand-primary;
-	}
-}
 
-.navbar-default .navbar-toggle {
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-	}
-}
+	<script type="text/javascript">
+		// http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.flips.min.js
 
-.social-buttons li a {
-	&:active,
-	&:focus,
-	&:hover {
-		background: $brand-primary;
-	}
-}
+		"use strict";
 
-.scroll-top-wrapper {
-	-moz-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	background: $gray-base;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	bottom: 20em;
-	color: $gray-dark;
-	height: 48px;
-	line-height: 48px;
-	opacity: 0;
-	overflow: hidden;
-	padding-top: 2px;
-	position: fixed;
-	right: 1em;
-	text-align: center;
-	transition: all .5s ease-in-out;
-	visibility: hidden;
-	width: 50px;
-	z-index: 100000000;
-	i.fa {
-		line-height: inherit;
-	}
-	&.show {
-		cursor: pointer;
-		opacity: 1;
-		visibility: visible;
-	}
-	&:hover {
-		background: $gray-darker;
-	}
-}
-
-.service-heading {
-	margin: 15px 0;
-	text-transform: none;
-}
-
-.service-modal .close-modal .lr .rl,
-.portfolio-modal .close-modal .lr .rl {
-	-ms-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	background: $gray-darker;
-	height: 75px;
-	transform: rotate(90deg);
-	width: 1px;
-	z-index: 1052;
-}
-
-.service-modal .close-modal .lr,
-.portfolio-modal .close-modal .lr {
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	background: $gray-darker;
-	height: 75px;
-	margin-left: 35px;
-	transform: rotate(45deg);
-	width: 1px;
-	z-index: 1051;
-}
-
-.service-modal .close-modal,
-.portfolio-modal .close-modal {
-	cursor: pointer;
-	height: 75px;
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	width: 75px;
-}
-
-.service-modal .close-modal:hover,
-.portfolio-modal .close-modal:hover {
-	opacity: .3;
-}
-
-.service-modal .modal-backdrop,
-.portfolio-modal .modal-backdrop {
-	display: none;
-	opacity: 0;
-}
-
-.service-modal .modal-content h2,
-.portfolio-modal .modal-content h2 {
-	font-size: 3em;
-	margin-bottom: 15px;
-}
-
-.service-modal .modal-content {
-	p,
-	img {
-		margin-bottom: 30px;
-	}
-}
-
-.portfolio-modal .modal-content {
-	p,
-	img {
-		margin-bottom: 30px;
-	}
-}
-
-.service-modal .modal-content p.item-intro,
-.portfolio-modal .modal-content p.item-intro {
-	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	font-style: italic;
-	margin: 20px 0 30px;
-}
-
-.service-modal .modal-content ul.list-inline,
-.portfolio-modal .modal-content ul.list-inline {
-	margin-bottom: 30px;
-	margin-top: 0;
-}
-
-.service-modal .modal-content,
-.portfolio-modal .modal-content {
-	-webkit-box-shadow: none;
-	background: border-box;
-	border: none;
-	border-radius: 0;
-	box-shadow: none;
-	min-height: 100%;
-	padding: 100px 0;
-	text-align: center;
-}
-
-.service-modal .modal-dialog,
-.portfolio-modal .modal-dialog {
-	height: 100%;
-	margin: 0;
-	width: auto;
-}
-
-.social-buttons li a {
-	-moz-transition: all .3s;
-	-webkit-transition: all .3s;
-	background: $gray-darker;
-	border-radius: 100%;
-	color: White;
-	display: block;
-	font-size: 20px;
-	height: 40px;
-	line-height: 40px;
-	outline: none;
-	transition: all .3s;
-	width: 40px;
-}
-
-.team-member {
-	margin-bottom: 50px;
-	text-align: center;
-	h4 {
-		margin-bottom: 0;
-		margin-top: 25px;
-		text-transform: none;
-	}
-	img {
-		border: 7px solid White;
-		margin: 0 auto;
-	}
-	p {
-		margin-top: 0;
-	}
-}
-
-.text-muted {
-	color: $gray-base;
-}
-
-.text-primary {
-	color: $brand-primary;
-}
-
-.timeline {
-	list-style: none;
-	padding: 0;
-	position: relative;
-	.timeline-heading h4 {
-		color: inherit;
-		margin-top: 0;
-		&.subheading {
-			text-transform: none;
-		}
-	}
-	> li {
-		margin-bottom: 50px;
-		min-height: 50px;
-		position: relative;
-		.timeline-image {
-			background: $brand-primary;
-			border: 7px solid $gray-light;
-			border-radius: 100%;
-			color: White;
-			height: 80px;
-			left: 0;
-			margin-left: 0;
-			position: absolute;
-			text-align: center;
-			width: 80px;
-			z-index: 100;
-			h4 {
-				font-size: 10px;
-				line-height: 14px;
-				margin-top: 12px;
-			}
-		}
-		.timeline-panel {
-			float: right;
-			padding: 0 20px 0 100px;
-			position: relative;
-			text-align: left;
-			width: 100%;
-			&:after {
-				border-left-width: 0;
-				border-right-width: 14px;
-				left: -14px;
-				right: auto;
-			}
-		}
-		&.timeline-inverted > .timeline-panel:after {
-			border-left-width: 0;
-			border-right-width: 14px;
-			left: -14px;
-			right: auto;
-		}
-		.timeline-panel:before {
-			border-left-width: 0;
-			border-right-width: 15px;
-			left: -15px;
-			right: auto;
-		}
-		&.timeline-inverted > .timeline-panel {
-			&:before {
-				border-left-width: 0;
-				border-right-width: 15px;
-				left: -15px;
-				right: auto;
-			}
-			float: right;
-			padding: 0 20px 0 100px;
-			text-align: left;
-		}
-		&:after {
-			clear: both;
-			content: " ";
-			display: table;
-		}
-		&:before {
-			content: " ";
-			display: table;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	.timeline-body > {
-		p,
-		ul {
-			margin-bottom: 0;
-		}
-	}
-}
-
-.social-buttons {
-	margin-bottom: 0;
-}
-
-.timeline:before {
-	background: $gray-light;
-	bottom: 0;
-	content: "";
-	left: 40px;
-	margin-left: -1.5px;
-	position: absolute;
-	top: 0;
-	width: 2px;
-}
-
-.to-flips {
-	.content {
-		height: 150px;
-		overflow: hidden;
-		position: relative;
-		.block {
-			display: block;
-			overflow: hidden;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-		.grey {
-			color: $gray-darker;
-		}
-	}
-	.flipnav {
-		margin: 0 0 0 70px;
-		.btn-left,
-		.btn-right,
-		.btn-left-dis {
-			background: $gray-base;
-			color: White;
-			cursor: pointer;
-			float: left;
-			font-size: 16px;
-			height: 20px;
-			text-align: center;
-			width: 20px;
-		}
-	}
-}
-
-.btn-right-dis {
-	background: $gray-base;
-	color: White;
-	cursor: pointer;
-	float: left;
-	font-size: 16px;
-	height: 20px;
-	text-align: center;
-	width: 20px;
-}
-
-.to-flips .flipnav {
-	.btn-left-dis,
-	.btn-right-dis {
-		background: White;
-		color: White;
-		cursor: default;
-	}
-}
-
-a {
-	color: $brand-primary;
-	outline: none;
-	&.active,
-	&:active,
-	&:focus,
-	&:hover {
-		color: $brand-primary;
-		outline: none;
-	}
-}
-
-aside.clients img {
-	margin: 50px auto;
-}
-
-body {
-	-webkit-tap-highlight-color: $brand-primary;
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	overflow-x: hidden;
-}
-
-footer {
-	padding: 25px 0;
-	text-align: center;
-	span.copyright {
-		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		line-height: 40px;
-		text-transform: none;
-	}
-	ul.quicklinks {
-		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		line-height: 40px;
-		margin-bottom: 0;
-		text-transform: none;
-	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-header {
-	-o-background-size: cover;
-	-webkit-background-size: cover;
-	color: White;
-	text-align: center;
-	.intro-text {
-		padding-bottom: 50px;
-		padding-top: 100px;
-		.intro-heading {
-			font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 50px;
-			font-weight: 700;
-			line-height: 50px;
-			margin-bottom: 25px;
-			text-transform: uppercase;
-		}
-		.intro-lead-in {
-			font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 22px;
-			font-style: italic;
-			line-height: 22px;
-			margin-bottom: 25px;
-		}
-	}
-}
-
-p {
-	font-size: 14px;
-	line-height: 1.75;
-	&.large {
-		font-size: 16px;
-	}
-}
-
-section {
-	padding: 10em 0;
-	h2.section-heading {
-		font-size: 40px;
-		margin-bottom: 15px;
-		margin-top: 0;
-	}
-	h3.section-subheading {
-		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 16px;
-		font-style: italic;
-		font-weight: 400;
-		margin-bottom: 75px;
-		text-transform: none;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	#service .service-item,
-	#portfolio .portfolio-item {
-		margin: 0 0 30px;
-	}
-	.navbar-default {
-		-moz-transition: padding .3s;
-		-webkit-transition: padding .3s;
-		border: none;
-		padding: 25px 0;
-		transition: padding .3s;
-		.navbar-brand {
-			-moz-transition: all .3s;
-			-webkit-transition: all .3s;
-			font-size: 2em;
-			transition: all .3s;
-		}
-		.navbar-nav > .active > a {
-			border-radius: 3px;
-		}
-		&.navbar-shrink {
-			background: $gray-darker;
-			padding: 10px 0;
-			.navbar-brand {
-				font-size: 1.5em;
-			}
-		}
-	}
-	.timeline {
-		> li {
-			margin-bottom: 100px;
-			min-height: 100px;
-			.timeline-image {
-				height: 100px;
-				left: 50%;
-				margin-left: -50px;
-				width: 100px;
-				h4 {
-					font-size: 13px;
-					line-height: 18px;
-					margin-top: 16px;
+		(function (a) {
+			a.fn.flips = function (k) {
+				if (this.length > 1) {
+					this.each(function () {
+						a(this).flips(k)
+					});
+					return this
+				}
+				var e = {
+					speed: 500,
+					autorun: 10000,
+					autorun_delay: 0,
+					stop_autorun: false,
+					left_arrow: "&laquo;",
+					// left_arrows: '&lt;span class="glyphicon glyphicon-menu-left"&gt;&lt;&frasl;span&gt;',
+					right_arrow: "&raquo;",
+					direction: "right",
+					items: 1,
+				};
+				var j = this;
+				var k = a.extend(e, k);
+				var h, b, f, g, c, d = [],
+					i = false;
+				this.initBlocks = function () {
+					h = a(".content", j);
+					a(".block", j).css("display", "block");
+					f = -1;
+					g = a(".block", h).length;
+					var page = 0;
+					a(".block", h).each(function () {
+						a(this).wrapInner('<div class="in"></div');
+						a(this).css("left", "0px");
+						a(this).css("top", "0px");
+						switch (k.direction) {
+						case "left":
+							a(this).css("left", h.width() - a(this).width() * (page + 1));
+							break;
+						case "right":
+							a(this).css("left", a(this).width() * page);
+							break;
+						case "top":
+							a(this).css("top", h.height() - a(this).height() * (page + 1));
+							break;
+						case "bottom":
+							a(this).css("top", a(this).height() * page);
+							break
+						}
+						a(this).addClass("page" + (page++))
+					});
+					var m = a(".block", h);
+					for (var l = 0; l < k.items; l++) {
+						var n = m[l];
+						d.push(n);
+						a(n).show();
+						f++
+					}
+					b = a(".flipnav", j)
+				};
+				this.prepareNavigation = function () {
+					b.append('<div class="btn-left"></div>');
+					b.append('<div class="btn-left-dis"></div>');
+					b.append('<div class="btn-right"></div>');
+					b.append('<div class="btn-right-dis"></div>');
+					if (k.left_arrow != "") {
+						a(".btn-left", b).html(k.left_arrow);
+						a(".btn-left-dis", b).html(k.left_arrow)
+					}
+					if (k.right_arrow != "") {
+						a(".btn-right", b).html(k.right_arrow);
+						a(".btn-right-dis", b).html(k.right_arrow)
+					}
+					a(".btn-right", b).click(function () {
+						j.stopAutorun();
+						j.clickRight()
+					});
+					a(".btn-left", b).click(function () {
+						j.stopAutorun();
+						j.clickLeft()
+					})
+				};
+				this.clickRight = function (q) {
+					if (i) {
+						return
+					}
+					if (f >= g - 1) {
+						var p = a(".page0", h)
+					} else {
+						var p = a(".page" + (f + 1), h)
+					}
+					var o = {};
+					var m = {};
+					for (var n = 0; n < d.length; n++) {
+						var l = a(d[n]);
+						var r = l.position();
+						switch (k.direction) {
+						case "left":
+							o = {
+								left: r.left + l.width()
+							};
+							break;
+						case "right":
+							o = {
+								left: r.left - l.width()
+							};
+							break;
+						case "top":
+							o = {
+								top: r.top + l.height()
+							};
+							break;
+						case "bottom":
+							o = {
+								top: r.top - l.height()
+							};
+							break
+						}
+						l.animate(o, k.speed, "swing")
+					}
+					switch (k.direction) {
+					case "left":
+						p.css("left", -p.width());
+						m = {
+							left: 0
+						};
+						break;
+					case "right":
+						p.css("left", h.width());
+						m = {
+							left: p.position().left - p.width()
+						};
+						break;
+					case "top":
+						p.css("top", -p.height());
+						m = {
+							top: 0
+						};
+						break;
+					case "bottom":
+						p.css("top", h.height());
+						m = {
+							top: p.position().top - p.height()
+						};
+						break
+					}
+					p.animate(m, k.speed, "swing");
+					d.shift();
+					d.push(p);
+					if (f >= g - 1) {
+						f = 0
+					} else {
+						f++
+					}
+					j.lockClick();
+					j.processArrows()
+				};
+				this.clickLeft = function () {
+					if (i) {
+						return
+					}
+					if (f - k.items < 0) {
+						var p = a(".page" + (g + (f - k.items)), h)
+					} else {
+						var p = a(".page" + (f - k.items), h)
+					}
+					var o = {};
+					var m = {};
+					for (var n = 0; n < d.length; n++) {
+						var l = a(d[n]);
+						var q = l.position();
+						switch (k.direction) {
+						case "left":
+							o = {
+								left: q.left - l.width()
+							};
+							break;
+						case "right":
+							o = {
+								left: q.left + l.width()
+							};
+							break;
+						case "top":
+							o = {
+								top: q.top - l.height()
+							};
+							break;
+						case "bottom":
+							o = {
+								top: q.top + l.height()
+							};
+							break
+						}
+						l.animate(o, k.speed, "swing")
+					}
+					switch (k.direction) {
+					case "left":
+						p.css("left", h.width());
+						m = {
+							left: p.position().left - p.width()
+						};
+						break;
+					case "right":
+						p.css("left", -p.width());
+						m = {
+							left: 0
+						};
+						break;
+					case "top":
+						p.css("top", h.height());
+						m = {
+							top: p.position().top - p.height()
+						};
+						break;
+					case "bottom":
+						p.css("top", -p.height());
+						m = {
+							top: 0
+						};
+						break
+					}
+					p.animate(m, k.speed, "swing");
+					d.unshift(p);
+					d.pop();
+					if (f == 0) {
+						f = g - 1
+					} else {
+						f--
+					}
+					j.lockClick();
+					j.processArrows()
+				};
+				this.processArrows = function () {
+					if (k.items > 1) {
+						a(".btn-left", b).css("display", "block");
+						a(".btn-left-dis", b).css("display", "none");
+						a(".btn-right", b).css("display", "block");
+						a(".btn-right-dis", b).css("display", "none")
+					} else {
+						a(".btn-left", b).css("display", f > 0 ? "block" : "none");
+						a(".btn-left-dis", b).css("display", f == 0 ? "block" : "none");
+						a(".btn-right", b).css("display", f < g - 1 ? "block" : "none");
+						a(".btn-right-dis", b).css("display", f == g - 1 ? "block" : "none")
+					}
+				};
+				this.startAutorun = function () {
+					c = setInterval(j.clickRight, k.autorun)
+				};
+				this.stopAutorun = function () {
+					clearInterval(c);
+					if (!k.stop_autorun) {
+						j.startAutorun()
+					}
+				};
+				this.lockClick = function () {
+					i = true;
+					setTimeout(j.unlockClick, k.speed + 50)
+				};
+				this.unlockClick = function () {
+					i = false
+				};
+				this.initBlocks();
+				this.prepareNavigation();
+				this.processArrows();
+				if (k.autorun > 0) {
+					if (k.autorun_delay > 0) {
+						setTimeout(this.startAutorun, k.autorun_delay)
+					} else {
+						this.startAutorun()
+					}
 				}
 			}
-			.timeline-panel {
-				float: left;
-				padding: 0 20px 20px 30px;
-				text-align: right;
-				width: 41%;
-			}
-			&.timeline-inverted > .timeline-panel {
-				float: right;
-				padding: 0 30px 20px 20px;
-				text-align: left;
-			}
-		}
-		&:before {
-			left: 50%;
-		}
-	}
-	header .intro-text {
-		padding-bottom: 200px;
-		padding-top: 300px;
-		.intro-heading {
-			font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 75px;
-			font-weight: 700;
-			line-height: 75px;
-			margin-bottom: 50px;
-			text-transform: uppercase;
-		}
-		.intro-lead-in {
-			font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 40px;
-			font-style: italic;
-			line-height: 40px;
-			margin-bottom: 25px;
-		}
-	}
-	section {
-		padding: 150px 0;
-	}
-}
+		})(jQuery);
+	</script>
 
-@media screen and (min-width: 992px) {
-	.timeline > li {
-		min-height: 150px;
-		.timeline-image {
-			height: 150px;
-			margin-left: -75px;
-			width: 150px;
-			h4 {
-				font-size: 18px;
-				line-height: 26px;
-				margin-top: 30px;
-			}
-		}
-		.timeline-panel,
-		&.timeline-inverted > .timeline-panel {
-			padding: 0 20px 20px;
-		}
-	}
-}
+	<script type="text/javascript">
+		jQuery(function () {
 
-@media screen and (min-width: 1200px) {
-	.timeline > li {
-		min-height: 170px;
-		.timeline-image {
-			height: 170px;
-			margin-left: -85px;
-			width: 170px;
-			h4 {
-				margin-top: 40px;
+			jQuery.getFeed({
+				// RSS path must be local unless using a proxy
+				url: 'rss/rss20.xml',
+				success: function (feed) {
+
+					var html = '';
+
+					// Selects how many RSS items to parse
+					for (var i = 0; i < feed.items.length && i < 10; i++) {
+
+						var item = feed.items[i];
+						html += '<div class=block>'
+							// Gets the RSS link and title
+							+ '<h3>' + '<a href="' + item.link + '">' + item.title + '</a>' + '</h3>';
+
+						html += '<div class="grey">'
+							// Gets the RSS pubDate
+							+ item.updated + '</div>'
+							// Gets the RSS description
+							+ item.description + '</div>';
+					}
+					jQuery('#latestnews').append(html);
+
+					// Adds the jQuery Flips element. The direction can left, top or bottom/
+					$('#news').flips({
+						autorun_delay: 200,
+						direction: 'right'
+					});
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		/*
+		 * http://jcatala.net/node/943
+		 *
+		 * Para que funcione:
+		 * ------------------
+		 * <body onload="actualizaReloj()">
+		 * <div id="Fecha_Reloj"></div>
+		 *
+		 */
+		/*Script del Reloj */
+		function actualizarReloj() {
+			/* Capturamos la Hora, los minutos y los segundos */
+			var marcacion = new Date()
+				/* Capturamos la Hora */
+			var Hora = marcacion.getHours()
+				/* Capturamos los Minutos */
+			var Minutos = marcacion.getMinutes()
+				/* Capturamos los Segundos */
+			var Segundos = marcacion.getSeconds()
+				/*variable para el apóstrofe de am o pm*/
+			var dn = "AM"
+			if (Hora > 12) {
+				dn = "PM"
+				Hora = Hora - 12
 			}
+			if (Hora == 0)
+				Hora = 12
+				/* Si la Hora, los Minutos o los Segundos son Menores o igual a 9, le añadimos un 0 */
+			if (Hora <= 9) Hora = "0" + Hora
+			if (Minutos <= 9) Minutos = "0" + Minutos
+			if (Segundos <= 9) Segundos = "0" + Segundos
+				/* Termina el Script del Reloj */
+
+			/*Script de la Fecha */
+
+			var Dia = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+			var Mes = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+			var Hoy = new Date();
+			var Anio = Hoy.getFullYear();
+			var Fecha = Dia[Hoy.getDay()] + ", " + Hoy.getDate() + " de " + Mes[Hoy.getMonth()] + " de " + Anio + ". ";
+
+			/* Termina el script de la Fecha */
+
+			/* Creamos 2 variables para darle formato a nuestro Script */
+			var Script, Total
+
+			/* En Reloj le indicamos la Hora, los Minutos y los Segundos */
+			Script = Fecha + Hora + ":" + Minutos + ":" + Segundos + " " + dn
+
+			/* En total Finalizamos el Reloj uniendo las variables */
+			Total = Script
+
+			/* Capturamos una celda para mostrar el Reloj */
+			document.getElementById('Fecha_Reloj').innerHTML = Total
+
+			/* Indicamos que nos refresque el Reloj cada 1 segundo */
+			setTimeout("actualizarReloj()", 1000)
 		}
-		.timeline-panel {
-			padding: 0 20px 20px 100px;
-		}
-		&.timeline-inverted > .timeline-panel {
-			padding: 0 100px 20px 20px;
-		}
-	}
-}
+	</script>
+
+	<script>
+		//(function (i, s, o, g, r, a, m) {
+		//	i['GoogleAnalyticsObject'] = r;
+		//	i[r] = i[r] || function () {
+		//		(i[r].q = i[r].q || []).push(arguments)
+		//	}, i[r].l = 1 * new Date();
+		//	a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		//	a.async = 1;
+		//	a.src = g;
+		//	m.parentNode.insertBefore(a, m)
+		//})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		//ga('create', 'UA-XXXXXXXX-X', 'auto');
+		//ga('send', 'pageview');
+	</script>
+</body>
+
+</html>
