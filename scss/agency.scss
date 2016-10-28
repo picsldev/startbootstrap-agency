@@ -1,3 +1,8 @@
+
+/*                  *\
+| Tema personalizado |
+\*                  */
+
 @import 'variables';
 @import 'mixins';
 @import 'print';
@@ -10,8 +15,8 @@
     gray-light: $gray-light;
     gray-lighter: $gray-lighter;
     brand-primary: $brand-primary;
-    brand-sucess: $brand-sucess;
-    brand-info: $brand-info;
+    brand-sucess: $brand-sucess;   //
+    brand-info: $brand-info;       //
     brand-warning: $brand-warning;
     brand-danger: $brand-danger;
 }
