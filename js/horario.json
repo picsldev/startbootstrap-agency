@@ -1,0 +1,99 @@
+{
+    "horario":[
+        {
+            "Lunes":[
+                {
+                    "apertura_matutina":"09:00",
+                    "cierre_matutino":"14:30",
+                    "apertura_vespertina":"17:00",
+                    "cierre_verpertino":"20:00"
+                }
+            ]
+        }
+    ],
+    "festivo Nacional":[
+        {
+            "Enero":[
+                {
+                    "1":"Año Nuevo",
+                    "6":"Epifanía del Señor"
+                }
+            ],
+            "Febrero":[{}],
+            "Marzo":[
+                {
+                    "25":"Viernes Santo"
+                }
+            ],
+            "Abril":[{}],
+            "Mayo":[
+                {
+                    "2":"Día del Trabajador"
+                }
+            ],
+            "Junio":[{}],
+            "Julio":[{}],
+            "Agosto":[
+                {
+                    "15":"Asunción de la Virgen"
+                }
+            ],
+            "Septiembre":[{}],
+            "Octubre":[
+                {
+                    "12":"Fiesta Nacional de España"
+                }
+            ],
+            "Noviembre":[
+                {
+                    "1":"Todos los Santos"
+                }
+            ],
+            "Diciembre":[
+                {
+                    "6":"Día de la Constitución",
+                    "8":"Inmaculada Concepción"
+                }
+            ]
+        }
+    ],
+    "Festivo Autonomico":
+    [
+        {
+            "Mayo":
+            [
+                {
+                    "30":"Día de Canarias"
+                }
+            ]
+        }
+    ],
+    "Festivo Insular":
+    [
+        {
+            "Septiembre":
+            [
+                {
+                    "8":"Nuestra Señora del Pino"
+                }
+            ]
+        }
+    ],
+    "Festivo Municipal":
+    [
+        {
+            "Febrero":
+            [
+                {
+                    "9":"Martes de Carnaval"
+                }
+            ],
+            "Junio":
+            [
+                {
+                    "24":"Conmemoración Fundación de Las Palmas de G.C."
+                }
+            ]
+        }
+    ]
+}
