@@ -11,25 +11,80 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="msapplication-tap-highlight" content="no">
 
+	<!--
+	General:
+	Información: https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/
+	Específica sobre Microsoft: https://msdn.microsoft.com/library/dn455115(v=vs.85).aspx
+	-->
+	<!-- icon in the highest resolution we need it for -->
+	<link rel="icon" sizes="192x192" href="icon.png">
+	<!-- reuse same icon for Safari -->
+	<link rel="apple-touch-icon" href="ios-icon.png">
+	<!-- multiple icons for IE -->
+	<meta name="msapplication-square310x310logo" content="icon_largetile.png">
+
 	<!-- Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="CHANGE-ME">
+	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
 
 	<!-- Safari on iOS -->
+	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+	<link rel="apple-touch-startup-image" href="icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://cdn.css-tricks.com/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://cdn.css-tricks.com/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.css-tricks.com/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.css-tricks.com/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://cdn.css-tricks.com/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.css-tricks.com/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.css-tricks.com/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.css-tricks.com/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
-	<!-- Windows 8 -->
-	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<!-- Windows 8/10 & WIndows Phone -->
+	<meta name="application-name" content="Contoso Pinned Site Caption">
+	<meta name="msapplication-allowDomainApiCalls" content="true">
+	<meta name="msapplication-allowDomainMetaTags" content="true">
+	<meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name="msapplication-navbutton-color" content="#FF3300">
+	<meta name="msapplication-notification" content="frequency=30;
+			   polling-uri=http://contoso.com/livetile;
+               polling-uri2=http://contoso.com/livetile2;
+			   polling-uri3=http://contoso.com/livetile3;
+               polling-uri4=http://contoso.com/livetile4;
+			   polling-uri5=http://contoso.com/livetile5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-square150x150logo" content="images/logo.png">
+	<meta name="msapplication-square310x310logo" content="images/largelogo.png">
+	<meta name="msapplication-square70x70logo" content="images/tinylogo.png">
+	<meta name="msapplication-wide310x150logo" content="images/widelogo.png">
+	<meta content="name=Nombre de la tarea;
+			   action-uri=document to be launched;
+			   icon-uri=./favicon.ico;
+			   window-type=window" name="msapplication-task">
+	<!-- <meta name="msapplication-TileColor" content="#FFFFFF">-->
+	<meta name="msapplication-tooltip" content="Example Tooltip Text">
+	<!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">-->
+	<meta name="msapplication-window" content="width=1024;height=768">
+	<meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="icon_smalltile.png">
+	<meta name="msapplication-square150x150logo" content="icon_mediumtile.png">
+	<meta name="msapplication-wide310x150logo" content="icon_widetile.png">
 
+	<meta name="theme-color" content="#FF0000">
 
-	<meta name="theme-color" content="#000000">
-
+	<!-- Mejor PNG que ICO -->
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-96x96.png" sizes="96x96">
 
 	<title>CHANGE-ME</title>
 
@@ -46,6 +101,21 @@
 	<style>
 		/* CSS de jfeed */
 	</style>
+
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="PIC-SL">
+	<meta name="application-name" content="PIC-SL">
+	<meta name="msapplication-TileColor" content="#d9db59">
+	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#d9db59">
 
 </head>
 
