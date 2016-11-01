@@ -8,92 +8,137 @@
                     "apertura_vespertina":"17:00",
                     "cierre_verpertino":"20:00"
                 }
-            ]
-        }
-    ],
-    "festivo Nacional":[
-        {
-            "Enero":[
+            ],
+            "Martes":
+            [
                 {
-                    "1":"Año Nuevo",
-                    "6":"Epifanía del Señor"
+                    "apertura_matutina":"09:00",
+                    "cierre_matutino":"14:30",
+                    "apertura_vespertina":"17:00",
+                    "cierre_verpertino":"20:00"
                 }
             ],
-            "Febrero":[{}],
-            "Marzo":[
+            "Miércoles":
+            [
                 {
-                    "25":"Viernes Santo"
+                    "apertura_matutina":"09:00",
+                    "cierre_matutino":"14:30",
+                    "apertura_vespertina":"17:00",
+                    "cierre_verpertino":"20:00"
                 }
             ],
-            "Abril":[{}],
-            "Mayo":[
+            "Jueves":
+            [
                 {
-                    "2":"Día del Trabajador"
+                    "apertura_matutina":"09:00",
+                    "cierre_matutino":"14:30",
+                    "apertura_vespertina":"17:00",
+                    "cierre_verpertino":"20:00"
                 }
             ],
-            "Junio":[{}],
-            "Julio":[{}],
-            "Agosto":[
+            "Viernes":
+            [
                 {
-                    "15":"Asunción de la Virgen"
-                }
-            ],
-            "Septiembre":[{}],
-            "Octubre":[
-                {
-                    "12":"Fiesta Nacional de España"
-                }
-            ],
-            "Noviembre":[
-                {
-                    "1":"Todos los Santos"
-                }
-            ],
-            "Diciembre":[
-                {
-                    "6":"Día de la Constitución",
-                    "8":"Inmaculada Concepción"
+                    "apertura_matutina":"09:00",
+                    "cierre_matutino":"14:30",
+                    "apertura_vespertina":"17:00",
+                    "cierre_verpertino":"20:00"
                 }
             ]
         }
     ],
-    "Festivo Autonomico":
+    "2016":
     [
         {
-            "Mayo":
-            [
+            "festivo Nacional":[
                 {
-                    "30":"Día de Canarias"
-                }
-            ]
-        }
-    ],
-    "Festivo Insular":
-    [
-        {
-            "Septiembre":
-            [
-                {
-                    "8":"Nuestra Señora del Pino"
-                }
-            ]
-        }
-    ],
-    "Festivo Municipal":
-    [
-        {
-            "Febrero":
-            [
-                {
-                    "9":"Martes de Carnaval"
+                    "Enero":[
+                        {
+                            "1":"Año Nuevo",
+                            "6":"Epifanía del Señor"
+                        }
+                    ],
+                    "Febrero":[{}],
+                    "Marzo":[
+                        {
+                            "25":"Viernes Santo"
+                        }
+                    ],
+                    "Abril":[{}],
+                    "Mayo":[
+                        {
+                            "2":"Día del Trabajador"
+                        }
+                    ],
+                    "Junio":[{}],
+                    "Julio":[{}],
+                    "Agosto":[
+                        {
+                            "15":"Asunción de la Virgen"
+                        }
+                    ],
+                    "Septiembre":[{}],
+                    "Octubre":[
+                        {
+                            "12":"Fiesta Nacional de España"
+                        }
+                    ],
+                    "Noviembre":[
+                        {
+                            "1":"Todos los Santos"
+                        }
+                    ],
+                    "Diciembre":[
+                        {
+                            "6":"Día de la Constitución",
+                            "8":"Inmaculada Concepción"
+                        }
+                    ]
                 }
             ],
-            "Junio":
+            "Festivo Autonomico":
             [
                 {
-                    "24":"Conmemoración Fundación de Las Palmas de G.C."
+                    "Mayo":
+                    [
+                        {
+                            "30":"Día de Canarias"
+                        }
+                    ]
+                }
+            ],
+            "Festivo Insular":
+            [
+                {
+                    "Septiembre":
+                    [
+                        {
+                            "8":"Nuestra Señora del Pino"
+                        }
+                    ]
+                }
+            ],
+            "Festivo Municipal":
+            [
+                {
+                    "Febrero":
+                    [
+                        {
+                            "9":"Martes de Carnaval"
+                        }
+                    ],
+                    "Junio":
+                    [
+                        {
+                            "24":"Conmemoración Fundación de Las Palmas de G.C."
+                        }
+                    ]
                 }
             ]
         }
-    ]
+    ],
+    "2017":[{}],
+    "2018":[{}],
+    "2019":[{}],
+    "2020":[{}]
 }
