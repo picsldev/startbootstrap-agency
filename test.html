@@ -1,589 +1,597 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="CHANGE-ME">
+		<meta name="description" content="CHANGE-ME">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="CHANGE-ME">
-    <meta name="description" content="CHANGE-ME">
+		<!-- Mobile Stuff -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Mobile Stuff -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="msapplication-tap-highlight" content="no">
+		<!--
+General:
+Información: https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/
+Específica sobre Microsoft: https://msdn.microsoft.com/library/dn455115(v=vs.85).aspx
+-->
+		<!-- icon in the highest resolution we need it for -->
+		<link rel="icon" sizes="192x192" href="icon.png">
+		<!-- reuse same icon for Safari -->
+		<link rel="apple-touch-icon" href="ios-icon.png">
+		<!-- multiple icons for IE -->
+		<meta name="msapplication-square310x310logo" content="icon_largetile.png">
 
-    <!--
-        General:
-        Información: https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/
-        Específica sobre Microsoft: https://msdn.microsoft.com/library/dn455115(v=vs.85).aspx
-        -->
-    <!-- icon in the highest resolution we need it for -->
-    <link rel="icon" sizes="192x192" href="icon.png">
-    <!-- reuse same icon for Safari -->
-    <link rel="apple-touch-icon" href="ios-icon.png">
-    <!-- multiple icons for IE -->
-    <meta name="msapplication-square310x310logo" content="icon_largetile.png">
+		<!-- Chrome on Android -->
+		<meta name="application-name" content="CHANGE-ME">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
 
-    <!-- Chrome on Android -->
-    <meta name="application-name" content="CHANGE-ME">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+		<!-- Safari on iOS -->
+		<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="apple-touch-startup-image" href="icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://cdn.css-tricks.com/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://cdn.css-tricks.com/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.css-tricks.com/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.css-tricks.com/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://cdn.css-tricks.com/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.css-tricks.com/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.css-tricks.com/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.css-tricks.com/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
-    <!-- Safari on iOS -->
-    <meta name="apple-mobile-web-app-title" content="CHANGE-ME">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-startup-image" href="icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.css-tricks.com/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://cdn.css-tricks.com/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.css-tricks.com/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.css-tricks.com/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.css-tricks.com/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.css-tricks.com/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.css-tricks.com/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.css-tricks.com/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<!-- Windows 8/10 & WIndows Phone -->
+		<meta name="application-name" content="Contoso Pinned Site Caption">
+		<meta name="msapplication-allowDomainApiCalls" content="true">
+		<meta name="msapplication-allowDomainMetaTags" content="true">
+		<meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta name="msapplication-navbutton-color" content="#FF3300">
+		<meta name="msapplication-notification" content="frequency=30;
+														 polling-uri=http://contoso.com/livetile;
+														 polling-uri2=http://contoso.com/livetile2;
+														 polling-uri3=http://contoso.com/livetile3;
+														 polling-uri4=http://contoso.com/livetile4;
+														 polling-uri5=http://contoso.com/livetile5">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-square150x150logo" content="images/logo.png">
+		<meta name="msapplication-square310x310logo" content="images/largelogo.png">
+		<meta name="msapplication-square70x70logo" content="images/tinylogo.png">
+		<meta name="msapplication-wide310x150logo" content="images/widelogo.png">
+		<meta content="name=Nombre de la tarea;
+					   action-uri=document to be launched;
+					   icon-uri=./favicon.ico;
+					   window-type=window" name="msapplication-task">
+		<!-- <meta name="msapplication-TileColor" content="#FFFFFF">-->
+		<meta name="msapplication-tooltip" content="Example Tooltip Text">
+		<!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">-->
+		<meta name="msapplication-window" content="width=1024;height=768">
+		<meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+		<meta name="msapplication-square70x70logo" content="icon_smalltile.png">
+		<meta name="msapplication-square150x150logo" content="icon_mediumtile.png">
+		<meta name="msapplication-wide310x150logo" content="icon_widetile.png">
 
-    <!-- Windows 8/10 & WIndows Phone -->
-    <meta name="application-name" content="Contoso Pinned Site Caption">
-    <meta name="msapplication-allowDomainApiCalls" content="true">
-    <meta name="msapplication-allowDomainMetaTags" content="true">
-    <meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="msapplication-navbutton-color" content="#FF3300">
-    <meta name="msapplication-notification" content="frequency=30;
-        polling-uri=http://contoso.com/livetile;
-        polling-uri2=http://contoso.com/livetile2;
-        polling-uri3=http://contoso.com/livetile3;
-        polling-uri4=http://contoso.com/livetile4;
-        polling-uri5=http://contoso.com/livetile5">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-square150x150logo" content="images/logo.png">
-    <meta name="msapplication-square310x310logo" content="images/largelogo.png">
-    <meta name="msapplication-square70x70logo" content="images/tinylogo.png">
-    <meta name="msapplication-wide310x150logo" content="images/widelogo.png">
-    <meta content="name=Nombre de la tarea;
-        action-uri=document to be launched;
-        icon-uri=./favicon.ico;
-        window-type=window" name="msapplication-task">
-    <!-- <meta name="msapplication-TileColor" content="#FFFFFF">-->
-    <meta name="msapplication-tooltip" content="Example Tooltip Text">
-    <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">-->
-    <meta name="msapplication-window" content="width=1024;height=768">
-    <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
-    <meta name="msapplication-square70x70logo" content="icon_smalltile.png">
-    <meta name="msapplication-square150x150logo" content="icon_mediumtile.png">
-    <meta name="msapplication-wide310x150logo" content="icon_widetile.png">
+		<meta name="theme-color" content="#FF0000">
 
-    <meta name="theme-color" content="#FF0000">
+		<!-- Mejor PNG que ICO -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-96x96.png" sizes="96x96">
 
-    <!-- Mejor PNG que ICO -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://cdn.css-tricks.com/favicon-96x96.png" sizes="96x96">
-
-    <title>CHANGE-ME</title>
+		<title>CHANGE-ME</title>
 
 
-    <!-- Bootstrap -->
-    <!-- Los más rápidos según http://www.quickonlinetips.com/archives/2015/09/fastest-cdn-jquery-bootstrap/ -->
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-    <script>
-        // Fallback por si el CDN no es accesible
-        (window.jQuery || document.write('jquery.min.js - INACCESIBLE'));
-    </script>
-    <script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
-    <script>
-        // Fallback por si el CDN no es accesible
-        (window.jQuery || document.write('Bootstrap.min.js INACCESIBLE'));
-    </script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-3.0.0.min.js"></script>
-    <script>
-        // Fallback por si el CDN no es accesible
-        (window.jQuery || document.write('jquery-migrate.js - INACCESIBLE'));
-    </script>
+		<!-- Bootstrap -->
+		<!-- Los más rápidos según http://www.quickonlinetips.com/archives/2015/09/fastest-cdn-jquery-bootstrap/ -->
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+		<script>
+			// Fallback por si el CDN no es accesible
+			(window.jQuery || document.write('jquery.min.js - INACCESIBLE'));
+		</script>
+		<script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
+		<script>
+			// Fallback por si el CDN no es accesible
+			(window.jQuery || document.write('Bootstrap.min.js INACCESIBLE'));
+		</script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-3.0.0.min.js"></script>
+		<script>
+			// Fallback por si el CDN no es accesible
+			(window.jQuery || document.write('jquery-migrate.js - INACCESIBLE'));
+		</script>
 
-    <link rel="stylesheet" media="screen" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script>
-        // Fallback por si el CDN no es accesible
-        (window.jQuery || document.write('Bootstrap.min.css - INACCESIBLE'));
-    </script>
-
+		<link rel="stylesheet" media="screen" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script>
+			// Fallback por si el CDN no es accesible
+			(window.jQuery || document.write('Bootstrap.min.css - INACCESIBLE'));
+		</script>
 
 
 
-    <!-- Fuentes -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
 
-    <!-- TEMA PERSONALIZADO -->
-    <link href="css/agency.css" rel="stylesheet" type="text/css">
+		<!-- Fuentes -->
+		<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
 
-    <style>
-        /* CSS de jfeed */
-    </style>
+		<!-- TEMA PERSONALIZADO -->
+		<link href="css/agency.css" rel="stylesheet" type="text/css">
 
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="PIC-SL">
-    <meta name="application-name" content="PIC-SL">
-    <meta name="msapplication-TileColor" content="#d9db59">
-    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#d9db59">
-
-
-    <!-- FIXME  Revisar si este es el sitio correcto para este script -->
-    <script src="js/horario.js"></script>
-</head>
-
-<body onload="actualizarReloj()">
-    <!-- Insert your HTML here -->
-
-    <div class="container-fluid">
-
-        <div class="row" style="min-height: 75vh; background-color: Gray;">
-
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Dropdown link</a></li>
-                    <li><a href="#">Dropdown link</a></li>
-                </ul>
-            </div>
-            <br />
-            <div id="Fecha_Reloj"></div>
-            <div id="horario_apertura"></div>
-            <div><span class="glyphicon glyphicon-user"></span></div>
-            &lt; . &gt; &frasl;
-        </div>
+		<style>
+			/* CSS de jfeed */
+		</style>
 
 
 
-        <div class="row" style="min-height: 25vh; background-color: #FFC">
-            <div class="to-flips" id="news">
-                <!-- <h1>Últimas Noticias</h1>-->
-                <div class="content">
-                    <div id="latestnews"></div>
-                </div>
-                <div class="flipnav"></div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="section">
-        <!-- Scripts -->
-        <script type="text/javascript">
-            //http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.jfeed.pack.js
-            "use strict";
-            eval(function (p, a, c, k, e, d) {
-                e = function (c) {
-                    return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
-                };
-                while (c--)
-                    if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
-                return p
-            }('3.X=a(h){h=3.J({v:D,C:D,u:D},h);k(h.v){$.W({t:\'V\',v:h.v,C:h.C,U:\'4\',u:a(4){d f=j B(4);k(3.T(h.u))h.u(f)}})}};a B(4){k(4)2.K(4)};B.r={t:\'\',l:\'\',c:\'\',b:\'\',g:\'\',K:a(4){k(3(\'8\',4).y==1){2.t=\'x\';d s=j z(4)}H k(3(\'f\',4).y==1){2.t=\'S\';d s=j A(4)}k(s)3.J(2,s)}};a o(){};o.r={c:\'\',b:\'\',g:\'\',i:\'\',n:\'\'};a A(4){2.q(4)};A.r={q:a(4){d 8=3(\'f\',4).9(0);2.l=\'1.0\';2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').p(\'I\');2.g=3(8).5(\'R:e\').6();2.w=3(8).p(\'4:Q\');2.i=3(8).5(\'i:e\').6();2.m=j G();d f=2;3(\'P\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).p(\'I\');7.g=3(2).5(\'O\').9(0).6();7.i=3(2).5(\'i\').9(0).6();7.n=3(2).5(\'n\').9(0).6();f.m.E(7)})}};a z(4){2.q(4)};z.r={q:a(4){k(3(\'x\',4).y==0)2.l=\'1.0\';H 2.l=3(\'x\',4).9(0).p(\'l\');d 8=3(\'8\',4).9(0);2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').6();2.g=3(8).5(\'g:e\').6();2.w=3(8).5(\'w:e\').6();2.i=3(8).5(\'N:e\').6();2.m=j G();d f=2;3(\'7\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).6();7.g=3(2).5(\'g\').9(0).6();7.i=3(2).5(\'M\').9(0).6();7.n=3(2).5(\'L\').9(0).6();f.m.E(7)})}};', 60, 60, '||this|jQuery|xml|find|text|item|channel|eq|function|link|title|var|first|feed|description|options|updated|new|if|version|items|id|JFeedItem|attr|_parse|prototype|feedClass|type|success|url|language|rss|length|JRss|JAtom|JFeed|data|null|push|each|Array|else|href|extend|parse|guid|pubDate|lastBuildDate|content|entry|lang|subtitle|atom|isFunction|dataType|GET|ajax|getFeed'.split('|')))
-        </script>
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico">
+		<meta name="apple-mobile-web-app-title" content="PIC-SL">
+		<meta name="application-name" content="PIC-SL">
+		<meta name="msapplication-TileColor" content="#d9db59">
+		<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#d9db59">
 
 
-        <script type="text/javascript">
-            // http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.flips.min.js
+		<!-- FIXME  Revisar si este es el sitio correcto para este script -->
+		<script src="js/horario.js"></script>
+	</head>
 
-            "use strict";
+	<body onload="actualizarReloj()">
+		<!-- Insert your HTML here -->
 
-            (function (a) {
-                a.fn.flips = function (k) {
-                    if (this.length > 1) {
-                        this.each(function () {
-                            a(this).flips(k)
-                        });
-                        return this
-                    }
-                    var e = {
-                        speed: 500,
-                        autorun: 10000,
-                        autorun_delay: 0,
-                        stop_autorun: false,
-                        left_arrow: "&laquo;",
-                        // left_arrows: '&lt;span class="glyphicon glyphicon-menu-left"&gt;&lt;&frasl;span&gt;',
-                        right_arrow: "&raquo;",
-                        direction: "right",
-                        items: 1,
-                    };
-                    var j = this;
-                    var k = a.extend(e, k);
-                    var h, b, f, g, c, d = [],
-                        i = false;
-                    this.initBlocks = function () {
-                        h = a(".content", j);
-                        a(".block", j).css("display", "block");
-                        f = -1;
-                        g = a(".block", h).length;
-                        var page = 0;
-                        a(".block", h).each(function () {
-                            a(this).wrapInner('<div class="in"></div');
-                            a(this).css("left", "0px");
-                            a(this).css("top", "0px");
-                            switch (k.direction) {
-                            case "left":
-                                a(this).css("left", h.width() - a(this).width() * (page + 1));
-                                break;
-                            case "right":
-                                a(this).css("left", a(this).width() * page);
-                                break;
-                            case "top":
-                                a(this).css("top", h.height() - a(this).height() * (page + 1));
-                                break;
-                            case "bottom":
-                                a(this).css("top", a(this).height() * page);
-                                break
-                            }
-                            a(this).addClass("page" + (page++))
-                        });
-                        var m = a(".block", h);
-                        for (var l = 0; l < k.items; l++) {
-                            var n = m[l];
-                            d.push(n);
-                            a(n).show();
-                            f++
-                        }
-                        b = a(".flipnav", j)
-                    };
-                    this.prepareNavigation = function () {
-                        b.append('<div class="btn-left"></div>');
-                        b.append('<div class="btn-left-dis"></div>');
-                        b.append('<div class="btn-right"></div>');
-                        b.append('<div class="btn-right-dis"></div>');
-                        if (k.left_arrow != "") {
-                            a(".btn-left", b).html(k.left_arrow);
-                            a(".btn-left-dis", b).html(k.left_arrow)
-                        }
-                        if (k.right_arrow != "") {
-                            a(".btn-right", b).html(k.right_arrow);
-                            a(".btn-right-dis", b).html(k.right_arrow)
-                        }
-                        a(".btn-right", b).click(function () {
-                            j.stopAutorun();
-                            j.clickRight()
-                        });
-                        a(".btn-left", b).click(function () {
-                            j.stopAutorun();
-                            j.clickLeft()
-                        })
-                    };
-                    this.clickRight = function (q) {
-                        if (i) {
-                            return
-                        }
-                        if (f >= g - 1) {
-                            var p = a(".page0", h)
-                        } else {
-                            var p = a(".page" + (f + 1), h)
-                        }
-                        var o = {};
-                        var m = {};
-                        for (var n = 0; n < d.length; n++) {
-                            var l = a(d[n]);
-                            var r = l.position();
-                            switch (k.direction) {
-                            case "left":
-                                o = {
-                                    left: r.left + l.width()
-                                };
-                                break;
-                            case "right":
-                                o = {
-                                    left: r.left - l.width()
-                                };
-                                break;
-                            case "top":
-                                o = {
-                                    top: r.top + l.height()
-                                };
-                                break;
-                            case "bottom":
-                                o = {
-                                    top: r.top - l.height()
-                                };
-                                break
-                            }
-                            l.animate(o, k.speed, "swing")
-                        }
-                        switch (k.direction) {
-                        case "left":
-                            p.css("left", -p.width());
-                            m = {
-                                left: 0
-                            };
-                            break;
-                        case "right":
-                            p.css("left", h.width());
-                            m = {
-                                left: p.position().left - p.width()
-                            };
-                            break;
-                        case "top":
-                            p.css("top", -p.height());
-                            m = {
-                                top: 0
-                            };
-                            break;
-                        case "bottom":
-                            p.css("top", h.height());
-                            m = {
-                                top: p.position().top - p.height()
-                            };
-                            break
-                        }
-                        p.animate(m, k.speed, "swing");
-                        d.shift();
-                        d.push(p);
-                        if (f >= g - 1) {
-                            f = 0
-                        } else {
-                            f++
-                        }
-                        j.lockClick();
-                        j.processArrows()
-                    };
-                    this.clickLeft = function () {
-                        if (i) {
-                            return
-                        }
-                        if (f - k.items < 0) {
-                            var p = a(".page" + (g + (f - k.items)), h)
-                        } else {
-                            var p = a(".page" + (f - k.items), h)
-                        }
-                        var o = {};
-                        var m = {};
-                        for (var n = 0; n < d.length; n++) {
-                            var l = a(d[n]);
-                            var q = l.position();
-                            switch (k.direction) {
-                            case "left":
-                                o = {
-                                    left: q.left - l.width()
-                                };
-                                break;
-                            case "right":
-                                o = {
-                                    left: q.left + l.width()
-                                };
-                                break;
-                            case "top":
-                                o = {
-                                    top: q.top - l.height()
-                                };
-                                break;
-                            case "bottom":
-                                o = {
-                                    top: q.top + l.height()
-                                };
-                                break
-                            }
-                            l.animate(o, k.speed, "swing")
-                        }
-                        switch (k.direction) {
-                        case "left":
-                            p.css("left", h.width());
-                            m = {
-                                left: p.position().left - p.width()
-                            };
-                            break;
-                        case "right":
-                            p.css("left", -p.width());
-                            m = {
-                                left: 0
-                            };
-                            break;
-                        case "top":
-                            p.css("top", h.height());
-                            m = {
-                                top: p.position().top - p.height()
-                            };
-                            break;
-                        case "bottom":
-                            p.css("top", -p.height());
-                            m = {
-                                top: 0
-                            };
-                            break
-                        }
-                        p.animate(m, k.speed, "swing");
-                        d.unshift(p);
-                        d.pop();
-                        if (f == 0) {
-                            f = g - 1
-                        } else {
-                            f--
-                        }
-                        j.lockClick();
-                        j.processArrows()
-                    };
-                    this.processArrows = function () {
-                        if (k.items > 1) {
-                            a(".btn-left", b).css("display", "block");
-                            a(".btn-left-dis", b).css("display", "none");
-                            a(".btn-right", b).css("display", "block");
-                            a(".btn-right-dis", b).css("display", "none")
-                        } else {
-                            a(".btn-left", b).css("display", f > 0 ? "block" : "none");
-                            a(".btn-left-dis", b).css("display", f == 0 ? "block" : "none");
-                            a(".btn-right", b).css("display", f < g - 1 ? "block" : "none");
-                            a(".btn-right-dis", b).css("display", f == g - 1 ? "block" : "none")
-                        }
-                    };
-                    this.startAutorun = function () {
-                        c = setInterval(j.clickRight, k.autorun)
-                    };
-                    this.stopAutorun = function () {
-                        clearInterval(c);
-                        if (!k.stop_autorun) {
-                            j.startAutorun()
-                        }
-                    };
-                    this.lockClick = function () {
-                        i = true;
-                        setTimeout(j.unlockClick, k.speed + 50)
-                    };
-                    this.unlockClick = function () {
-                        i = false
-                    };
-                    this.initBlocks();
-                    this.prepareNavigation();
-                    this.processArrows();
-                    if (k.autorun > 0) {
-                        if (k.autorun_delay > 0) {
-                            setTimeout(this.startAutorun, k.autorun_delay)
-                        } else {
-                            this.startAutorun()
-                        }
-                    }
-                }
-            })(jQuery);
-        </script>
+		<div class="container-fluid">
 
-        <script type="text/javascript">
-            jQuery(function () {
+			<div class="row" style="min-height: 75vh; background-color: Silver;">
 
-                jQuery.getFeed({
-                    // RSS path must be local unless using a proxy
-                    url: 'rss/rss20.xml',
-                    success: function (feed) {
 
-                        var html = '';
+				<div class="col-lg-12">
 
-                        // Selects how many RSS items to parse
-                        for (var i = 0; i < feed.items.length && i < 10; i++) {
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Dropdown link</a></li>
+							<li><a href="#">Dropdown link</a></li>
+						</ul>
+					</div>
+					<br />
+					<div id="Fecha_Reloj"></div>
+					<div id="horario_apertura"></div>
+					<div>
+						<span class="glyphicon glyphicon-user"></span><br />
+						<span class="glyphicon glyphicon-ok"></span><span class="sr-only">ok</span>
+						<span class="glyphicon glyphicon-remove"></span><span class="sr-only">No</span>
+						<span class="glyphicon glyphicon-star"></span><span class="sr-only">Estrella</span>
+					</div>
+				</div>
+			</div>
 
-                            var item = feed.items[i];
-                            html += '<div class=block>'
-                                // Gets the RSS link and title
-                                + '<h3>' + '<a href="' + item.link + '">' + item.title + '</a>' + '</h3>';
+			<div class="row" style="min-height: 25vh; background-color: #FFC">
+				<div class="col-lg-12">
+					<div class="to-flips" id="news">
+						<!-- <h1>Últimas Noticias</h1>-->
+						<div class="content">
+							<div id="latestnews"></div>
+						</div>
+						<div class="flipnav"></div>
+					</div>
+				</div>
+			</div>
 
-                            html += '<div class="grey">'
-                                // Gets the RSS pubDate
-                                + item.updated + '</div>'
-                                // Gets the RSS description
-                                + item.description + '</div>';
-                        }
-                        jQuery('#latestnews').append(html);
+		</div>
 
-                        // Adds the jQuery Flips element. The direction can left, top or bottom/
-                        $('#news').flips({
-                            autorun_delay: 200,
-                            direction: 'right'
-                        });
-                    }
-                });
-            });
-        </script>
+		<div class="section">
+			<!-- Scripts -->
+			<script type="text/javascript">
+				//http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.jfeed.pack.js
+				"use strict";
+				eval(function (p, a, c, k, e, d) {
+					e = function (c) {
+						return (c < a ? '' : e(<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+											   arseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+					};
+					while (c--)
+						if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+					return p
+				}('3.X=a(h){h=3.J({v:D,C:D,u:D},h);k(h.v){$.W({t:\'V\',v:h.v,C:h.C,U:\'4\',u:a(4){d f=j B(4);k(3.T(h.u))h.u(f)}})}};a B(4){k(4)2.K(4)};B.r={t:\'\',l:\'\',c:\'\',b:\'\',g:\'\',K:a(4){k(3(\'8\',4).y==1){2.t=\'x\';d s=j z(4)}H k(3(\'f\',4).y==1){2.t=\'S\';d s=j A(4)}k(s)3.J(2,s)}};a o(){};o.r={c:\'\',b:\'\',g:\'\',i:\'\',n:\'\'};a A(4){2.q(4)};A.r={q:a(4){d 8=3(\'f\',4).9(0);2.l=\'1.0\';2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').p(\'I\');2.g=3(8).5(\'R:e\').6();2.w=3(8).p(\'4:Q\');2.i=3(8).5(\'i:e\').6();2.m=j G();d f=2;3(\'P\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).p(\'I\');7.g=3(2).5(\'O\').9(0).6();7.i=3(2).5(\'i\').9(0).6();7.n=3(2).5(\'n\').9(0).6();f.m.E(7)})}};a z(4){2.q(4)};z.r={q:a(4){k(3(\'x\',4).y==0)2.l=\'1.0\';H 2.l=3(\'x\',4).9(0).p(\'l\');d 8=3(\'8\',4).9(0);2.c=3(8).5(\'c:e\').6();2.b=3(8).5(\'b:e\').6();2.g=3(8).5(\'g:e\').6();2.w=3(8).5(\'w:e\').6();2.i=3(8).5(\'N:e\').6();2.m=j G();d f=2;3(\'7\',4).F(a(){d 7=j o();7.c=3(2).5(\'c\').9(0).6();7.b=3(2).5(\'b\').9(0).6();7.g=3(2).5(\'g\').9(0).6();7.i=3(2).5(\'M\').9(0).6();7.n=3(2).5(\'L\').9(0).6();f.m.E(7)})}};', 60, 60, '||this|jQuery|xml|find|text|item|channel|eq|function|link|title|var|first|feed|description|options|updated|new|if|version|items|id|JFeedItem|attr|_parse|prototype|feedClass|type|success|url|language|rss|length|JRss|JAtom|JFeed|data|null|push|each|Array|else|href|extend|parse|guid|pubDate|lastBuildDate|content|entry|lang|subtitle|atom|isFunction|dataType|GET|ajax|getFeed'.split('|')))
+			</script>
 
-        <script type="text/javascript">
-            //            /*
-            //             * http: //jcatala.net/node/943
-            //             *
-            //             * Para que funcione:
-            //             * -- -- -- -- -- -- -- -- --
-            //             * < body onload = "actualizaReloj()" >
-            //             * < div id = "Fecha_Reloj" > < /div> *
-            //             */
-            //            /*Script del Reloj */
-            //            function actualizarReloj() {
-            //                "use strict";
-            //                var marcacion = new Date()
-            //                var Hora = marcacion.getHours()
-            //                var Minutos = marcacion.getMinutes()
-            //                var Segundos = marcacion.getSeconds()
-            //                var dn = "AM"
-            //                if (Hora > 12) {
-            //                    dn = "PM"
-            //                    Hora = Hora - 12
-            //                }
-            //                if (Hora == 0)
-            //                    Hora = 12
-            //                    /* Si la Hora, los Minutos o los Segundos son Menores o igual a 9, le añadimos un 0 */
-            //                if (Hora <= 9) Hora = "0" + Hora
-            //                if (Minutos <= 9) Minutos = "0" + Minutos
-            //                if (Segundos <= 9) Segundos = "0" + Segundos
-            //                    /* Termina el Script del Reloj */
-            //
-            //                /*Script de la Fecha */
-            //                var Dia = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
-            //                var Mes = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-            //                var Hoy = new Date();
-            //                var Anio = Hoy.getFullYear();
-            //                var Fecha = Dia[Hoy.getDay()] + ", " + Hoy.getDate() + " de " + Mes[Hoy.getMonth()] + " de " + Anio + ". ";
-            //
-            //                /* Termina el script de la Fecha */
-            //
-            //                /* Creamos 2 variables para darle formato a nuestro Script */
-            //                var Script, Total
-            //
-            //                /* En Reloj le indicamos la Hora, los Minutos y los Segundos */
-            //                Script = Fecha + Hora + ":" + Minutos + ":" + Segundos + " " + dn
-            //
-            //                /* En total Finalizamos el Reloj uniendo las variables */
-            //                Total = Script
-            //
-            //                /* Capturamos una celda para mostrar el Reloj */
-            //                document.getElementById('Fecha_Reloj').innerHTML = Total
-            //
-            //                /* Indicamos que nos refresque el Reloj cada 1 segundo */
-            //                setTimeout("actualizarReloj()", 1000)
-            //            }
-        </script>
 
-        <script>
-            //(function (i, s, o, g, r, a, m) {
-            //	i['GoogleAnalyticsObject'] = r;
-            //	i[r] = i[r] || function () {
-            //		(i[r].q = i[r].q || []).push(arguments)
-            //	}, i[r].l = 1 * new Date();
-            //	a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            //	a.async = 1;
-            //	a.src = g;
-            //	m.parentNode.insertBefore(a, m)
-            //})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-            //ga('create', 'UA-XXXXXXXX-X', 'auto');
-            //ga('send', 'pageview');
-        </script>
-    </div>
-</body>
+			<script type="text/javascript">
+				// http://www.peterhintondesign.co.uk/blog/jquery-rss-slider/js/jquery.flips.min.js
+
+				"use strict";
+
+				(function (a) {
+					a.fn.flips = function (k) {
+						if (this.length > 1) {
+							this.each(function () {
+								a(this).flips(k)
+							});
+							return this
+						}
+						var e = {
+							speed: 500,
+							autorun: 10000,
+							autorun_delay: 0,
+							stop_autorun: false,
+							left_arrow: "&laquo;",
+							// left_arrows: '&lt;span class="glyphicon glyphicon-menu-left"&gt;&lt;&frasl;span&gt;',
+							right_arrow: "&raquo;",
+							direction: "right",
+							items: 1,
+						};
+						var j = this;
+						var k = a.extend(e, k);
+						var h, b, f, g, c, d = [],
+							i = false;
+						this.initBlocks = function () {
+							h = a(".content", j);
+							a(".block", j).css("display", "block");
+							f = -1;
+							g = a(".block", h).length;
+							var page = 0;
+							a(".block", h).each(function () {
+								a(this).wrapInner('<div class="in"></div');
+								a(this).css("left", "0px");
+								a(this).css("top", "0px");
+								switch (k.direction) {
+									case "left":
+										a(this).css("left", h.width() - a(this).width() * (page + 1));
+										break;
+									case "right":
+										a(this).css("left", a(this).width() * page);
+										break;
+									case "top":
+										a(this).css("top", h.height() - a(this).height() * (page + 1));
+										break;
+									case "bottom":
+										a(this).css("top", a(this).height() * page);
+										break
+								}
+								a(this).addClass("page" + (page++))
+							});
+							var m = a(".block", h);
+							for (var l = 0; l < k.items; l++) {
+								var n = m[l];
+								d.push(n);
+								a(n).show();
+								f++
+							}
+							b = a(".flipnav", j)
+						};
+						this.prepareNavigation = function () {
+							b.append('<div class="btn-left"></div>');
+							b.append('<div class="btn-left-dis"></div>');
+							b.append('<div class="btn-right"></div>');
+							b.append('<div class="btn-right-dis"></div>');
+							if (k.left_arrow != "") {
+								a(".btn-left", b).html(k.left_arrow);
+								a(".btn-left-dis", b).html(k.left_arrow)
+							}
+							if (k.right_arrow != "") {
+								a(".btn-right", b).html(k.right_arrow);
+								a(".btn-right-dis", b).html(k.right_arrow)
+							}
+							a(".btn-right", b).click(function () {
+								j.stopAutorun();
+								j.clickRight()
+							});
+							a(".btn-left", b).click(function () {
+								j.stopAutorun();
+								j.clickLeft()
+							})
+						};
+						this.clickRight = function (q) {
+							if (i) {
+								return
+							}
+							if (f >= g - 1) {
+								var p = a(".page0", h)
+								} else {
+									var p = a(".page" + (f + 1), h)
+									}
+							var o = {};
+							var m = {};
+							for (var n = 0; n < d.length; n++) {
+								var l = a(d[n]);
+								var r = l.position();
+								switch (k.direction) {
+									case "left":
+										o = {
+											left: r.left + l.width()
+										};
+										break;
+									case "right":
+										o = {
+											left: r.left - l.width()
+										};
+										break;
+									case "top":
+										o = {
+											top: r.top + l.height()
+										};
+										break;
+									case "bottom":
+										o = {
+											top: r.top - l.height()
+										};
+										break
+								}
+								l.animate(o, k.speed, "swing")
+							}
+							switch (k.direction) {
+								case "left":
+									p.css("left", -p.width());
+									m = {
+										left: 0
+									};
+									break;
+								case "right":
+									p.css("left", h.width());
+									m = {
+										left: p.position().left - p.width()
+									};
+									break;
+								case "top":
+									p.css("top", -p.height());
+									m = {
+										top: 0
+									};
+									break;
+								case "bottom":
+									p.css("top", h.height());
+									m = {
+										top: p.position().top - p.height()
+									};
+									break
+							}
+							p.animate(m, k.speed, "swing");
+							d.shift();
+							d.push(p);
+							if (f >= g - 1) {
+								f = 0
+							} else {
+								f++
+							}
+							j.lockClick();
+							j.processArrows()
+						};
+						this.clickLeft = function () {
+							if (i) {
+								return
+							}
+							if (f - k.items < 0) {
+								var p = a(".page" + (g + (f - k.items)), h)
+								} else {
+									var p = a(".page" + (f - k.items), h)
+									}
+							var o = {};
+							var m = {};
+							for (var n = 0; n < d.length; n++) {
+								var l = a(d[n]);
+								var q = l.position();
+								switch (k.direction) {
+									case "left":
+										o = {
+											left: q.left - l.width()
+										};
+										break;
+									case "right":
+										o = {
+											left: q.left + l.width()
+										};
+										break;
+									case "top":
+										o = {
+											top: q.top - l.height()
+										};
+										break;
+									case "bottom":
+										o = {
+											top: q.top + l.height()
+										};
+										break
+								}
+								l.animate(o, k.speed, "swing")
+							}
+							switch (k.direction) {
+								case "left":
+									p.css("left", h.width());
+									m = {
+										left: p.position().left - p.width()
+									};
+									break;
+								case "right":
+									p.css("left", -p.width());
+									m = {
+										left: 0
+									};
+									break;
+								case "top":
+									p.css("top", h.height());
+									m = {
+										top: p.position().top - p.height()
+									};
+									break;
+								case "bottom":
+									p.css("top", -p.height());
+									m = {
+										top: 0
+									};
+									break
+							}
+							p.animate(m, k.speed, "swing");
+							d.unshift(p);
+							d.pop();
+							if (f == 0) {
+								f = g - 1
+							} else {
+								f--
+							}
+							j.lockClick();
+							j.processArrows()
+						};
+						this.processArrows = function () {
+							if (k.items > 1) {
+								a(".btn-left", b).css("display", "block");
+								a(".btn-left-dis", b).css("display", "none");
+								a(".btn-right", b).css("display", "block");
+								a(".btn-right-dis", b).css("display", "none")
+							} else {
+								a(".btn-left", b).css("display", f > 0 ? "block" : "none");
+								a(".btn-left-dis", b).css("display", f == 0 ? "block" : "none");
+								a(".btn-right", b).css("display", f < g - 1 ? "block" : "none");
+								a(".btn-right-dis", b).css("display", f == g - 1 ? "block" : "none")
+							}
+						};
+						this.startAutorun = function () {
+							c = setInterval(j.clickRight, k.autorun)
+						};
+						this.stopAutorun = function () {
+							clearInterval(c);
+							if (!k.stop_autorun) {
+								j.startAutorun()
+							}
+						};
+						this.lockClick = function () {
+							i = true;
+							setTimeout(j.unlockClick, k.speed + 50)
+						};
+						this.unlockClick = function () {
+							i = false
+						};
+						this.initBlocks();
+						this.prepareNavigation();
+						this.processArrows();
+						if (k.autorun > 0) {
+							if (k.autorun_delay > 0) {
+								setTimeout(this.startAutorun, k.autorun_delay)
+							} else {
+								this.startAutorun()
+							}
+						}
+					}
+				})(jQuery);
+			</script>
+
+			<script type="text/javascript">
+				jQuery(function () {
+
+					jQuery.getFeed({
+						// RSS path must be local unless using a proxy
+						url: 'rss/rss20.xml',
+						success: function (feed) {
+
+							var html = '';
+
+							// Selects how many RSS items to parse
+							for (var i = 0; i < feed.items.length && i < 10; i++) {
+
+								var item = feed.items[i];
+								html += '<div class=block>'
+								// Gets the RSS link and title
+									+ '<h3>' + '<a href="' + item.link + '">' + item.title + '</a>' + '</h3>';
+
+								html += '<div class="grey">'
+								// Gets the RSS pubDate
+									+ item.updated + '</div>'
+								// Gets the RSS description
+									+ item.description + '</div>';
+							}
+							jQuery('#latestnews').append(html);
+
+							// Adds the jQuery Flips element. The direction can left, top or bottom/
+							$('#news').flips({
+								autorun_delay: 200,
+								direction: 'right'
+							});
+						}
+					});
+				});
+			</script>
+
+			<script type="text/javascript">
+				//            /*
+				//             * http: //jcatala.net/node/943
+				//             *
+				//             * Para que funcione:
+				//             * -- -- -- -- -- -- -- -- --
+				//             * < body onload = "actualizaReloj()" >
+				//             * < div id = "Fecha_Reloj" > < /div> *
+				//             */
+				//            /*Script del Reloj */
+				//            function actualizarReloj() {
+				//                "use strict";
+				//                var marcacion = new Date()
+				//                var Hora = marcacion.getHours()
+				//                var Minutos = marcacion.getMinutes()
+				//                var Segundos = marcacion.getSeconds()
+				//                var dn = "AM"
+				//                if (Hora > 12) {
+				//                    dn = "PM"
+				//                    Hora = Hora - 12
+				//                }
+				//                if (Hora == 0)
+				//                    Hora = 12
+				//                    /* Si la Hora, los Minutos o los Segundos son Menores o igual a 9, le añadimos un 0 */
+				//                if (Hora <= 9) Hora = "0" + Hora
+				//                if (Minutos <= 9) Minutos = "0" + Minutos
+				//                if (Segundos <= 9) Segundos = "0" + Segundos
+				//                    /* Termina el Script del Reloj */
+				//
+				//                /*Script de la Fecha */
+				//                var Dia = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+				//                var Mes = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+				//                var Hoy = new Date();
+				//                var Anio = Hoy.getFullYear();
+				//                var Fecha = Dia[Hoy.getDay()] + ", " + Hoy.getDate() + " de " + Mes[Hoy.getMonth()] + " de " + Anio + ". ";
+				//
+				//                /* Termina el script de la Fecha */
+				//
+				//                /* Creamos 2 variables para darle formato a nuestro Script */
+				//                var Script, Total
+				//
+				//                /* En Reloj le indicamos la Hora, los Minutos y los Segundos */
+				//                Script = Fecha + Hora + ":" + Minutos + ":" + Segundos + " " + dn
+				//
+				//                /* En total Finalizamos el Reloj uniendo las variables */
+				//                Total = Script
+				//
+				//                /* Capturamos una celda para mostrar el Reloj */
+				//                document.getElementById('Fecha_Reloj').innerHTML = Total
+				//
+				//                /* Indicamos que nos refresque el Reloj cada 1 segundo */
+				//                setTimeout("actualizarReloj()", 1000)
+				//            }
+			</script>
+
+			<script>
+				//(function (i, s, o, g, r, a, m) {
+				//	i['GoogleAnalyticsObject'] = r;
+				//	i[r] = i[r] || function () {
+				//		(i[r].q = i[r].q || []).push(arguments)
+				//	}, i[r].l = 1 * new Date();
+				//	a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				//	a.async = 1;
+				//	a.src = g;
+				//	m.parentNode.insertBefore(a, m)
+				//})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+				//ga('create', 'UA-XXXXXXXX-X', 'auto');
+				//ga('send', 'pageview');
+			</script>
+		</div>
+	</body>
 
 </html>

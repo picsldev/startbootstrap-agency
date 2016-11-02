@@ -14,7 +14,7 @@
   gray-lighter: white;
   brand-primary: #337ab7;
   brand-sucess: #5CB85C ​;
-  brand-info: #5bc0de ​;
+  brand-info: #5BC0DE ​;
   brand-warning: #F0AD4E;
   brand-danger: #d9534f;
 }
@@ -46,7 +46,7 @@
   color: #d9534f;
 }
 #contact:-moz-placeholder, #contact::-moz-placeholder {
-  color: #bbbbbb;
+  color: #BBBBBB;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -433,12 +433,13 @@ fieldset[disabled] .btn-xl.active, fieldset[disabled] .btn-xl:active, fieldset[d
 .portfolio-modal .modal-content {
   -webkit-box-shadow: none;
   background: border-box;
+  background-color: #FFFFFF;
   border: none;
   border-radius: 0;
   box-shadow: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .service-modal .modal-dialog,
