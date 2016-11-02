@@ -12,3 +12,9 @@ index.backup.html
 img/portfolio/ck/tmp/
 img/portfolio/unycop/tmp/
 .sass-cache/
+
+scss/_variables.css
+scss/_variables.css.map
+scss/agency.css
+scss/agency.css.map
+
