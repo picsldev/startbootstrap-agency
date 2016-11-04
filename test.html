@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="CHANGE-ME">
@@ -169,12 +170,150 @@ Específica sobre Microsoft: https://msdn.microsoft.com/library/dn455115(v=vs.85
 					<div id="Fecha_Reloj"></div>
 					<div id="horario_apertura"></div>
 					<div>
-						<span class="glyphicon glyphicon-user"></span><br />
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="glyphicon glyphicon-user"></span>
+						<br />
+						<span class="glyphicon glyphicon-ok"></span><span class="sr-only">ok</span>
+						<span class="glyphicon glyphicon-remove"></span><span class="sr-only">No</span>
+						<span class="glyphicon glyphicon-star"></span><span class="sr-only">Estrella</span>
+						<br />
 						<span class="glyphicon glyphicon-ok"></span><span class="sr-only">ok</span>
 						<span class="glyphicon glyphicon-remove"></span><span class="sr-only">No</span>
 						<span class="glyphicon glyphicon-star"></span><span class="sr-only">Estrella</span>
 					</div>
 				</div>
+
+				<div class="col-lg-12">
+
+					<!--PRUEBAS-->
+
+					<article id="idServicios">
+						<header>
+							<h2>Servicios</h2>
+						</header>
+
+						<div>
+
+							<div typeof="schema:BlogPosting">
+
+								<div class="container">
+
+									<!-- Primer grupo -->
+
+									<div class="row">
+
+										<div class="col-sm-6 col-md-4">
+
+											<a href="/servicios/formacion/">
+												<div class="stickout">
+
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Formación</span>
+
+													<div>
+														<div>Formación</div>
+													</div>
+
+												</div>
+											</a>
+										</div>
+
+										<div class="col-sm-6 col-md-4">
+
+											<a href="/servicios/servicio-tecnico/">
+												<div class="stickout">
+
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Servicio Técnico</span>
+
+													<div>
+														<div>Servicio Técnico</div>
+													</div>
+
+												</div>
+											</a>
+										</div>
+
+										<div class="col-sm-6 col-md-4">
+											<a href="/servicios/soporte-personalizado/">
+												<div class="stickout">
+
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Soporte Personalizado</span>
+
+													<div>
+														<div>Soporte Personalizado</div>
+													</div>
+
+												</div>
+											</a>
+
+										</div>
+										<div class="clearfix"></div>
+									</div>
+
+									<!-- Segundo grupo -->
+
+									<div class="row">
+
+										<div class="col-sm-6 col-md-4">
+
+											<a href="/servicios/redes-infraestructura-y-servidores/">
+
+												<div class="stickout">
+
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Redes, infraestructuras y servidores</span>
+
+													<div>
+														<div>Redes, infraestructuras y servidores</div>
+													</div>
+
+												</div>
+											</a>
+										</div>
+
+										<div class="col-sm-6 col-md-4">
+											<a href="/servicios/desarrollo-web/">
+												<div class="stickout">
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Desarrollo Web</span>
+
+													<div>
+														<div>Desarrollo Web</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="col-sm-6 col-md-4">
+											<a href="/servicios/ventas-y-postventa/">
+												<div class="stickout">
+													<span class="glyphicon glyphicon-user"></span><span class="sr-only">Venta y Post-Venta</span>
+
+													<div>
+														<div>Venta y Post-Venta</div>
+													</div>
+												</div>
+											</a>
+
+										</div>
+
+										<div class="clearfix"></div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<!-- .entry-content -->
+						<br>
+						<footer class="entry-footer">
+							<div class="centrado">
+								<button class="btn btn-info btn-responsive">aaa</button>
+								<br />
+								<button class="btn btn-info btn-responsive">bbb</button>
+							</div>
+						</footer>
+						<!-- .entry-footer -->
+					</article>
+				</div>
+
 			</div>
 
 			<div class="row" style="min-height: 25vh; background-color: #FFC">
@@ -198,7 +337,7 @@ Específica sobre Microsoft: https://msdn.microsoft.com/library/dn455115(v=vs.85
 				"use strict";
 				eval(function (p, a, c, k, e, d) {
 					e = function (c) {
-						return (c < a ? '' : e(<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+						return (c < a ? '' : e( < p > You can use the mark tag to < mark > highlight < /mark> text.</p >
 											   arseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
 					};
 					while (c--)

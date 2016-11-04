@@ -859,3 +859,20 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+/* ---------- *\
+| Experimentos |
+\* ---------- */
+.stickout {
+  transition-property: background-color, color, box-shadow, filter;
+  transition-duration: 0.3s, 0.15s, 0.3s, 0.3s, 0.3s;
+  transition-timing-function: initial, initial, initial, initial, initial;
+  transition-delay: initial, initial, initial, initial, initial;
+}
+.stickout:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+}
