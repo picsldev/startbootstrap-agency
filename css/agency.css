@@ -1,11 +1,8 @@
 @charset "UTF-8";
-/*                  *\
-| Tema personalizado |
-\*                  */
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-#MISCOLORES {
+.mis_colores {
   gray-base: #777;
   gray-darker: #999999;
   gray-dark: #aaaaaa;
@@ -52,16 +49,24 @@
   text-transform: uppercase;
 }
 
-#service .service-item .service-caption p,
-#portfolio .portfolio-item .portfolio-caption p {
+#service
+.service-item
+.service-caption p,
+#portfolio
+.portfolio-item
+.portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 0;
 }
 
-#service .service-item .service-caption,
-#portfolio .portfolio-item .portfolio-caption {
+#service
+.service-item
+.service-caption,
+#portfolio
+.portfolio-item
+.portfolio-caption {
   background: White;
   margin: 0 auto;
   max-width: 400px;
@@ -69,13 +74,29 @@
   text-align: center;
 }
 
-#service .service-item .service-link .service-hover .service-hover-content i,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#service
+.service-item
+.service-link
+.service-hover
+.service-hover-content i,
+#portfolio
+.portfolio-item
+.portfolio-link
+.portfolio-hover
+.portfolio-hover-content i {
   margin-top: -12px;
 }
 
-#service .service-item .service-link .service-hover .service-hover-content,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#service
+.service-item
+.service-link
+.service-hover
+.service-hover-content,
+#portfolio
+.portfolio-item
+.portfolio-link
+.portfolio-hover
+.portfolio-hover-content {
   color: White;
   font-size: 20px;
   height: 20px;
@@ -86,8 +107,14 @@
   width: 100%;
 }
 
-#service .service-item .service-link .service-hover,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#service
+.service-item
+.service-link
+.service-hover,
+#portfolio
+.portfolio-item
+.portfolio-link
+.portfolio-hover {
   -moz-transition: all ease .5s;
   -webkit-transition: all ease .5s;
   height: 100%;
@@ -97,21 +124,33 @@
   width: 100%;
 }
 
-#service .service-item .service-link .service-hover:hover,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#service
+.service-item
+.service-link
+.service-hover:hover,
+#portfolio
+.portfolio-item
+.portfolio-link
+.portfolio-hover:hover {
   opacity: 1;
 }
 
-#service .service-item .service-link,
-#portfolio .portfolio-item .portfolio-link {
+#service
+.service-item
+.service-link,
+#portfolio
+.portfolio-item
+.portfolio-link {
   display: block;
   margin: 0 auto;
   max-width: 400px;
   position: relative;
 }
 
-#service .service-item,
-#portfolio .portfolio-item {
+#service
+.service-item,
+#portfolio
+.portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
