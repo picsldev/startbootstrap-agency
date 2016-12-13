@@ -2,26 +2,32 @@
 
 ## Fase I: Instalación del entorno virtual
 
-# Instalación base para iniciar la instalación:
+### Instalación base para iniciar la instalación:
 
 ```sh
 apt-get install python-virtualenv virtualenvwrapper python-pip git-flow python-dev
 ```
 
 ### Creamos el fichero /etc/profile.d/virtualenvwraper.sh
-```bash
+```sh
 #!/bin/sh
+
 # Para virtualenv:
 export PROJECT_HOME=${HOME}/Proyectos/Python/
+
 # Preparamos el entorno para virtualenvwrapper:
 export WORKON_HOME=${HOME}/.virtualenvs
+
 # Directorio temporal para todas las operaciones
 export VIRTUALENVWRAPPER_TMPDIR=/tmp
+
 # Cargamos todo en la sesión:
 source /etc/bash_completion.d/virtualenvwrapper
 ```
 
-> \# Una vez creado este fichero, tendremos que salir de la sesión para recargar los cambios.
+> Una vez creado este fichero, tendremos que salir de la sesión para recargar los cambios.
+
+
 
 ## Fase II: Personalizar el entorno
 
